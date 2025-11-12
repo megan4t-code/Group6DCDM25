@@ -33,7 +33,7 @@ ui <- fluidPage(
         selectInput(
         inputId = "phenotype",
         label = "Choose a phenotype",
-         choices = 
+         choices =
          list(
           "Weight", 
           "Images", 
@@ -84,3 +84,4 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+fjdkal;
