@@ -1,0 +1,53 @@
+---
+title: "data_merge"
+format: html
+params:
+  data_dir: "~/Documents/kclworkspace/CW_DCDM/imp-data-analysis/data"
+  output_dir: "~/Documents/kclworkspace/CW_DCDM/imp-data-analysis/output"
+---
+
+#install.packages("data.table")
+```{r}
+library(data.table)
+library(dplyr)
+```
+
+#Creating file list
+```{r}
+dir <- params$data_dir
+files <- list.files(dir, pattern = "(?i)\\.csv$", full.names=TRUE)
+```
+#Read one file, set values to string types to prevent fread from manipulating types
+#Retreive and set record_id from filenames; handle duplicate column entries 
+#Reshape data from long to wide format
+```{r}
+read_file <- function(path){
+  cols <- c("Attribute", "Value")
+  record <- fread(
+    path,
+    header = FALSE,
+    select = 1:2,
+    col.names = cols,
+    colClasses = c("character", "character")
+  )
+  
+  wide <- dcast(record, . ~ Attribute, value.var = "Value")
+  wide[, "." := NULL]
+
+  setnames(wide, tolower(names(wide)))
+  wide
+}
+```
+
+#Read all files and store all one-row data tables(dt), combine them and merge
+```{r}
+dt_list <- lapply(files, read_file)
+combined <- rbindlist(dt_list, fill = TRUE, use.names = TRUE)
+res_dir <- params$output_dir
+timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
+merged_data_path <- file.path(res_dir, "merged_data", paste0("merged_data_", timestamp, ".csv"))
+fwrite(combined, merged_data_path)
+```
+
+
+
