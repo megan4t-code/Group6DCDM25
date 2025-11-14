@@ -7,17 +7,59 @@
 #    https://shiny.posit.co/
 #
 
+
+
+# Example data
+data <- data.frame(
+  gene_symbol = rep(c("2153608", "3607787", "1922928", "1928486", "88289"), each = 3),
+  phenotype = rep(c("Lower Urinary Tract", "Large Intestine", "White Adipose Tissue"), times = 5),
+  score = rnorm(15, mean = 0.5, sd = 0.2)
+)
+
 library(shiny)
 library(ggplot2)
 library(plotly)
 
+# Define UI
+ui <- fluidPage(
+  titlePanel("IMPC Gene Impact Viewer"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      helpText("Enter the GeneID (e.g. 2153608)"),
+      textInput("gene_id", "Enter Gene Symbol:", value = ""),
+      actionButton("search", "Search")
+    ), 
+    
+    mainPanel(
+      h4("Results for Selected Gene"),
+      plotlyOutput("scorePlot")
+    )
+  )
+)
+
+‎q1_shiny.R‎
++69
+Lines changed: 69 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,69 @@
+  #
+  # This is a Shiny web application. You can run the application by clicking
+  # the 'Run App' button above.
+  #
+  # Find out more about building applications with Shiny here:
+  #
+  #    https://shiny.posit.co/
+  #
+  library(shiny)
+library(ggplot2)
+library(plotly)
 # Example data
 data <- data.frame(
   gene_symbol = rep(c("GeneA", "GeneB", "GeneC", "GeneD", "GeneE"), each = 3),
   phenotype = rep(c("Weight", "Images", "Brain"), times = 5),
   score = rnorm(15, mean = 0.5, sd = 0.2)
 )
-
 # Define UI
 ui <- fluidPage(
   titlePanel("Knockout Gene–Phenotype Association"),
@@ -35,7 +77,6 @@ ui <- fluidPage(
     )
   )
 )
-
 # Define Server
 server <- function(input, output) {
   observeEvent(input$search, {
@@ -62,6 +103,7 @@ server <- function(input, output) {
     })
   })
 }
+
 # Run the app
 shinyApp(ui = ui, server = server)
 
