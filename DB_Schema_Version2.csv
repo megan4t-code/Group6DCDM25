@@ -1,0 +1,27 @@
+Table name,Column name,Key type,Description
+IMPC_disease,disease_id,PK,doid
+IMPC_disease,disease_name,,disease name.
+IMPC_disease,omim_ids,,OMIM ID(s) as text (e.g. OMIM:264300)
+IMPC_analysis_disease,mgi_accession_id (gene_id),"PK, FK ? gene.mgi_accession_id",Links to a gene that is associated with the disease.
+IMPC_analysis_disease,disease_id,PK FK ? disease.disease_id,Links to a disease associated with the gene.
+IMPC_procedure,procedure_id (new),PK,autoincremented new
+IMPC_procedure,procedure_name,,Name of the procedure (e.g. Insulin Blood Level).
+IMPC_procedure,description,,procedure description
+IMPC_procedure,is_mandatory,,TRUE/FALSE flag 
+IMPC_parameter,impc_parameter_orig_id,PK,Unique IMPC param orig ID from Parameters table.
+IMPC_parameter,parameter_code (param id: IMPC_),,IMPC_HWT_008_001 (not unique)
+IMPC_parameter,parameter_name,,(e.g. Body weight).
+IMPC_parameter,description,,parameter description
+IMPC_procedure_parameter,procedure_id,"PK, FK ? procedure.procedure_id",Which procedure this parameter belongs to.
+IMPC_procedure_parameter,impc_parameter_orig_id,PK FK ? parameter.impc_parameter_orig_id,Which parameter is part of that procedure.
+IMPC_parameter_group,parameter_group_id (new),PK,autoincremented new
+IMPC_parameter_group,group_name (new),,"Group label (e.g. Weight, Images, Brain)."
+IMPC_parameter_group_member,impc_parameter_orig_id,"PK, FK ? parameter.impc_parameter_orig_id",Parameter that is being grouped.
+IMPC_parameter_group_member,parameter_group_id,PK FK ? parameter_group.parameter_group_id,Group that the parameter belongs to.
+IMPC_analysis,analysis_id,PK,Original analysis ID from CSV (e.g. 00025394r9310l8).
+IMPC_analysis,mgi_accession_id (gene_id),,Which gene this result belongs to.
+IMPC_analysis,gene_symbol,,Gene symbol code e.g. Clcc1
+IMPC_analysis,impc_parameter_orig_id,FK ? parameter.impc_parameter_orig_id,Which parameter was analysed.
+IMPC_analysis,mouse_life_stage,,Life stage from your data (e.g. Early adult).
+IMPC_analysis,mouse_strain,,Strain from your data (e.g. C57BL).
+IMPC_analysis,p_value,,P-value from your analysis CSV.
