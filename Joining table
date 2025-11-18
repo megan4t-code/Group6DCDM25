@@ -1,0 +1,245 @@
+create table original_parameter (
+    impc_parameter_orig_id int,
+    parameter_name varchar(74),
+    description varchar(400),
+    parameter_code varchar(20)
+);
+
+create table original_procedure (
+    procedure_name varchar(50),
+    description varchar(600),
+    is_mandatory tinyint(1) default 0,
+    impc_parameter_orig_id int
+);
+
+create table original_analysis (
+    analysis_id varchar(15),
+    mgi_accession_id varchar(11),
+    gene_symbol varchar(13),
+    mouse_life_stage varchar(17),  -- 'Early adult'
+    mouse_strain varchar(5),       -- 'C57BL'
+    parameter_id varchar(20),
+    parameter_name varchar(74),
+    pvalue double
+);
+
+create table original_disease (
+    disease_id varchar(20),
+    disease_name varchar(150),
+    omim_id varchar(600),
+    mgi_accession_id varchar(11)   -- you have this in the Excel
+);
+
+create table chosen_group_names (
+    group_name             varchar(100),
+    impc_parameter_orig_id int
+);
+Then: use DBeaver’s Data Import to load each CSV into the matching original_* / chosen_group_names table.
+
+Step 2 – Create the core IMPC tables (no data yet)
+Order here must respect foreign keys:
+
+impc_parameter
+
+impc_procedure
+
+impc_parameter_group
+
+impc_disease
+
+impc_analysis (needs impc_parameter)
+
+sql
+Copy code
+create table impc_parameter (
+    impc_parameter_orig_id int not null,
+    parameter_code varchar(20),
+    parameter_name varchar(74) not null,
+    description varchar(400),
+    constraint impc_parameter_pk primary key (impc_parameter_orig_id)
+);
+
+create table impc_procedure (
+    procedure_id int auto_increment not null,
+    procedure_name varchar(50) not null,
+    description varchar(600),
+    is_mandatory tinyint(1) not null default 0,
+    constraint impc_procedure_pk primary key (procedure_id)
+);
+
+create table impc_parameter_group (
+    parameter_group_id int auto_increment not null,
+    group_name varchar(100) not null,
+    constraint impc_parameter_group_pk primary key (parameter_group_id)
+);
+
+create table impc_disease (
+    disease_id varchar(20) not null,
+    disease_name varchar(150),
+    omim_ids varchar(600),
+    constraint impc_disease_pk primary key (disease_id)
+);
+
+create table impc_analysis (
+    analysis_id varchar(15) not null,
+    mgi_accession_id varchar(11) not null,
+    gene_symbol varchar(13) not null,
+    mouse_strain varchar(5),
+    mouse_life_stage varchar(17),
+    impc_parameter_orig_id int not null,
+    pvalue double,
+    constraint impc_analysis_pk primary key (analysis_id),
+    foreign key (impc_parameter_orig_id)
+        references impc_parameter (impc_parameter_orig_id)
+);
+Step 3 – Load data into the core tables from the staging tables
+sql
+Copy code
+-- impc_parameter
+insert into impc_parameter (
+    impc_parameter_orig_id, parameter_code, parameter_name, description
+)
+select
+    impc_parameter_orig_id,
+    parameter_code,
+    parameter_name,
+    description
+from original_parameter;
+
+-- impc_procedure
+insert into impc_procedure (procedure_name, description, is_mandatory)
+select
+    procedure_name,
+    description,
+    is_mandatory
+from original_procedure;
+
+-- parameter groups (just the names)
+insert into impc_parameter_group (group_name)
+select distinct group_name
+from chosen_group_names;
+
+-- impc_disease
+insert into impc_disease (disease_id, disease_name, omim_ids)
+select distinct
+    disease_id,
+    disease_name,
+    omim_id
+from original_disease;
+
+-- impc_analysis (map parameter_id → impc_parameter_orig_id)
+insert into impc_analysis (
+    analysis_id,
+    mgi_accession_id,
+    gene_symbol,
+    mouse_life_stage,
+    mouse_strain,
+    impc_parameter_orig_id,
+    pvalue
+)
+select
+    oa.analysis_id,
+    oa.mgi_accession_id,
+    oa.gene_symbol,
+    oa.mouse_life_stage,
+    oa.mouse_strain,
+    ip.impc_parameter_orig_id,
+    oa.pvalue
+from original_analysis oa
+join impc_parameter ip
+  on oa.parameter_id = ip.parameter_code;
+At this point: all the pink tables in your diagram have data.
+
+Step 4 – Create the joining tables (structure only)
+Now that all parent tables exist:
+
+sql
+Copy code
+create table impc_analysis_disease (
+    mgi_accession_id varchar(11) not null,
+    disease_id varchar(20) not null,
+    constraint impc_analysis_disease_pk
+        primary key (mgi_accession_id, disease_id),
+    foreign key (mgi_accession_id) references impc_analysis (mgi_accession_id),
+    foreign key (disease_id)      references impc_disease  (disease_id)
+);
+
+create table impc_parameter_group_member (
+    impc_parameter_orig_id int not null,
+    parameter_group_id     int not null,
+    constraint impc_parameter_group_member_pk
+        primary key (impc_parameter_orig_id, parameter_group_id),
+    foreign key (impc_parameter_orig_id)
+        references impc_parameter (impc_parameter_orig_id),
+    foreign key (parameter_group_id)
+        references impc_parameter_group (parameter_group_id)
+);
+
+create table impc_procedure_parameter (
+    procedure_id          int not null,
+    impc_parameter_orig_id int not null,
+    constraint impc_procedure_parameter_pk
+        primary key (procedure_id, impc_parameter_orig_id),
+    foreign key (procedure_id) references impc_procedure (procedure_id),
+    foreign key (impc_parameter_orig_id)
+        references impc_parameter (impc_parameter_orig_id)
+);
+Step 5 – Populate the joining tables
+a) impc_parameter_group_member
+Use chosen_group_names to map parameters to groups:
+
+sql
+Copy code
+insert into impc_parameter_group_member (
+    impc_parameter_orig_id,
+    parameter_group_id
+)
+select distinct
+    c.impc_parameter_orig_id,
+    g.parameter_group_id
+from chosen_group_names c
+join impc_parameter_group g
+  on g.group_name = c.group_name;
+b) impc_procedure_parameter
+Map procedures to parameters:
+
+sql
+Copy code
+insert into impc_procedure_parameter (
+    procedure_id,
+    impc_parameter_orig_id
+)
+select distinct
+    p.procedure_id,
+    o.impc_parameter_orig_id
+from original_procedure o
+join impc_procedure p
+  on p.procedure_name = o.procedure_name;
+c) impc_analysis_disease
+Map each gene (mgi_accession_id) to disease_id using the disease file:
+
+sql
+Copy code
+insert into impc_analysis_disease (
+    mgi_accession_id,
+    disease_id
+)
+select distinct
+    od.mgi_accession_id,
+    od.disease_id
+from original_disease od
+join impc_analysis ia
+  on ia.mgi_accession_id = od.mgi_accession_id
+join impc_disease d
+  on d.disease_id = od.disease_id;
+Step 6 – Create the indexes (put these at the end)
+sql
+Copy code
+create index idx_disease_name
+    on impc_disease (disease_name);
+
+create index idx_parameter_name
+    on impc_parameter (parameter_name);
+
+create index idx_analysis_columns
+    on impc_analysis (mgi_accession_id, impc_parameter_orig_id, gene_symbol);
