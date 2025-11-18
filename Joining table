@@ -1,16 +1,5 @@
-create table original_parameter (
-    impc_parameter_orig_id int,
-    parameter_name varchar(74),
-    description varchar(400),
-    parameter_code varchar(20)
-);
 
-create table original_procedure (
-    procedure_name varchar(50),
-    description varchar(600),
-    is_mandatory tinyint(1) default 0,
-    impc_parameter_orig_id int
-);
+
 
 create table original_analysis (
     analysis_id varchar(15),
@@ -23,62 +12,6 @@ create table original_analysis (
     pvalue double
 );
 
-create table original_disease (
-    disease_id varchar(20),
-    disease_name varchar(150),
-    omim_id varchar(600),
-    mgi_accession_id varchar(11)   -- you have this in the Excel
-);
-
-create table chosen_group_names (
-    group_name             varchar(100),
-    impc_parameter_orig_id int
-);
-Then: use DBeaver’s Data Import to load each CSV into the matching original_* / chosen_group_names table.
-
-Step 2 – Create the core IMPC tables (no data yet)
-Order here must respect foreign keys:
-
-impc_parameter
-
-impc_procedure
-
-impc_parameter_group
-
-impc_disease
-
-impc_analysis (needs impc_parameter)
-
-sql
-Copy code
-create table impc_parameter (
-    impc_parameter_orig_id int not null,
-    parameter_code varchar(20),
-    parameter_name varchar(74) not null,
-    description varchar(400),
-    constraint impc_parameter_pk primary key (impc_parameter_orig_id)
-);
-
-create table impc_procedure (
-    procedure_id int auto_increment not null,
-    procedure_name varchar(50) not null,
-    description varchar(600),
-    is_mandatory tinyint(1) not null default 0,
-    constraint impc_procedure_pk primary key (procedure_id)
-);
-
-create table impc_parameter_group (
-    parameter_group_id int auto_increment not null,
-    group_name varchar(100) not null,
-    constraint impc_parameter_group_pk primary key (parameter_group_id)
-);
-
-create table impc_disease (
-    disease_id varchar(20) not null,
-    disease_name varchar(150),
-    omim_ids varchar(600),
-    constraint impc_disease_pk primary key (disease_id)
-);
 
 create table impc_analysis (
     analysis_id varchar(15) not null,
@@ -91,41 +24,7 @@ create table impc_analysis (
     constraint impc_analysis_pk primary key (analysis_id),
     foreign key (impc_parameter_orig_id)
         references impc_parameter (impc_parameter_orig_id)
-);
-Step 3 – Load data into the core tables from the staging tables
-sql
-Copy code
--- impc_parameter
-insert into impc_parameter (
-    impc_parameter_orig_id, parameter_code, parameter_name, description
-)
-select
-    impc_parameter_orig_id,
-    parameter_code,
-    parameter_name,
-    description
-from original_parameter;
 
--- impc_procedure
-insert into impc_procedure (procedure_name, description, is_mandatory)
-select
-    procedure_name,
-    description,
-    is_mandatory
-from original_procedure;
-
--- parameter groups (just the names)
-insert into impc_parameter_group (group_name)
-select distinct group_name
-from chosen_group_names;
-
--- impc_disease
-insert into impc_disease (disease_id, disease_name, omim_ids)
-select distinct
-    disease_id,
-    disease_name,
-    omim_id
-from original_disease;
 
 -- impc_analysis (map parameter_id → impc_parameter_orig_id)
 insert into impc_analysis (
