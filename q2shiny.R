@@ -17,12 +17,19 @@ library(shiny)
 library(dplyr)
 library(plotly)
 
-data <- data.frame(
-  parameter_ID = rep(c("IMPC_CBC_018_001", "IMPC_OFD_011_001", "M-G-P_006_001_026", "M-G-P_007_001_010", "IMPC_GRS_008_001"), each = 3),
-  parameter_symbol = rep(c("Glucose", "Periphery resting time", "Fusion of vertebrae", "center - distance", "Forelimb grip strength measurement mean"), each = 3),
-  gene_symbol = rep(c("Ube2j2", "Necap1", "Spata21", "Ucn3", "Clcc1"),  time = 3),
-  score = rnorm(15, mean = 0.5, sd = 0.2)
-)
+
+
+clean_data <- read.csv("~/Desktop/Data_cleaning_and_management/DCDM_25_26/DCDM_group_coursework/clean_input_files/cleaned_analysis_data.csv", 
+                   header = TRUE,   # 第一列是欄位名稱
+                   sep = ",",       # CSV 的分隔符號
+                   stringsAsFactors = FALSE)  # 不自動轉成 factor
+
+#data <- data.frame(
+  #parameter_ID = rep(c("IMPC_CBC_018_001", "IMPC_OFD_011_001", "M-G-P_006_001_026", "M-G-P_007_001_010", "IMPC_GRS_008_001"), each = 3),
+  #parameter_symbol = rep(c("Glucose", "Periphery resting time", "Fusion of vertebrae", "center - distance", "Forelimb grip strength measurement mean"), each = 3),
+  #gene_symbol = rep(c("Ube2j2", "Necap1", "Spata21", "Ucn3", "Clcc1"),  time = 3),
+  #score = rnorm(15, mean = 0.5, sd = 0.2)
+#)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -39,10 +46,10 @@ ui <- fluidPage(
         selectizeInput(
           "parameter_search",
           "Enter Parameter Symbol:",
-          choices = data$parameter_symbol,   
+          choices = clean_data$parameter_name,   
           options = list(
             placeholder = "Type a parameter name...",
-            maxOptions = 15
+            maxOptions = 50
           )
         ),
         helpText("Search by Gene Symbol (e.g. Ube2j2)"),
@@ -50,19 +57,6 @@ ui <- fluidPage(
         actionButton(inputId = "search", label = "Search")
       ),
         
-        # selectInput(
-        #inputId = "phenotype",
-        #label = "Choose a phenotype",
-         #choices =
-         #list(
-          #"Weight", 
-          #"Images", 
-          #"Brain",
-          #"1",
-          #"2",
-          #"3"
-          # )
-
         mainPanel(
           conditionalPanel(
           condition = "input.search > 0",
@@ -87,9 +81,9 @@ server <- function(input, output) {
     }
     
     # 篩選資料
-    data %>% filter(
-      (input$parameter_search != "" & parameter_symbol == input$parameter_search) |
-        (input$text_search != "" & parameter_ID == input$text_search)
+    clean_data %>% filter(
+      (input$parameter_search != "" & parameter_name == input$parameter_search) |
+        (input$text_search != "" & parameter_id == input$text_search)
     )
   })
   
@@ -101,13 +95,13 @@ server <- function(input, output) {
     # 如果沒有選擇任何參數就不畫圖
     if(nrow(df) == 0) return(NULL)
     
-    p <- ggplot(df, aes(x = gene_symbol, y = score)) +
-      geom_point(size = 4, color = "steelblue") +
-      theme_minimal(base_size = 14) +
+    p <- ggplot(df, aes(x = gene_symbol, y = pvalue)) +
+      geom_point(size = 1, color = "steelblue") +
+      theme_minimal(base_size = 7) +
       labs(
         title = paste("Scores for parameter:", input$parameter_search),
         x = "Parameter",
-        y = "Score"
+        y = "p-value"
       ) +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
