@@ -7,6 +7,8 @@ data <- data.frame(
 )
 
 
+
+
 library(shiny)
 library(ggplot2)
 library(plotly)
@@ -21,12 +23,12 @@ ui <- fluidPage(
     
     sidebarPanel(
       textInput("text_search", "Enter GeneID:", value = ""),
-      helpText("Search by GeneID (e.g. 2153608)"),
+      helpText("Search by GeneID (e.g. MGI:2153608)"),
       
       selectizeInput(
         "gene_search",
         "Enter Gene Symbol:",
-        choices = data$gene_symbol,   
+        choices = IMPC_analysis$gene_symbol,   
         options = list(
           placeholder = "Type a gene name...",
           maxOptions = 15
@@ -42,7 +44,7 @@ ui <- fluidPage(
         condition = "input.search > 0",
         h4("Phenotypes associated with the Selected Gene")
       ),
-      plotlyOutput("scorePlot")
+      plotlyOutput("scorePlot",  height = "2000px", width = "2000px")
     )
     
   )
@@ -70,53 +72,47 @@ server <- function(input, output, session) {
     
     # Use GeneID
     if (nzchar(id)) {
-      subset(data, gene_ID == id)
+      subset(IMPC_analysis, mgi_accession_id == id)
     } else {
-      subset(data, gene_symbol == sym)
+      subset(IMPC_analysis, gene_symbol == sym)
     }
     
-  })   # <<< THIS was missing — closes eventReactive
+  })   
   
-  # Volcano Plot
+  # Dot_Plot
   output$scorePlot <- renderPlotly({
     
     df <- selected_data()
     req(df)
     
-    df$neglog10p <- -log10(df$score)
-    
     p <- ggplot(df, aes(
-      x = score,
-      y = neglog10p,
-      label = phenotype
+      x = reorder(parameter_name,pvalue,FUN=min, decreasing = TRUE),
+      y = pvalue,
+      text = paste ("Phenotype:", parameter_name,
+                    "<br>p-value:", pvalue)
     )) +
-      geom_point(color = "steelblue", size = 3) +
-      geom_hline(yintercept = -log10(0.05), linetype = "dashed", colour = "red") +
+      geom_point(color = "pink", size = 3) +
+      geom_hline(
+        yintercept = 0.05, 
+        linetype = "dashed", 
+        colour = "blue"
+      ) +
+      coord_flip() +
       labs(
-        x = "Score",
-        y = "-Log10(p-value)",
-        title = "Volcano Plot"
+        x = "Phenotype",
+        y = "p-value",
+        title = "Phenotype Significance for Knockout Gene"
       ) +
       theme_minimal() +
       theme(
-        plot.title = element_text(
-          hjust = 0.5,   
-          size = 20,     
-          face = "bold" 
-        ),
-        axis.title.x = element_text(size = 15, face = "bold"),
-        axis.title.y = element_text(size = 15, face = "bold")
-      )
-    
-    
-    plt <- ggplotly(p, tooltip = c("label", "x", "y"))
-    
-    plt %>% layout(width = 1000, height = 1000)
-  })
+        plot.title = element_text(hjust = 0.5, size = 20, face = "bold"), 
+        axis.title.x = element_text(size = 15, face = "bold"),    
+        axis.title.y = element_text(size = 15, face = "bold"),
+        axis.text.x = element_text(angle = 90, hjust = 1))
+    ggplotly(p, tooltip = "text") 
+  }
+  )
+}
   
-} 
-
-
-# Run the app
-
+# Run app
 shinyApp(ui = ui, server = server)

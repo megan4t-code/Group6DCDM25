@@ -25,9 +25,13 @@ df <- data.frame(
 mat <- as.matrix(df[, -1])
 rownames(mat) <- df$gene
 
+
+colnames(IMPC_analysis)
+
+install.packages("reshape2")
+
 library(shiny)
 library(plotly)
-library(ggplot2)
 library (reshape2)
 
 
@@ -35,34 +39,38 @@ ui <- fluidPage(
   titlePanel("Phenotype Profile Heatmap of Knockout Genes"),
   
   mainPanel(
-    plotlyOutput("heat", height = "900px", width = "900px")   # FIXED: use plotlyOutput and correct ID
+    plotlyOutput("heat", height = "2000px", width = "2000px")   # FIXED: use plotlyOutput and correct ID
   )
 )
 
 server <- function(input, output) {
   output$heat <- renderPlotly({
     
-    df_long <- melt(mat)
-    colnames(df_long) <- c("Gene", "Phenotype", "p_value")
+    df <- IMPC_analysis
     
-    g <- ggplot(df_long, aes(
-      x = Phenotype,
-      y = Gene,
-      fill = p_value,
+    g <- ggplot(df, aes(
+      x = parameter_name,
+      y = gene_symbol,
+      fill = pvalue,
       text = paste(
-        "Phenotype:", Phenotype,
-        "<br>Gene:", Gene,
-        "<br>p-value:", round(p_value, 4)
+        "Phenotype:", parameter_name,
+        "<br>Gene:", gene_symbol,
+        "<br>p-value:", round(pvalue, 10)
       )
     )) +
       geom_tile() +
       scale_fill_gradientn(colors = c("black", "red", "yellow", "white", "lightblue")) +
       theme_minimal() +
-      labs(x = "Phenotype Type", y = "Knockout Genes")
+      labs(
+        x = "Phenotype",
+        y = "Gene Symbol",
+        fill = "p-value"
+      ) +
+      theme(
+        axis.text.x = element_text(angle = 90, hjust = 1)
+      )
     
-    # Convert to interactive plot
     ggplotly(g, tooltip = "text")
-    
   })
 }
 
