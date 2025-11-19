@@ -7,6 +7,30 @@ clean_data <- read.csv("~/Desktop/Data_cleaning_and_management/DCDM_25_26/DCDM_g
                        header = TRUE,   # 第一列是欄位名稱
                        sep = ",",       # CSV 的分隔符號
                        stringsAsFactors = FALSE)  # 不自動轉成 factor
+  
+cleaned_analysisid <- clean_data %>% group_by(
+    #gene_accession_id,
+    gene_symbol,
+    mouse_life_stage,
+    mouse_strain,
+    parameter_id,
+    parameter_name
+  ) %>% 
+  slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%
+  ungroup()
+
+cleaned_analysisid2<- cleaned_analysisid %>% group_by(
+  #gene_accession_id,
+  gene_symbol,
+  mouse_life_stage,
+  mouse_strain,
+  #parameter_id,
+  parameter_name
+) %>% 
+  slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%
+  ungroup()
+
+names(clean_data)
 
 ui <- fluidPage(
   titlePanel("IMPC Mouse Phenotype & Gene Viewer"),
@@ -18,7 +42,8 @@ ui <- fluidPage(
                sidebarPanel(
                  textInput("gene_id", "Enter GeneID:", value = ""),
                  selectizeInput("gene_name", "Enter Gene Symbol:", 
-                                choices = unique(clean_data$gene_symbol)),
+                                choices = unique(  
+                                  cleaned_analysisid2$gene_symbol)),
                  actionButton("gene_search", "Search")
                ),
                mainPanel(
@@ -36,7 +61,8 @@ ui <- fluidPage(
                sidebarPanel(
                  textInput("param_id", "Enter ParameterID:", value = ""),
                  selectizeInput("param_name", "Enter Parameter Symbol:", 
-                                choices = unique(clean_data$parameter_name)),
+                                choices = unique(  
+                                  cleaned_analysisid2$parameter_name)),
                  actionButton("param_search", "Search")
                ),
                mainPanel(
@@ -59,7 +85,8 @@ server <- function(input, output, session) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
-    clean_data %>% filter(
+    
+    cleaned_analysisid2 %>% filter(
       (input$param_id != "" & parameter_id == input$param_id) |
         (input$param_name != "" & parameter_name == input$param_name)
     )
@@ -68,12 +95,18 @@ server <- function(input, output, session) {
   output$dotPlot <- renderPlotly({
     df <- filtered_param()
     req(df)
-    
+    df$text_info <- paste(
+      "Gene:", df$gene_symbol,
+      "<br>Parameter ID:", df$parameter_id,
+      "<br>Life Stage:", df$mouse_life_stage,
+      "<br>Strain:", df$mouse_strain,
+      "<br>p-value:", df$pvalue
+    )
     p <- ggplot(df, aes(x = reorder(gene_symbol, pvalue, FUN = min, decreasing = TRUE), y =pvalue, 
-                        text = paste("Score:", pvalue, "<br>ID:", parameter_id))) +
+                        text = text_info)) +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "blue")+
       coord_flip() +
-      geom_point(size = 2, color = "forestgreen") +
+      geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
       theme_minimal() +
       labs(x = "Gene", y = "p-value") +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
@@ -91,22 +124,29 @@ server <- function(input, output, session) {
       return(NULL)
     }
     if (nzchar(input$gene_id)) {
-      subset(clean_data, mgi_accession_id == input$gene_id)
+      subset(cleaned_analysisid2, gene_accession_id == input$gene_id)
     } else {
-      subset(clean_data, gene_symbol == input$gene_name)
+      subset(cleaned_analysisid2, gene_symbol == input$gene_name)
     }
   })
   
   output$volcanoPlot <- renderPlotly({
     df <- selected_gene()
     req(df)
+    df$text_info <- paste(
+      "Phenotype:", df$parametername,
+      "<br>Parameter ID:", df$parameter_id,
+      "<br>Life Stage:", df$mouse_life_stage,
+      "<br>Strain:", df$mouse_strain,
+      "<br>p-value:", df$pvalue
+    )
     
     p <- ggplot(df, aes(
       x = reorder(parameter_name, pvalue, FUN = min, decreasing = TRUE),
       y = pvalue,
-      text = paste("Phenotype:", parameter_name, "<br>p-value:", pvalue)
+      text = text_info
     )) +
-      geom_point(color = "indianred", size = 2) +
+      geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
       coord_flip() +
       labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
