@@ -39,7 +39,7 @@ ui <- fluidPage(
   titlePanel("Phenotype Profile Heatmap of Knockout Genes"),
   
   mainPanel(
-    plotlyOutput("heat", height = "2000px", width = "2000px")   # FIXED: use plotlyOutput and correct ID
+    plotlyOutput("heat", height = "1500px", width = "1500px")   # FIXED: use plotlyOutput and correct ID
   )
 )
 
@@ -48,9 +48,13 @@ server <- function(input, output) {
     
     df <- IMPC_analysis
     
-    g <- ggplot(df, aes(
-      x = parameter_name,
-      y = gene_symbol,
+    collapsed <- IMPC_analysis %>%
+      group_by(gene_symbol, parameter_name) %>%
+      summarise(pvalue = min(pvalue, na.rm = TRUE), .groups = "drop")
+    
+    g <- ggplot(  collapsed , aes(
+      x = gene_symbol,
+      y = parameter_name,
       fill = pvalue,
       text = paste(
         "Phenotype:", parameter_name,
@@ -59,11 +63,12 @@ server <- function(input, output) {
       )
     )) +
       geom_tile() +
-      scale_fill_gradientn(colors = c("black", "red", "yellow", "white", "lightblue")) +
+      scale_fill_gradientn(colors = c("#4D004B",   
+                                      "purple","lavender", "skyblue", "lightblue"))+
       theme_minimal() +
       labs(
-        x = "Phenotype",
-        y = "Gene Symbol",
+        x = "Knockout Gene",
+        y = "Parameter",
         fill = "p-value"
       ) +
       theme(
