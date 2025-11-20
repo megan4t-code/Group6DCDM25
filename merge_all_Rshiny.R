@@ -36,7 +36,7 @@ ui <- fluidPage(
   titlePanel("IMPC Mouse Phenotype & Gene Viewer"),
   
   tabsetPanel(
-    # ----------------------------------
+    # UI for Panel 1: Gene search
     tabPanel("Gene Search",
              sidebarLayout(
                sidebarPanel(
@@ -125,6 +125,10 @@ server <- function(input, output, session) {
   })
   
   # ----------------- Tab 2: Gene Search -----------------
+  # Server-side logic for Gene search: Search gene by ID or name and returns phenotypes associated to it (p-value)
+  
+  # Select the p-value of  by gene ID or gene name
+  # Shows error if both terms are entered
   selected_gene <- eventReactive(input$gene_search, {
     if (nzchar(input$gene_id) && nzchar(input$gene_name)) {
       showNotification("Please enter only one input.", type = "error")
@@ -137,9 +141,15 @@ server <- function(input, output, session) {
     }
   })
   
-  output$volcanoPlot <- renderPlotly({
+  
+  output$DotPlot <- renderPlotly({
+    
+    # Retrieves the filtered dataset for the chosen gene
+    # Ensure the plot only runs when valid data is avaliable
     df <- selected_gene()
     req(df)
+    
+    # Provide information to the hover text
     df$text_info <- paste(
       "Phenotype:", df$parametername,
       "<br>Parameter ID:", df$parameter_id,
@@ -148,22 +158,35 @@ server <- function(input, output, session) {
       "<br>p-value:", df$pvalue
     )
     
+    # Crete a dot plot (ggplot)
+    # Puts phenotype in X-axis, reordered to allow the significant association occured first in the dot plot
+    # Puts p-values on the Y-axis, and attach the hover text to each points for interactive purpose
     p <- ggplot(df, aes(
       x = reorder(parameter_name, pvalue, FUN = min, decreasing = TRUE),
       y = pvalue,
       text = text_info
     )) +
+      
+      # Coloring the dot points by life stage and re-shaping them by different mouse strain for visually distinguishing in the dot plot
       geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
       scale_shape_manual(
         values = c(
           "C57BL" = 16,   # Circle
-          "129SV" = 17,     # ▲
-          "C3H" = 15,     # ■
+          "129SV" = 17,     # triangle
+          "C3H" = 15,     # square
           "B6J"
         ))+
+      
+      # Create a horizontal dashed line at p=0.05 for easy visulize the significant gene-phenotype associations
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
+      
+      # Swap the x and y axis, make the phenotype names easier to read 
       coord_flip() +
+      
+      # Plot lables
       labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
+      
+      # Setting theme
       theme_minimal() +
       theme(
         plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
@@ -173,8 +196,10 @@ server <- function(input, output, session) {
         # axis.text.y = element_text(size = 5)
       )
     
+    # Convert ggplot into an interactive plot
     ggplotly(p, tooltip = "text")
   })
 }
 
+# Launching the Shiny application
 shinyApp(ui = ui, server = server)
