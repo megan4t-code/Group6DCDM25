@@ -108,6 +108,13 @@ server <- function(input, output, session) {
       coord_flip() +
       geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
       theme_minimal() +
+      scale_shape_manual(
+        values = c(
+          "C57BL" = 16,   # Circle
+          "129SV" = 17,     # ▲
+          "C3H" = 15,     # ■
+          "B6J"
+        ))+
       labs(x = "Gene", y = "p-value") +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
@@ -147,6 +154,13 @@ server <- function(input, output, session) {
       text = text_info
     )) +
       geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
+      scale_shape_manual(
+        values = c(
+          "C57BL" = 16,   # Circle
+          "129SV" = 17,     # ▲
+          "C3H" = 15,     # ■
+          "B6J"
+        ))+
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
       coord_flip() +
       labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
