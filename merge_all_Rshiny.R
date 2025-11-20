@@ -20,7 +20,7 @@ cleaned_analysisid <- clean_data %>% group_by(
   ungroup()
 
 cleaned_analysisid2<- cleaned_analysisid %>% group_by(
-  #gene_accession_id,
+  mgi_accession_id,
   gene_symbol,
   mouse_life_stage,
   mouse_strain,
