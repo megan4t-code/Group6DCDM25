@@ -11,7 +11,6 @@
 "002v12129kan406","MGI:99602","Acan","Early adult","C57BL","IMPC_HWT_008_001","Heart weight",0.4744618
 "00315jjm71f0213","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.2146964
 "0035683697nhz7i","MGI:98241","Stmn2","E18.5","C57BL","IMPC_OFD_015_001","Center resting time",0.4704225
-"003h9t2lah4olh3","MGI:2661120","Actr3b","Early adult","C52BL","IMPC_EYE_014_001","Pupil Light Response",0.7728638
 "003o3b4j7jec95n","MGI:1915918","Klk5","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.6322903
 "003vk817zmfr0l3","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.9084152
 "004283cd279d058","MGI:1859211","Irf6","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.8112395
@@ -50,7 +49,6 @@
 "00r2gag28173bh9","MGI:2385186","Clcc1","E12.5","C57BL","JAX_OFD_007_001","Whole arena resting time",0.4209288
 "00r45jwg1nwfr4h","MGI:99160","Zfp14","Early adult","C57BL","JAX_SLW_004_001","Sleep dark phase percent",0.5205296
 "00s9ct66h9ewyws","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_EYE_014_001","Pupil Light Response",0.8834246
-"00ubaak18o8q2f8","MGI:1349473","Ppp2r5e","Early adult","C54BL","M-G-P_025_001_013","Aspartate aminotransferase",0.855894
 "00wkx6j2c6j043u","MGI:99602","Acan","E15.5","C57BL","IMPC_CBC_005_001","Creatinine",0.7487304
 "00xgw4076n897rq","MGI:1915625","Ndufa8","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.2072466
 "00y3qi0u34b65g7","MGI:2153608","Ube2j2","Middle aged adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.4147123
@@ -170,7 +168,6 @@
 "02ch241s48po066","MGI:1920431","Nfatc4","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.3171601
 "02d936z41lm12z9","MGI:1349473","Ppp2r5e","Early adult","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.8603784
 "02dnx3f78p911qk","MGI:1859026","Cnot4","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.1151619
-"02dol93nv2s9b9p","MGI:1916387","Vstm5","Early adult","C50BL","IMPC_EYE_069_001","Left inner nuclear layer",0.5470138
 "02e567cbdlhg97y","MGI:1922928","Ippk","E12.5","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.3451331
 "02eal23z6mnpn64","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.8789202
 "02f898ecsm06qa3","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.3072918
@@ -316,7 +313,6 @@
 "04i14rgr7z4wx6c","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.05089397
 "04i157o26i898s9","MGI:3652039","Rad21l","Late adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.4017678
 "04iwi47d3n6inim","MGI:2388280","Polr2b","E9.5","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.790425
-"04izcd32i0yvv8p","MGI:2385186","Clcc1","E9.5","C53BL","IMPC_GEP_005_002","Responsive to tactile stimuli",0.6940248
 "04jc4ja75ce1846","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_EYE_069_001","Left inner nuclear layer",0.7700584
 "04k2l6g121q1huy","MGI:2685945","Pstk","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.06403417
 "04ks8539woxx2h2","MGI:3652039","Rad21l","Early adult","C57BL","JAX_LDT_009_001","Percent time in light",0.992882
@@ -335,7 +331,6 @@
 "04s93vo7r132sx1","MGI:1921720","Cep72","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.8036593
 "04slu993132ia0h","MGI:1921287","Acot6","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.8262313
 "04t479g0l2e76tm","MGI:102716","Cryba4","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.2608582
-"04u84opln058i72","MGI:3527427","Taar3","Early adult","C51BL","IMPC_HEM_007_001","Mean cell hemoglobin concentration",0.76477
 "04utin6grkho8cl","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.2904355
 "04v2w953kh3my2l","MGI:1915918","Klk5","Early adult","C57BL","M-G-P_005_001_001","Weight",0.4751416
 "04x14d331qa9543","MGI:1914852","Necap1","E18.5","C57BL","IMPC_DXA_009_001","Fat/Body weight",0.7536644
@@ -352,7 +347,6 @@
 "051uwv15i8z87t1","MGI:3652039","Rad21l","Late adult","C57BL","IMPC_CBC_028_001","Creatine kinase",0.2456624
 "051zu676in61j9x","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_CSD_029_001","Activity (body position)",0.3552212
 "0526ock2866js83","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.7203742
-"0528906p31ttwwq","MGI:1921674","Tmc5","Early adult","C54BL","IMPC_CSD_023_001","Vibrissae - presence",0.7221346
 "052y2k371fsc52m","MGI:2385186","Clcc1","E9.5","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0
 "05356oun3ek8kof","MGI:96438","Igfbp3","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.9074626
 "05387v2ed0kej02","MGI:2661120","Actr3b","Early adult","C57BL","M-G-P_006_001_013","Radius",0.8908749
@@ -576,7 +570,6 @@
 "08bh5e6t3t0llr3","MGI:1921287","Acot6","Early adult","129SV","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.6248012
 "08d0m345rr2ipbg","MGI:2684313","Togaram1","Early adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.6466668
 "08e8y0k2zk28245","MGI:3652039","Rad21l","Late adult","C57BL","ESLIM_016_001_008","Platelets count",0.6099447
-"08f3v213zj9481x","MGI:109349","Atf2","Early adult","C53BL","HMGULA_SHI_009_001","Startle response",0.3173224
 "08f57g136006e65","MGI:88289","Cbx2","E15.5","C57BL","M-G-P_025_001_021","Uric acid",0.3079239
 "08frb4123w46wd5","MGI:1921287","Acot6","Early adult","C57BL","ESLIM_016_001_005","Mean cell volume",0.1175043
 "08g0c5357ppby8a","MGI:88071","Arnt","Early adult","C57BL","IMPC_ABR_008_001","18kHz-evoked ABR Threshold",0.6557171
@@ -617,7 +610,6 @@
 "095tk720z61144t","MGI:101901","Klra7","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.2541607
 "0961t9fo2x438qc","MGI:3646952","Spink14","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.6532737
 "0967xtmo99g85iz","MGI:2443796","Scart1","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.8911961
-"096kwj9hq7ke7o8","MGI:96438","Igfbp3","Early adult","C58BL","IMPC_EYE_083_001","Vitreous",0.8258159
 "0973z678h38x86l","MGI:3527427","Taar3","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.4656404
 "098443w5qu0y388","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.277955
 "09890q0903664tx","MGI:109151","Ltbp1","Early adult","129SV","IMPC_GEO_019_001","Embryo Size",0.724985
@@ -700,7 +692,6 @@
 "0bf0l96paokd3of","MGI:98241","Stmn2","E18.5","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.9959106
 "0bk101oc69tr8fd","MGI:99602","Acan","E15.5","C57BL","ESLIM_011_001_004","PP3 startle magnitude",0.6862842
 "0bk5433b152xe32","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_CSD_029_001","Activity (body position)",0.05922693
-"0bm08m037e0o2l2","MGI:98839","Prss1","Early adult","C50BL","JAX_SLW_002_001","Sleep daily percent",0.7735569
 "0bni6a8rt20f5a4","MGI:106351","Vcf1","Early adult","129SV","IMPC_CSD_017_001","Forelimbs - position",0.3689478
 "0bqi65584w00l6m","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.7911183
 "0br51sk897h4bl3","MGI:1098746","Ankzf1","Early adult","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.1468053
@@ -1170,14 +1161,12 @@
 "0x11k316q4iu64j","MGI:97594","Prkacb","Early adult","C57BL","IMPC_OFD_013_001","Periphery average speed",0.4989463
 "0x2o51eqx28s05n","MGI:3041259","Mettl25","Early adult","C57BL","IMPC_HEM_038_001","Basophil differential count",0.778158
 "0x2tl672952gr84","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.4407645
-"0x378e3ok9qh4d1","MGI:2387194","Qsox2","Late adult","C55BL","IMPC_CAL_021_001","Total water intake",0.1261034
 "0x397sy9yel8483","MGI:1915267","Mrm2","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.2558637
 "0x43s11106oyt4o","MGI:2385186","Clcc1","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.2239226
 "0x5cso7le8875zr","MGI:2669796","Rtn4rl2","Early adult","C57BL","IMPC_GEP_004_002","Spontaneous movement",0.4276557
 "0x67kijfi51m0ke","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.7936812
 "0x7hyuwm62w1491","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_CSD_029_001","Activity (body position)",0.3912928
 "0x86q4yc6h1yc7y","MGI:98261","Ccl4","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.9649327
-"0xc7nk7999x4d4t","MGI:1930923","Slurp1","Early adult","C55BL","IMPC_CBC_028_001","Creatine kinase",0.752583
 "0xg8f318vs0bn66","MGI:1922928","Ippk","E12.5","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.9125584
 "0xk4grq76n7fhmh","MGI:103250","Calm2","Early adult","C57BL","IMPC_CBC_005_001","Creatinine",0.2979743
 "0xlsn24i56741fp","MGI:2387194","Qsox2","Late adult","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.4073248
@@ -1204,7 +1193,6 @@
 "0yempo6rj34eds4","MGI:1922928","Ippk","E9.5","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.8476209
 "0ygp8ur6b2308bf","MGI:2153608","Ube2j2","Middle aged adult","C57BL","M-G-P_025_001_022","Total bilirubin",0.2776358
 "0ylm917fir9b168","MGI:99602","Acan","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.8106814
-"0ym5ci0g174w1yb","MGI:1915267","Mrm2","Early adult","C56BL","ESLIM_011_001_003","PP2 startle magnitude",0.09333526
 "0yxw9fs64510k0q","MGI:1914015","4933411k16rik","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.8675232
 "0z3289t55zh6nf0","MGI:2385186","Clcc1","E9.5","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.7616502
 "0z4ly0c452gsbyw","MGI:1914015","4933411k16rik","Early adult","C57BL","JAX_SLW_004_001","Sleep dark phase percent",0.2541044
@@ -1274,7 +1262,6 @@
 "10ch1t3b1p3i6oj","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_HEM_038_001","Basophil differential count",0.8553958
 "10cr0v946867269","MGI:96438","Igfbp3","Early adult","C57BL","JAX_URI_002_001","Creatinine",0.6038877
 "10d488hq9xl58v2","MGI:1333782","Pld3","Early adult","C57BL","IMPC_DXA_009_001","Fat/Body weight",0.2547795
-"10dlkiu2lhq924v","MGI:99602","Acan","Early adult","C56BL","IMPC_CSD_008_001","Coat - color pattern - back",0.380962
 "10e3w4l69i71k5z","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_ECH_011_001","LVIDs",0.6603391
 "10e45f3p32a8786","MGI:1922928","Ippk","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.6881669
 "10ec1mesr45x275","MGI:2684313","Togaram1","E9.5","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.328084
@@ -1283,7 +1270,6 @@
 "10f3tevu61yewo1","MGI:1339711","Myh1","Early adult","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",2.074345e-05
 "10f7so0d132x217","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_DXA_007_001","BMC/Body weight",0.4729174
 "10g189967pwgq34","MGI:2388280","Polr2b","E9.5","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.6289775
-"10k65vw36dq1fpg","MGI:1930923","Slurp1","Early adult","C55BL","IMPC_HEM_019_001","Mean platelet volume",0.9202181
 "10m20512589ql65","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.2207766
 "10o3k8444rzd6zs","MGI:2137026","P2rx5","Early adult","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.1543345
 "10ok45r7uk6eocg","MGI:1920431","Nfatc4","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.6832567
@@ -1659,11 +1645,9 @@
 "16sx65zadtf41lj","MGI:98241","Stmn2","E18.5","C57BL","IMPC_ABR_006_001","12kHz-evoked ABR Threshold",0.06368683
 "16tgkog70t80g8g","MGI:1339759","Csf2rb","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.627128
 "16v24z504og21bz","MGI:2441730","Tbl1xr1","Late adult","C57BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.8460112
-"16v64g4330z0j66","MGI:3652039","Rad21l","Middle aged adult","C51BL","CCP_XRY_001_001","Skull shape",0.5533112
 "16wi4ce9l9v53uw","MGI:2153608","Ube2j2","Early adult","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.1386939
 "16yg14v4o924z46","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.5250758
 "16yk7hba2lw0984","MGI:3646952","Spink14","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.05490298
-"16z9mv85v3tok8m","MGI:1923549","Erp44","Early adult","C59BL","IMPC_ECH_008_001","LVIDd",0.1749929
 "16zc443xx73borg","MGI:3607787","Spata21","Early adult","C57BL","M-G-P_025_001_022","Total bilirubin",0.2834717
 "16zg5qdbhztm8ez","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.2042215
 "16zq347t026zgyl","MGI:1859211","Irf6","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.7864065
@@ -1708,7 +1692,6 @@
 "17l246m967b5k58","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.3557833
 "17l5o10k57w4jz1","MGI:1914852","Necap1","E18.5","C57BL","IMPC_HWT_002_001","Tibia length",0.9934349
 "17lh40ek11zb341","MGI:1930923","Slurp1","Early adult","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.8862106
-"17m41to2dx90cxt","MGI:2443796","Scart1","Early adult","C58BL","IMPC_CBC_006_001","Total protein",0.7809158
 "17n8vl53q6o9c20","MGI:95805","Grb2","Early adult","C57BL","IMPC_ABR_006_001","12kHz-evoked ABR Threshold",0.9197516
 "17q4o07nd22118b","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.09823504
 "17rf2xelcwh5454","MGI:1918588","Tprg1","Early adult","C57BL","IMPC_DXA_004_001","Bone Mineral Density (excluding skull)",0.2390497
@@ -1791,7 +1774,6 @@
 "19033812h191h23","MGI:88289","Cbx2","E15.5","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.4189058
 "19045lty8uukbqx","MGI:2136748","Pcdhb13","Early adult","C57BL","IMPC_ECH_009_001","LVPWd",0.264707
 "190u9noetu886jd","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.3557549
-"1933k6oc4e81l54","MGI:1918588","Tprg1","Early adult","C58BL","IMPC_EYE_062_001","Right total retinal thickness",0.5396262
 "1939t81b5b80k9t","MGI:104747","Pkia","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.0597396
 "19403b80qlb3590","MGI:95864","Gstp2","Early adult","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.8489832
 "1940574hil79er3","MGI:1921720","Cep72","Early adult","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0.6215751
@@ -1849,8 +1831,6 @@
 "19rd3t24912644t","MGI:88289","Cbx2","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.8732369
 "19rkv2kkhs71zu8","MGI:1922928","Ippk","Early adult","C57BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.463152
 "19rvy9dc2t640rl","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.2730287
-"19xv8h2555sf2gw","MGI:1921287","Acot6","Early adult","120SV","IMPC_CBC_009_001","Calcium",0.9858691
-"1a04gpsi0n22717","MGI:1347361","Mmp23","Early adult","C59BL","IMPC_CBC_006_001","Total protein",0.3691662
 "1a1295dy8lp05zs","MGI:1915918","Klk5","Early adult","C57BL","IMPC_EYE_017_001","Lens Opacity",0.1980389
 "1a1619x2445eo3f","MGI:98241","Stmn2","E12.5","C57BL","IMPC_CBC_003_001","Chloride",0.6911676
 "1a1c18bz0d42h73","MGI:2443834","Ppfia2","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.628923
@@ -1910,9 +1890,7 @@
 "1by6z796c8qs41o","MGI:1915625","Ndufa8","Early adult","C57BL","M-G-P_006_001_013","Radius",0.1959534
 "1byvtr7x0g11k37","MGI:1926024","Cfap61","Early adult","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.8909038
 "1c038b951j026a6","MGI:1922928","Ippk","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.3706217
-"1c15mc134392cc3","MGI:3052471","Slc2a12","Early adult","C50BL","IMPC_CSD_080_001","Head bobbing",0.3996496
 "1c21871a786xat2","MGI:2145567","Fam149b","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.4149349
-"1c2381owdt26487","MGI:1926024","Cfap61","Early adult","C52BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.5121548
 "1c32qik0015b709","MGI:1919824","Zc3h14","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.7605213
 "1c372flm13b8dmz","MGI:98905","Usp4","Early adult","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.8527994
 "1c41p2w8arda8qi","MGI:1309998","Marco","Early adult","C57BL","IMPC_HEM_019_001","Mean platelet volume",0.3925955
@@ -1970,7 +1948,6 @@
 "1e66608gi5yzmo8","MGI:96217","Hprt1","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.5715481
 "1e678d4yv725h28","MGI:3607787","Spata21","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.738963
 "1e7497q00770zsx","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_OFD_017_001","Center average speed",0.8576053
-"1e8f2y89hn14oo4","MGI:99602","Acan","Early adult","C53BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.8153819
 "1e908href1yc505","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.6716367
 "1egx95611497s2e","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_OFD_017_001","Center average speed",0.6635995
 "1enwiy35352715t","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_OFD_016_001","Center permanence time",0.442124
@@ -2058,7 +2035,6 @@
 "1j6j0k8q6w3398j","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.2401022
 "1j7f6022qwt4234","MGI:99602","Acan","E15.5","C57BL","IMPC_EYE_014_001","Pupil Light Response",0.4560473
 "1j8m841r3zm3031","MGI:88289","Cbx2","Early adult","C57BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.8310315
-"1j8nyo1e53y53q0","MGI:2444401","Snrnp200","Early adult","C52BL","IMPC_CSD_008_001","Coat - color pattern - back",0.9409348
 "1j8x70jzh49mm0e","MGI:2385186","Clcc1","E12.5","C57BL","JAX_URI_004_001","Magnesium",0.5958021
 "1j92m2554632nqc","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.09088448
 "1j9761o2j626v4n","MGI:1915340","Yif1a","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.9790324
@@ -2312,7 +2288,6 @@
 "1uvxp02584xh50g","MGI:2441730","Tbl1xr1","Early adult","C57BL","IMPC_OFD_011_001","Periphery resting time",0.8239765
 "1uvxq2352t066q7","MGI:3042250","Serpinb13","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.3778191
 "1uw2063j785b054","MGI:109349","Atf2","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.1877091
-"1uw2ksvtxpa2j4g","MGI:2136748","Pcdhb13","Early adult","C58BL","IMPC_CSD_080_001","Head bobbing",0.7716917
 "1v101ncddhi06q5","MGI:1349473","Ppp2r5e","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.8239591
 "1v14bk4q708l15i","MGI:1923549","Erp44","Early adult","C57BL","IMPC_ECH_011_001","LVIDs",0.3434021
 "1v1ha8e44688d4b","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.7600954
@@ -2441,7 +2416,6 @@
 "208yqbct33ilsz8","MGI:109151","Ltbp1","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.3985687
 "20976887ey3s021","MGI:95805","Grb2","Early adult","129SV","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.5609203
 "209ie5xjim69780","MGI:1890564","Rcan1","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.5785439
-"20a07323z8vhtp4","MGI:97594","Prkacb","Early adult","C58BL","ESLIM_016_001_002","Red blood cell count",0.1617715
 "20cg4r68s9g73lg","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.486696
 "20d8c7kawhhn37o","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_GEP_005_002","Responsive to tactile stimuli",0.6435378
 "20e4e0p3eahm2z4","MGI:1922928","Ippk","E12.5","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.9889426
@@ -2458,7 +2432,6 @@
 "20pk70o7989p576","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_HEM_002_001","Red blood cell count",0.1770981
 "20px13ua71uw25s","MGI:96438","Igfbp3","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.4478765
 "20q66b8yps73znk","MGI:109349","Atf2","Early adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.6267684
-"20r6cavx05r4687","MGI:1339759","Csf2rb","Early adult","C56BL","ESLIM_011_001_005","PP4 startle magnitude",0.8934815
 "20st98b55470oux","MGI:2151224","Alpk3","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.5262281
 "20t62375owmt6gd","MGI:3052471","Slc2a12","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",0.8432512
 "20u7b021402wo9l","MGI:2153608","Ube2j2","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.4551686
@@ -2474,7 +2447,6 @@
 "2128n7xf64a295n","MGI:98241","Stmn2","E18.5","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.7974778
 "21295h6tt1go520","MGI:99602","Acan","E15.5","C57BL","HMGULA_HWT_008_001","Heart weight",0.3876559
 "2129z67jar01d7e","MGI:1915759","Ptx4","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.4303244
-"2137ime55957q00","MGI:101901","Klra7","Early adult","C54BL","HMGULA_HWT_008_001","Heart weight",0.542914
 "213az96gn1f2r17","MGI:2385186","Clcc1","E12.5","C57BL","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.1673056
 "213c18xhg1ik1yn","MGI:1339711","Myh1","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.319761
 "213dsc3l90gi2g8","MGI:1890564","Rcan1","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.7446346
@@ -2584,7 +2556,6 @@
 "22k10x229l4sw46","MGI:88344","Cd7","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.05008878
 "22kde984rkee6o3","MGI:2443796","Scart1","Early adult","C57BL","IMPC_DXA_007_001","BMC/Body weight",0.6030585
 "22lighun6rrde08","MGI:1923549","Erp44","Early adult","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.6022387
-"22m1kv73144114q","MGI:1921674","Tmc5","Early adult","C55BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.2809719
 "22m39511k0ufq4k","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_GEM_063_001","Facial cleft",0.3275069
 "22my595i9oz0ror","MGI:1914015","4933411k16rik","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.6479024
 "22n34uba841v321","MGI:1915918","Klk5","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.5341508
@@ -2742,7 +2713,6 @@
 "24kxa443s344373","MGI:88289","Cbx2","Early adult","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.3811998
 "24l1s6cl12z03t2","MGI:1333782","Pld3","Early adult","C57BL","JAX_LDT_008_001","Percent time in dark",0.3558242
 "24mz7810gcdhi5c","MGI:1339759","Csf2rb","Early adult","C57BL","IMPC_HWT_008_001","Heart weight",0.6358117
-"24n95uoe3sja42l","MGI:95864","Gstp2","Early adult","C59BL","RBRCLA_HEM_005_001","Mean cell volume",0.4003396
 "24q280w6k6363uu","MGI:2136890","Setd4","Early adult","C57BL","ESLIM_016_001_005","Mean cell volume",0.3729088
 "24ql8h2180h277z","MGI:101901","Klra7","Early adult","C57BL","IMPC_CBC_017_001","Triglycerides",0.3954744
 "24r1t9f81pv21v6","MGI:1196466","Dsg2","Early adult","C57BL","JAX_HBD_001_001","Total holepokes",0.9862563
@@ -2832,7 +2802,6 @@
 "263vy7846viwwpq","MGI:2685031","Leo1","Early adult","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.7200888
 "2644m6fqaud2775","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.887706
 "2646a8ys32332l2","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_DXA_002_001","Fat mass",0.4118165
-"2657k50bk0455cx","MGI:700006","Dbnl","Early adult","C54BL","IMPC_GEM_068_001","Forebrain morphology",0.9401966
 "265c611ij56dsyq","MGI:1921275","Nphp3","Early adult","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.5338634
 "265csqg453rwu24","MGI:2145567","Fam149b","Early adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.1737898
 "265ehx28k15kul9","MGI:1859211","Irf6","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.1246879
@@ -2846,7 +2815,6 @@
 "2681tr8tffndz19","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_CBC_009_001","Calcium",0.7265911
 "2682e941d14343m","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.7230335
 "2683w7n5l8l3ej7","MGI:1914015","4933411k16rik","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.9637883
-"2684d3py0th72e8","MGI:99602","Acan","E18.5","C55BL","HMGULA_HWT_008_001","Heart weight",0.60107
 "2687s0epkh0uq58","MGI:1333782","Pld3","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.670457
 "2694o25o3fdddy9","MGI:2141255","Zfp513","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.2215954
 "269mm3y0963eb96","MGI:1353497","Slc25a10","Early adult","C57BL","JAX_LDT_009_001","Percent time in light",0.3841119
@@ -3140,7 +3108,6 @@
 "2dk70827aj86d17","MGI:96273","Htr1a","Early adult","C57BL","IMPC_EYE_016_001","Lens",0.4153227
 "2dl576cinjg1u89","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_HWT_002_001","Tibia length",0.614169
 "2dlg9rqr9g4a0ub","MGI:98241","Stmn2","E12.5","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.1093282
-"2dmgf34g1p557v4","MGI:2681308","Tas2r139","Early adult","C54BL","M-G-P_006_001_026","Fusion of vertebrae",0.4613886
 "2do51r77s24d1dh","MGI:3646952","Spink14","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.4389996
 "2dovz9950d4738j","MGI:3646952","Spink14","Early adult","C57BL","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.05507706
 "2dq35o37hfinwa4","MGI:1917022","Bdh2","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.9083467
@@ -3151,7 +3118,6 @@
 "2e000zm3i8lf213","MGI:1309467","Gstm6","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.6567257
 "2e0q0l3jbuo353i","MGI:2153608","Ube2j2","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.6643301
 "2e1942581236424","MGI:1347361","Mmp23","Early adult","C57BL","JAX_LDT_008_001","Percent time in dark",0.4406006
-"2e1bbf56781l844","MGI:2685031","Leo1","Early adult","C56BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.3877963
 "2e2p6ibziuv3y9d","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CSD_009_001","Coat - color pattern - head",0.5235465
 "2e2p756mz7286n4","MGI:102716","Cryba4","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.6761519
 "2e3ykvb81ij48pw","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.4964212
@@ -3274,7 +3240,6 @@
 "2jfgv0s962sh059","MGI:3042250","Serpinb13","Early adult","C57BL","JAX_URI_005_001","Glucose",0.8015265
 "2jfk03t93g1rjr5","MGI:3652039","Rad21l","Late adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.9459525
 "2ji425k99rxjwu2","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.6613469
-"2jk5q339ol086su","MGI:1196466","Dsg2","Early adult","C59BL","ESLIM_016_001_002","Red blood cell count",0.9482099
 "2jku946pmpwg1j7","MGI:2443834","Ppfia2","Early adult","C57BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.4963986
 "2jm35glnbc3y9w9","MGI:96273","Htr1a","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.2853295
 "2jn242esuv3hz4b","MGI:2441730","Tbl1xr1","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",0.6224256
@@ -3334,7 +3299,6 @@
 "2m034z8668pf9a3","MGI:2684313","Togaram1","E15.5","C57BL","JAX_SLW_004_001","Sleep dark phase percent",0.4045465
 "2m102b0747068au","MGI:88289","Cbx2","E15.5","C57BL","IMPC_DXA_002_001","Fat mass",0.3442925
 "2m1f6y35j4r89y4","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_EYE_083_001","Vitreous",0.9246955
-"2m30349u71c5i66","MGI:109349","Atf2","Early adult","C50BL","ESLIM_021_001_005","HDL-cholesterol",0.06536629
 "2m3q8945fdqs68y","MGI:3037820","Kcna10","E12.5","C57BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.7365882
 "2m456t4v28813m2","MGI:95864","Gstp2","Early adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.3253926
 "2m5mtjbg51610dk","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.3797138
@@ -3571,7 +3535,6 @@
 "2xp4x2l9o17732s","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.4375686
 "2xr7790v9h1gfbi","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_EYE_063_001","Right inner nuclear layer",0.3757659
 "2xufyz40cegqcka","MGI:96273","Htr1a","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.5784031
-"2xw40a96w8x25gv","MGI:2385186","Clcc1","E12.5","C58BL","IMPC_DXA_006_001","Body length",0.7469347
 "2xwl419ppgp9229","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.9412447
 "2xxv1610ao1l9ny","MGI:99602","Acan","Early adult","C57BL","IMPC_CBC_003_001","Chloride",0.90865
 "2y04s063cgc4xi8","MGI:95805","Grb2","Early adult","129SV","IMPC_OFD_013_001","Periphery average speed",0.5074812
@@ -3613,7 +3576,6 @@
 "2z9m225a524t61j","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.6048449
 "2z9t7u6h67m59do","MGI:1915918","Klk5","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.728899
 "2zew8d5dp1l8686","MGI:2153608","Ube2j2","Late adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.8460925
-"2zg79379vdx8q71","MGI:2681308","Tas2r139","Early adult","C50BL","IMPC_HEM_038_001","Basophil differential count",0.6956387
 "2zh51y7666080l2","MGI:1920431","Nfatc4","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.9413016
 "2zkkov81668266v","MGI:98839","Prss1","Early adult","C57BL","IMPC_CBC_018_001","Glucose",0.9528488
 "2zm5k780l6p6bz6","MGI:2444401","Snrnp200","Early adult","C57BL","IMPC_GEP_004_002","Spontaneous movement",0.8059053
@@ -3645,7 +3607,6 @@
 "304890qc514c68c","MGI:1921720","Cep72","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.8024176
 "305006m973923l0","MGI:1309998","Marco","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.4951994
 "305e97518w2r14c","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.2943435
-"305jc12y1957b22","MGI:1932970","Ucn3","Early adult","C52BL","IMPC_CBC_010_001","Phosphorus",0.4616168
 "305p5u69nl007gq","MGI:102716","Cryba4","Early adult","C57BL","IMPC_CBC_006_001","Total protein",0.5905772
 "305uz514wf46m4o","MGI:96217","Hprt1","Early adult","C57BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.08786319
 "3060677m2wh22o3","MGI:3646952","Spink14","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.7630622
@@ -3705,7 +3666,6 @@
 "311t6w83mdix2lv","MGI:88071","Arnt","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.3072457
 "312zxuth0z27xpl","MGI:96273","Htr1a","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.4147006
 "31319c385g27z2p","MGI:1859211","Irf6","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.1100532
-"3131g7qjy0661r9","MGI:2141255","Zfp513","Early adult","C51BL","IMPC_CSD_017_001","Forelimbs - position",0.504856
 "313jj53ky1ua980","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.5896473
 "314469t874z743s","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.5653875
 "3148vkejwet444q","MGI:1915759","Ptx4","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.1857915
@@ -3802,10 +3762,8 @@
 "32vmh72hfhg39o8","MGI:1922928","Ippk","E9.5","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.8473986
 "32z21h977f08azb","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.5065569
 "32z9mqkx746knua","MGI:97808","Ptpra","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.1627913
-"3306jh507zj3x19","MGI:2145567","Fam149b","Early adult","C58BL","M-G-P_007_001_010","center - distance",0.4259127
 "331454eg465262y","MGI:2685945","Pstk","Early adult","C57BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.3927656
 "3316ne475ec71sk","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_HEM_008_001","Platelet count",0.1787123
-"33223tmo78vep72","MGI:2385186","Clcc1","E9.5","C53BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.7543685
 "3329b896tz35rij","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.6176911
 "332jsq0418nka17","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.3388487
 "3335b8i914jnmtt","MGI:1333782","Pld3","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.299394
@@ -4241,7 +4199,6 @@
 "39s9ib5w79zbqoe","MGI:1922928","Ippk","E9.5","C57BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.4900153
 "39t4b3a9le85fk3","MGI:2684313","Togaram1","E12.5","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.6074618
 "39th495h2bk1095","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.8458913
-"39tjg4qjpi5y26h","MGI:1921078","Dcaf4","Early adult","C54BL","JAX_LDT_005_001","Time mobile dark side",0.7812432
 "39u8e3wx5t31k8q","MGI:1921078","Dcaf4","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.4900602
 "39uk1zn1u55r2en","MGI:2685031","Leo1","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.6601208
 "39upvd58n5h51h0","MGI:1923549","Erp44","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.2416248
@@ -4428,7 +4385,6 @@
 "3ij6h43bh1zas4f","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_OFD_017_001","Center average speed",0.05794302
 "3il5tg508j596uo","MGI:99160","Zfp14","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.1270723
 "3imi371w89o2wz2","MGI:1922928","Ippk","E12.5","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.5532141
-"3ip63c8kp7ub1lw","MGI:2387194","Qsox2","Early adult","C51BL","IMPC_GEM_068_001","Forebrain morphology",0.4834657
 "3is1jwbkx40420k","MGI:3646952","Spink14","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.1404941
 "3iu68cw8ih6x4g8","MGI:2684313","Togaram1","E9.5","C57BL","CCP_XRY_001_001","Skull shape",0.1559017
 "3ixpz3a282937mv","MGI:95805","Grb2","Early adult","C57BL","IMPC_DXA_006_001","Body length",0.5715344
@@ -4466,7 +4422,6 @@
 "3k3bl485dcr7s1l","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.8281911
 "3k4wk11621g32tk","MGI:2385186","Clcc1","E9.5","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.411198
 "3k522f44mbh4fh6","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_CSD_019_001","Forelimbs - size",0.8000074
-"3k5f3h4qtetu289","MGI:1921674","Tmc5","Early adult","C51BL","IMPC_CSD_036_001","Startle response",0.4002348
 "3k7455h52u61q3l","MGI:2443796","Scart1","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.4130369
 "3k7q00m86iq6569","MGI:103250","Calm2","Early adult","C57BL","IMPC_OFD_011_001","Periphery resting time",0.3296813
 "3k7q3b4yl784xge","MGI:99160","Zfp14","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.2676152
@@ -4532,7 +4487,6 @@
 "3n3s8lj813t942u","MGI:97594","Prkacb","Early adult","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.3605865
 "3n47ao420zm4270","MGI:1928486","Tdo2","E15.5","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.5096047
 "3n4f1792yuctiu7","MGI:1915625","Ndufa8","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.5491172
-"3n4wbmj1i9vx1zq","MGI:2685031","Leo1","Early adult","C54BL","HMGULA_SHI_009_001","Startle response",0.5120148
 "3n7j54wv5487ox9","MGI:95805","Grb2","Early adult","129SV","IMPC_CBC_028_001","Creatine kinase",0.3434039
 "3n7xp2cy1748t25","MGI:2444401","Snrnp200","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.1949246
 "3n901412z515581","MGI:2388280","Polr2b","Early adult","C57BL","JAX_LDT_009_001","Percent time in light",0.65415
@@ -4649,7 +4603,6 @@
 "3sn666u889gu31q","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.1194671
 "3srg8d94i5h0y86","MGI:1928486","Tdo2","E12.5","C57BL","JAX_HBD_001_001","Total holepokes",0.7536376
 "3t03apa15s44oz6","MGI:88071","Arnt","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.07817203
-"3t0v82bv872999q","MGI:3052471","Slc2a12","Early adult","C51BL","M-G-P_006_001_013","Radius",0.432945
 "3t15aglls1e80z0","MGI:1918588","Tprg1","Early adult","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.5834007
 "3t1cws8e3004n1n","MGI:3042250","Serpinb13","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.7502158
 "3t24x34281so73a","MGI:99602","Acan","E18.5","C57BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.7771534
@@ -4661,7 +4614,6 @@
 "3t58j06jen93k1n","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.3010489
 "3t65s9fk20k56g6","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.5751489
 "3t6x10659k94965","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_EYE_069_001","Left inner nuclear layer",0.3906499
-"3t70x23x36d84h9","MGI:96217","Hprt1","Early adult","C53BL","ESLIM_011_001_004","PP3 startle magnitude",0.3397664
 "3t80rf5k7gldbqa","MGI:2684313","Togaram1","E12.5","C57BL","IMPC_OFD_022_001","Percentage center time",0.4582317
 "3t8a55zyha13h30","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.1287327
 "3t8s93q19695afe","MGI:1915918","Klk5","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.9583665
@@ -4681,7 +4633,6 @@
 "3two835464e0836","MGI:1922928","Ippk","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.5669558
 "3ty3r4ysc190q79","MGI:2388280","Polr2b","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.7388681
 "3u0br9txo1i4064","MGI:1917022","Bdh2","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.8269389
-"3u0gbab7812fcx8","MGI:1917022","Bdh2","Early adult","C51BL","IMPC_OFD_020_001","Distance travelled - total",0.9644659
 "3u0m9o6qrb9o964","MGI:3646952","Spink14","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.7277785
 "3u22ei47o09pse0","MGI:95864","Gstp2","Early adult","C57BL","IMPC_ECH_011_001","LVIDs",0.5692244
 "3u24901dt4v6vzx","MGI:2442689","Lrrc49","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.1681471
@@ -4721,11 +4672,9 @@
 "3vqb2o1m0sd1ssc","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_EYE_007_001","Cornea",0.5272816
 "3vrq7yqo3hdbexa","MGI:107628","Prdm2","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.7491089
 "3vv0zq461eg6hk2","MGI:2385186","Clcc1","E12.5","C57BL","JAX_SLW_002_001","Sleep daily percent",0.6292362
-"3vwa3m7r6w72z15","MGI:109151","Ltbp1","Early adult","C50BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.5428362
 "3w012771do10802","MGI:1915918","Klk5","Early adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.334197
 "3w360g4jm51i96q","MGI:98241","Stmn2","E18.5","C57BL","ESLIM_016_001_008","Platelets count",0.3735965
 "3w36503mvl0n277","MGI:98241","Stmn2","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.922342
-"3w46msl11p1vt7i","MGI:1349473","Ppp2r5e","Early adult","C58BL","IMPC_CBC_008_001","Total bilirubin",0.4216768
 "3w6960kco3vqf5q","MGI:88344","Cd7","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.2397059
 "3w6ouw682eko81s","MGI:88452","Col2a1","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.5546858
 "3w7359868132z11","MGI:2385186","Clcc1","E9.5","C57BL","IMPC_CAL_021_001","Total water intake",0.7213791
@@ -4895,7 +4844,6 @@
 "41cf7r69u7vnkek","MGI:1915918","Klk5","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.4244798
 "41cwyf3004o47l7","MGI:1930923","Slurp1","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.3864378
 "41d95548a94mnch","MGI:2153608","Ube2j2","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.607934
-"41e4j2qj4906r85","MGI:1928486","Tdo2","Early adult","C56BL","IMPC_HEM_001_001","White blood cell count",0.9678409
 "41e4swx015h698n","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.6243895
 "41eil4677186klb","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_DXA_006_001","Body length",0.1493407
 "41fa292h07l02wz","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.7429582
@@ -5221,7 +5169,6 @@
 "4686zj22t1l7q0n","MGI:3037820","Kcna10","E12.5","C57BL","ESLIM_016_001_002","Red blood cell count",0.5803139
 "468azzqg4k887m9","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.5820698
 "468ko221h1q4505","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.1446039
-"4692n288s0u0fj8","MGI:1921078","Dcaf4","Early adult","C58BL","JAX_LDT_004_001","Dark side time spent",0.18513
 "469s3i1054370v8","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.7422878
 "46a2mxf7e60kx27","MGI:96217","Hprt1","Early adult","C57BL","IMPC_EYE_017_001","Lens Opacity",0.1882409
 "46a31k9nv4stmn7","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_HEM_004_001","Hematocrit",0.2270949
@@ -5326,7 +5273,6 @@
 "47vu0248405lg74","MGI:99160","Zfp14","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.8760839
 "47wqnemm49h18t0","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_HEM_019_001","Mean platelet volume",0.8395528
 "47x2ac03eo143m0","MGI:3041259","Mettl25","Early adult","C57BL","IMPC_CBC_028_001","Creatine kinase",0.5410155
-"47x4wjad9574yl5","MGI:2141255","Zfp513","Early adult","C50BL","JAX_LDT_005_001","Time mobile dark side",0.7658237
 "47y3gd79vw6da48","MGI:2685031","Leo1","Early adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.737805
 "47yc72a3exe4j7i","MGI:3042250","Serpinb13","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.05589456
 "47z944qvke7909w","MGI:3652039","Rad21l","Late adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.6725236
@@ -5435,7 +5381,6 @@
 "49909x8t4n8t17x","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_ABR_008_001","18kHz-evoked ABR Threshold",0.1529685
 "49936wv4hr79484","MGI:2441730","Tbl1xr1","Late adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.1325755
 "4993sy276333u0f","MGI:99602","Acan","E18.5","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.05465855
-"49970zi33wk6n8y","MGI:3652039","Rad21l","Late adult","C50BL","IMPC_HEM_008_001","Platelet count",0.2496573
 "499u0s0c9g9999e","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.6531709
 "49ajk8k086z5k34","MGI:1917022","Bdh2","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.7458453
 "49ba6015e1ww839","MGI:95864","Gstp2","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.9671521
@@ -5504,7 +5449,6 @@
 "4b602b6684wy2c6","MGI:98957","Wnt4","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.5794339
 "4b6309kz026dbu0","MGI:1919192","Myof","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.6729602
 "4b659r909h7iy6y","MGI:1339998","Efemp1","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.5264218
-"4b6834i9l0lz488","MGI:1916943","Pof1b","Early adult","C52BL","IMPC_ACS_006_001","Response amplitude - S",0.1085937
 "4b7793k3871790y","MGI:101901","Klra7","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.7400883
 "4b872p8u8tb2y98","MGI:1923549","Erp44","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.8605431
 "4b8vf139w0m791t","MGI:1917022","Bdh2","Early adult","C57BL","JAX_LDT_008_001","Percent time in dark",0.5357873
@@ -5822,7 +5766,6 @@
 "4q88m1f9r1f2h8y","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.7258378
 "4qgs9s0e8bn9d7v","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_GEP_004_002","Spontaneous movement",0.7191259
 "4qidyz932r9b437","MGI:101901","Klra7","Early adult","C57BL","ESLIM_020_001_002","Heart weight",0.5654473
-"4qlt21ya306zy99","MGI:96217","Hprt1","Early adult","C59BL","IMPC_GEP_005_002","Responsive to tactile stimuli",0.0510585
 "4qnrsv24ixn101w","MGI:2388280","Polr2b","E9.5","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.1139649
 "4qq1r842u9d28wd","MGI:96438","Igfbp3","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.05335045
 "4qq6y7c63j77hj6","MGI:98241","Stmn2","E12.5","C57BL","ESLIM_020_001_002","Heart weight",0.3155277
@@ -5898,7 +5841,6 @@
 "4u6vxyde3702sae","MGI:99160","Zfp14","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.7371102
 "4u7o3pud6v36r41","MGI:2685945","Pstk","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.38382
 "4u98h9670f9hkmb","MGI:98839","Prss1","Early adult","C57BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.5575848
-"4u9y19r4k0uv1v0","MGI:97594","Prkacb","Early adult","C53BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.8169342
 "4uczf72qn8x5v17","MGI:1309998","Marco","Early adult","C57BL","IMPC_DXA_007_001","BMC/Body weight",0.6204663
 "4ud8rab45oe0j82","MGI:1921287","Acot6","Early adult","129SV","IMPC_HEM_003_001","Hemoglobin",0.8835519
 "4udyi6xhivm64f4","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.9384277
@@ -5972,7 +5914,6 @@
 "4xpbu9i4r8k2pu4","MGI:88289","Cbx2","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.7469885
 "4xq1zg33f069x80","MGI:1928486","Tdo2","E15.5","C57BL","IMPC_DXA_008_001","Lean/Body weight",0.8806737
 "4xw5nua2r955e76","MGI:2669796","Rtn4rl2","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.4932553
-"4xw8x163498mu6h","MGI:2441730","Tbl1xr1","Early adult","C50BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.8279174
 "4xwfa0tke51w240","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.2285999
 "4y1kd85m8z57pq0","MGI:106351","Vcf1","Early adult","C57BL","M-G-P_006_001_013","Radius",0.421254
 "4y1l4z1svu6v9n2","MGI:98241","Stmn2","E12.5","C57BL","M-G-P_025_001_022","Total bilirubin",0.1264243
@@ -5990,7 +5931,6 @@
 "4yg1i0ouaj48t1r","MGI:1915918","Klk5","Early adult","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.08811674
 "4yq4ujo72ad97yl","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.3813162
 "4yrltmh4xrm3095","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.2711125
-"4yx2f4773879yd7","MGI:98241","Stmn2","E18.5","C58BL","IMPC_EYE_014_001","Pupil Light Response",0.4462254
 "4yxgi86d6033nk8","MGI:96217","Hprt1","Early adult","C57BL","IMPC_HEM_007_001","Mean cell hemoglobin concentration",0.1511031
 "4yym5xfkh1bayn5","MGI:1915759","Ptx4","Early adult","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.8710112
 "4yyw7k2t61175d6","MGI:1915918","Klk5","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.7462808
@@ -6006,7 +5946,6 @@
 "4zh4021yy849101","MGI:2137026","P2rx5","Early adult","C57BL","ESLIM_021_001_005","HDL-cholesterol",0.5633685
 "4zi1w5359123c10","MGI:1915267","Mrm2","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.2556219
 "4ziaxf3vau08537","MGI:2684313","Togaram1","E9.5","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.1584123
-"4zj5v5025910858","MGI:88289","Cbx2","Early adult","C58BL","IMPC_ABR_006_001","12kHz-evoked ABR Threshold",0.4646232
 "4zkwrp047v12636","MGI:3041259","Mettl25","Early adult","C57BL","IMPC_CSD_029_001","Activity (body position)",0.2275083
 "4zuy61d3ytj7u8j","MGI:1890564","Rcan1","Early adult","C57BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.4438996
 "4zx629b7bj53tme","MGI:1890564","Rcan1","Early adult","C57BL","JAX_LDT_008_001","Percent time in dark",0.9838074
@@ -6039,7 +5978,6 @@
 "50623993k1pb0p8","MGI:3037820","Kcna10","Early adult","C57BL","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.8721385
 "50711y9103132rs","MGI:1347361","Mmp23","Early adult","C57BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.6338834
 "50726s124k71523","MGI:99602","Acan","E15.5","C57BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.6220998
-"507e1su246264d2","MGI:1915267","Mrm2","E9.5","C53BL","M-G-P_025_001_022","Total bilirubin",0.8874131
 "507hqiy2d1w8g2s","MGI:3646952","Spink14","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.1249182
 "507n65mm2tg1r19","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_CSD_032_001","Locomotor activity",0.110809
 "5084w91a8620202","MGI:2387194","Qsox2","Early adult","C57BL","IMPC_CBC_018_001","Glucose",0.1102734
@@ -6185,11 +6123,9 @@
 "52n4wh177v94af7","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_CBC_001_001","Sodium",0.9038246
 "52o4q88c3s66069","MGI:1917022","Bdh2","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.2830341
 "52o8cxqsekc8117","MGI:96438","Igfbp3","Early adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.6134251
-"52p7d4gfi27k30o","MGI:3652039","Rad21l","Late adult","C58BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.2191389
 "52qb6ajt81s24y6","MGI:1926024","Cfap61","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.5600559
 "52t6x48r53mf3x0","MGI:96217","Hprt1","Early adult","C57BL","IMPC_EYE_016_001","Lens",0.5023287
 "52vju3z1wx2f4zj","MGI:99602","Acan","E15.5","C57BL","IMPC_DXA_002_001","Fat mass",0.1906314
-"52yk464606jt557","MGI:98905","Usp4","Early adult","C54BL","JAX_URI_005_001","Glucose",0.7110949
 "52yu364imlz43py","MGI:2136890","Setd4","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.8134469
 "52z7qz04ht8gj47","MGI:1915918","Klk5","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.2404058
 "52zxfmbz8pyn496","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_CBC_007_001","Albumin",0.1449483
@@ -6750,7 +6686,6 @@
 "5e4jxf6i9f19ygt","MGI:2153608","Ube2j2","Middle aged adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.8197701
 "5e522onwmg8nxz7","MGI:1928486","Tdo2","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.6823822
 "5e66z01478mrc46","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.4883987
-"5e713q0qae0zn99","MGI:2441730","Tbl1xr1","Late adult","C50BL","IMPC_ECH_007_001","LVAWd",0.2931132
 "5e7gi3m8o04xh13","MGI:96438","Igfbp3","Early adult","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.4400514
 "5e86080012ekiv4","MGI:98957","Wnt4","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.2778271
 "5e8xn12005gwi79","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_ACS_037_001","% Pre-pulse inhibition - Global",0.8483795
@@ -6948,7 +6883,6 @@
 "5ls3s00v06gd963","MGI:2387194","Qsox2","Early adult","C57BL","ESLIM_016_001_002","Red blood cell count",0.5483884
 "5lthq807rh44y55","MGI:1309998","Marco","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.9584833
 "5ltw2dbda3utokq","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.09247444
-"5lv3u29w6pjd618","MGI:99602","Acan","E18.5","C53BL","IMPC_CSD_009_001","Coat - color pattern - head",0.3701551
 "5lxrmfi0lf981y1","MGI:1339759","Csf2rb","Early adult","C57BL","ESLIM_016_001_008","Platelets count",0.8899228
 "5m060h6a6ba9k67","MGI:103250","Calm2","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.4689883
 "5m13539y1ngtw9l","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_EYE_016_001","Lens",0.777523
@@ -7089,7 +7023,6 @@
 "5s933up64sf0s9u","MGI:2153608","Ube2j2","Middle aged adult","C57BL","M-G-P_006_001_013","Radius",0.6399434
 "5s99594csx4mgb1","MGI:1915918","Klk5","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.8434402
 "5s99ip76h228j2d","MGI:99602","Acan","E18.5","C57BL","ESLIM_016_001_005","Mean cell volume",0.110168
-"5s9ou7gyj99x209","MGI:1922928","Ippk","Early adult","C51BL","ESLIM_016_001_008","Platelets count",0.980219
 "5sf4vweo2i165k5","MGI:1353497","Slc25a10","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.8560828
 "5sh5t0x1jlww8i7","MGI:1277171","Dcx","Early adult","C57BL","IMPC_CBC_028_001","Creatine kinase",0.1549242
 "5sn20rq2m3x5s07","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.4120004
@@ -7117,7 +7050,6 @@
 "5tpmg10z332379n","MGI:2387194","Qsox2","Early adult","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0.4003154
 "5tq55j0ujf4u77p","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0.5673615
 "5tqnmlrir57g3dg","MGI:3607787","Spata21","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.1745829
-"5tr28pdqu9azt7a","MGI:3052471","Slc2a12","Early adult","C55BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.385424
 "5trb4bs5wdsep31","MGI:2387194","Qsox2","Late adult","C57BL","IMPC_EYE_026_001","Retinal Blood Vessels Pattern",0.2197703
 "5tx0916633c89n3","MGI:1339759","Csf2rb","Early adult","C57BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.7689697
 "5u04auz6o0exb16","MGI:1919192","Myof","Early adult","C57BL","IMPC_OFD_014_001","Center distance travelled",0.5669481
@@ -7140,7 +7072,6 @@
 "5ucrwnhmfs47han","MGI:95805","Grb2","Early adult","129SV","IMPC_GEP_004_002","Spontaneous movement",0.06795558
 "5ugp994w787eql5","MGI:1928486","Tdo2","E15.5","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.9020842
 "5uh45n4w86l0djb","MGI:2443834","Ppfia2","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.2754196
-"5ui1orj9cxa7236","MGI:107628","Prdm2","Early adult","C51BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.8392121
 "5uj2gb30053502b","MGI:3607787","Spata21","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.6182871
 "5ukj611126ec376","MGI:99602","Acan","E18.5","C57BL","ESLIM_011_001_004","PP3 startle magnitude",0.6686967
 "5umwn4zn5plttpq","MGI:1309998","Marco","Early adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.3189555
@@ -7410,7 +7341,6 @@
 "625is47qwk61u17","MGI:2684313","Togaram1","E9.5","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.6447378
 "625p893x161u2u3","MGI:3646952","Spink14","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.2762525
 "6261108mx42dy2o","MGI:1923549","Erp44","Early adult","C57BL","IMPC_CBC_017_001","Triglycerides",0.6093668
-"626y5r9v289c3yo","MGI:2669796","Rtn4rl2","Early adult","C52BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.06679484
 "626ynn2rbq78jzr","MGI:2442689","Lrrc49","Early adult","C57BL","M-G-P_025_001_014","Alanine aminotransferase",0.9565403
 "626z18444a8ooju","MGI:1914015","4933411k16rik","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.9200485
 "6283892k5911c4f","MGI:1353497","Slc25a10","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.6840431
@@ -7435,7 +7365,6 @@
 "62hqz8z488dt03e","MGI:1339759","Csf2rb","Early adult","C57BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.2769446
 "62i01vxhwu03q33","MGI:106351","Vcf1","Early adult","129SV","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.6993013
 "62iw12bnaqe822e","MGI:1333782","Pld3","Early adult","C57BL","IMPC_DXA_010_001","Bone Area",0.5393624
-"62jh3cbr1e7zh64","MGI:2669796","Rtn4rl2","Early adult","C50BL","IMPC_OFD_015_001","Center resting time",0.5615989
 "62l399w5lf15156","MGI:109349","Atf2","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.3050798
 "62l3z6696r77ymd","MGI:88289","Cbx2","E15.5","C57BL","IMPC_EYE_067_001","Left anterior chamber depth",0.3420698
 "62l6q0172gddid7","MGI:96273","Htr1a","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.8880744
@@ -7517,7 +7446,6 @@
 "63xlq19n9t7777r","MGI:109151","Ltbp1","Early adult","C57BL","IMPC_DXA_004_001","Bone Mineral Density (excluding skull)",0.3275771
 "63zws1352817659","MGI:2136890","Setd4","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.1105348
 "6404x76n4kzl35n","MGI:99602","Acan","E15.5","C57BL","IMPC_CBC_017_001","Triglycerides",0.3110719
-"640ud2k625s81hj","MGI:2684313","Togaram1","Early adult","C59BL","IMPC_CSD_023_001","Vibrissae - presence",0.4784715
 "641577dwflx1rc8","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_OFD_011_001","Periphery resting time",0.9106823
 "641f45f8g047tb1","MGI:1915340","Yif1a","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.2705964
 "641t8329038n3nv","MGI:1353497","Slc25a10","Early adult","C57BL","M-G-P_005_001_001","Weight",0.06976261
@@ -7609,7 +7537,6 @@
 "654ahd43k9qg4tp","MGI:2443834","Ppfia2","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.5967084
 "654p941x5z6k357","MGI:1859211","Irf6","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.6548765
 "654y35b68p71pfq","MGI:3646952","Spink14","Early adult","C57BL","ESLIM_020_001_002","Heart weight",0.4529509
-"6558hvzkj811v2f","MGI:98241","Stmn2","Early adult","C52BL","IMPC_DXA_008_001","Lean/Body weight",0.599232
 "6560i249frouhti","MGI:1918588","Tprg1","Early adult","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.6399403
 "6562mdm8v63bmej","MGI:2136890","Setd4","Early adult","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.4847867
 "6568h86v2vpcmu1","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_ECH_008_001","LVIDd",0.05987961
@@ -7698,7 +7625,6 @@
 "66lmqdq1l2sf138","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_DXA_006_001","Body length",0.8196296
 "66m0o80s3d4caa6","MGI:106351","Vcf1","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.5136302
 "66m4p6b197o18w0","MGI:2685031","Leo1","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.1099417
-"66n70bz7ttna440","MGI:2685031","Leo1","Early adult","C52BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.7234842
 "66q1p3585zzkhkd","MGI:109349","Atf2","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.4731678
 "66r242h484j4341","MGI:1916943","Pof1b","Early adult","C57BL","IMPC_CSD_009_001","Coat - color pattern - head",0.1619695
 "66r576sa87znt3j","MGI:2136748","Pcdhb13","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.5019806
@@ -7754,7 +7680,6 @@
 "67g62pn57h2h9ai","MGI:1921287","Acot6","Early adult","129SV","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.1206174
 "67gk8534ecvp97n","MGI:1914852","Necap1","E18.5","C57BL","CCP_XRY_002_001","Zygomatic bone",0.7936314
 "67h9gy0x7abzj12","MGI:1915759","Ptx4","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.8202148
-"67hgf49mh48fos5","MGI:700006","Dbnl","Early adult","C55BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.7848145
 "67hos4t2d631fe5","MGI:2136890","Setd4","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.7668189
 "67i47g755p4in8k","MGI:1309467","Gstm6","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.4024838
 "67i66aioz3a108n","MGI:2685945","Pstk","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.592963
@@ -7834,7 +7759,6 @@
 "68t8j2k3k4eaou4","MGI:98957","Wnt4","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.1949209
 "68ux9w9m1v6735k","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.6970827
 "68vc47m7wj29ts0","MGI:1921078","Dcaf4","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.3360486
-"68y41sx370ji020","MGI:2669796","Rtn4rl2","Early adult","C58BL","CCP_XRY_002_001","Zygomatic bone",0.8348133
 "68z7r3m1c2w14qw","MGI:2141255","Zfp513","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.8130607
 "6900f49639l1wjy","MGI:2145567","Fam149b","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.1490138
 "6902m0zg0jyrwf1","MGI:1915918","Klk5","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.08051791
@@ -8196,7 +8120,6 @@
 "6nj81b0v3898diy","MGI:1353497","Slc25a10","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.815674
 "6nm5d3ro478f5y2","MGI:1339711","Myh1","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",0.8690039
 "6nm838b33nd59dz","MGI:2385186","Clcc1","Early adult","C57BL","ESLIM_020_001_002","Heart weight",0.7269591
-"6nna979p13o9z5c","MGI:88289","Cbx2","Early adult","C58BL","IMPC_HEM_035_001","Eosinophil differential count",0.8949683
 "6np4f3er8l7w0l5","MGI:106351","Vcf1","Early adult","129SV","IMPC_ECH_012_001","LVPWs",0.4763176
 "6np6u2zvo1238u0","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",0.5490854
 "6ns8ngae9ou9f75","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_HEM_027_001","Red blood cell distribution width",0.2315048
@@ -8559,7 +8482,6 @@
 "712i6d013269j1d","MGI:98957","Wnt4","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.7355828
 "712q1k2v0t3a44a","MGI:3037820","Kcna10","E12.5","C57BL","M-G-P_025_001_022","Total bilirubin",0.3083866
 "713ivaqfasf19sd","MGI:2669796","Rtn4rl2","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.7693271
-"7142v20gmpyqb19","MGI:109349","Atf2","Early adult","C54BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.6551356
 "7153t4a22yhyfxn","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.6876554
 "715k8w699493w70","MGI:106351","Vcf1","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.6334413
 "715o73wcpk19g80","MGI:99602","Acan","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.633609
@@ -8724,7 +8646,6 @@
 "73t439r3z6a0r69","MGI:88289","Cbx2","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.6038705
 "73xp63x8i6i8764","MGI:1339759","Csf2rb","Early adult","C57BL","IMPC_HEM_002_001","Red blood cell count",0.2089833
 "73y5tbfok4gnelb","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.2437677
-"73yqcq750ter7jf","MGI:1928486","Tdo2","E12.5","C59BL","IMPC_OFD_050_001","Percentage center movement time",0.673038
 "73z6pyr2z3k9237","MGI:1918588","Tprg1","Early adult","C57BL","IMPC_EYE_063_001","Right inner nuclear layer",0.9251613
 "74002e0ewy5a3z5","MGI:1921275","Nphp3","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.1882399
 "74002xxzg036xe7","MGI:95805","Grb2","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.6731541
@@ -8915,13 +8836,11 @@
 "773qqj6kv60247l","MGI:1309998","Marco","Early adult","C57BL","M-G-P_025_001_022","Total bilirubin",0.3459466
 "7740wjth69185su","MGI:1921720","Cep72","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.3163503
 "7748t76h8amx7oi","MGI:99602","Acan","E18.5","C57BL","IMPC_XRY_033_001","Tibia length",0.3284746
-"774ov9173e625f7","MGI:3052471","Slc2a12","Early adult","C52BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.7027359
 "77578v33jk55m4g","MGI:2136890","Setd4","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",0.7716721
 "77579zlz025dkk7","MGI:97808","Ptpra","Early adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.4993953
 "77589yw3nk6qq38","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.8762124
 "7759q103y5hyx41","MGI:88289","Cbx2","E15.5","C57BL","IMPC_CBC_028_001","Creatine kinase",0.2738492
 "775hv9l8159590x","MGI:107628","Prdm2","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.2096243
-"775rdvd1zp03658","MGI:2684313","Togaram1","Early adult","C58BL","IMPC_HEM_038_001","Basophil differential count",0.3942934
 "775v5eak68zq897","MGI:98241","Stmn2","E18.5","C57BL","IMPC_EYE_023_001","Optic Disc",0.7015472
 "77614uixc5207uc","MGI:1922928","Ippk","E12.5","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.3967622
 "7765xax5gbx025t","MGI:109151","Ltbp1","Early adult","129SV","IMPC_CSD_017_001","Forelimbs - position",0.4929101
@@ -9191,7 +9110,6 @@
 "7en68f7433lj2zz","MGI:1339998","Efemp1","Early adult","C57BL","ESLIM_021_001_005","HDL-cholesterol",0.1270233
 "7ex31p33j760al0","MGI:3527427","Taar3","Early adult","C57BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.849773
 "7eykw5bc8kk4ud5","MGI:2387194","Qsox2","Late adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.921286
-"7f0nyv8w8r54ahe","MGI:98839","Prss1","Early adult","C55BL","IMPC_GEL_032_001","Embryo Size",0.113535
 "7f0y5hq66s3113o","MGI:1915918","Klk5","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.2996894
 "7f27082r1z7l058","MGI:95864","Gstp2","Early adult","C57BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.7914524
 "7f294piq9288347","MGI:103250","Calm2","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.8992585
@@ -9224,7 +9142,6 @@
 "7h42z2im516b3im","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.3876371
 "7h518w0gflc0r4g","MGI:95805","Grb2","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.9664152
 "7h53st86ua6347o","MGI:3607787","Spata21","Early adult","C57BL","JAX_SLW_004_001","Sleep dark phase percent",0.1415947
-"7h552l6pe4a662m","MGI:1349473","Ppp2r5e","Early adult","C54BL","IMPC_ECH_007_001","LVAWd",0.2205126
 "7h61uvb336qz823","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.9057953
 "7h66qua4gy54j01","MGI:1916943","Pof1b","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.6249838
 "7h6h7z0897ca341","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.492943
@@ -9457,7 +9374,6 @@
 "7sajl583aj238j7","MGI:98261","Ccl4","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.5151046
 "7sed32sf1l7eu95","MGI:99602","Acan","E15.5","C57BL","IMPC_CSD_029_001","Activity (body position)",0.7584228
 "7sf35vskn7t6s9p","MGI:2136890","Setd4","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.3119441
-"7shd910z67cbaz6","MGI:98957","Wnt4","Early adult","C53BL","IMPC_ECH_009_001","LVPWd",0.7740773
 "7slz237re934k7w","MGI:96438","Igfbp3","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.8516974
 "7sq24tq52tto921","MGI:3037820","Kcna10","Early adult","C57BL","CCP_XRY_001_001","Skull shape",0.5538341
 "7sq4s9xzcf16947","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.7253753
@@ -9479,13 +9395,10 @@
 "7t6a12o5h095qeu","MGI:88344","Cd7","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.1020156
 "7t6x60z471c82xj","MGI:88289","Cbx2","Early adult","C57BL","IMPC_CBC_001_001","Sodium",0.6304448
 "7t7uy43evm8r4u1","MGI:700006","Dbnl","Early adult","C57BL","IMPC_EYE_002_001","Bulging eye",0.1191102
-"7t8zeqz3l9m7qj2","MGI:2147067","Dhx57","Early adult","C50BL","JAX_LDT_005_001","Time mobile dark side",0.4017312
 "7t9ki458968y475","MGI:700006","Dbnl","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",4.708465e-05
 "7t9xa069263qoto","MGI:2153608","Ube2j2","Middle aged adult","C57BL","IMPC_ECH_009_001","LVPWd",0.6044817
 "7ta93l754i554yp","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_DXA_002_001","Fat mass",0.7488389
 "7tco6q8i8z24419","MGI:1922928","Ippk","E9.5","C57BL","IMPC_GEM_063_001","Facial cleft",0.5686973
-"7te25e1fr4k7095","MGI:3042250","Serpinb13","Early adult","C53BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.2019765
-"7tgog8550796yh3","MGI:97808","Ptpra","Early adult","C52BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",2.105967e-05
 "7th5q6m2b8373pf","MGI:2684313","Togaram1","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.8599989
 "7tj7pa480796zz9","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_ABR_006_001","12kHz-evoked ABR Threshold",0.3922263
 "7tn4347c44s6wb6","MGI:2681308","Tas2r139","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.6597982
@@ -9555,7 +9468,6 @@
 "7wthnl2fa71093h","MGI:3041259","Mettl25","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.7551253
 "7wv018bjf26azce","MGI:2385186","Clcc1","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.9851862
 "7wx09352hf8s911","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.05968377
-"7x1936m23d77byp","MGI:2141255","Zfp513","Early adult","C54BL","JAX_LDT_004_001","Dark side time spent",0.9303409
 "7x2qaanvf92xe49","MGI:2443796","Scart1","Early adult","C57BL","IMPC_OFD_016_001","Center permanence time",0.6546556
 "7x423kp4pd60d7p","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_DXA_003_001","Lean mass",0.4452292
 "7x51s8aatu1u3xr","MGI:106351","Vcf1","Early adult","129SV","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.4233341
@@ -9607,7 +9519,6 @@
 "7zpk7s1u6e0b4ot","MGI:1914852","Necap1","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.14692
 "7zq30a19q297f24","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.1956534
 "7zq6513esn0z7b4","MGI:1859211","Irf6","Early adult","C57BL","IMPC_CSD_019_001","Forelimbs - size",0.8225079
-"7zrb93e7l3241ao","MGI:96217","Hprt1","Early adult","C51BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.8731543
 "7zt6237kvz67k79","MGI:109151","Ltbp1","Early adult","C57BL","IMPC_CBC_005_001","Creatinine",0.3585292
 "7ztgpi97m3v02by","MGI:1922928","Ippk","E9.5","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.9278952
 "7zw6ea53y2d3b55","MGI:88344","Cd7","Early adult","C57BL","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.975832
@@ -9697,7 +9608,6 @@
 "812r0vu4io28ax3","MGI:2441730","Tbl1xr1","Early adult","C57BL","JAX_HBD_001_001","Total holepokes",0.1961531
 "8130h08j3n0eenx","MGI:2387194","Qsox2","Early adult","C57BL","IMPC_CBC_006_001","Total protein",0.07125848
 "8132jpp9k11f1ru","MGI:2685945","Pstk","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.9577286
-"8133bc9605l0133","MGI:1928486","Tdo2","E12.5","C52BL","HMGULA_HWT_008_001","Heart weight",0.8406923
 "8134pk539v441na","MGI:1916387","Vstm5","Early adult","C57BL","ESLIM_011_001_004","PP3 startle magnitude",0.3887664
 "813wq0460q5e13f","MGI:1916387","Vstm5","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.2453459
 "81458g17t2o64k7","MGI:1339711","Myh1","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",2.632638e-08
@@ -9923,7 +9833,6 @@
 "84li4gzlf55036i","MGI:3527427","Taar3","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.3661562
 "84ou10pjb115n4d","MGI:2661120","Actr3b","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.5026676
 "84pi7304gqu833w","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.8508329
-"84rznb1w56578cy","MGI:109151","Ltbp1","Early adult","C52BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.6770937
 "84s5e5589948954","MGI:1347361","Mmp23","Early adult","C57BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.29627
 "84sbs3ydqi6857l","MGI:104747","Pkia","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.6758007
 "84sy219na39m6ft","MGI:1914015","4933411k16rik","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.8751315
@@ -9947,7 +9856,6 @@
 "8503lo8262yku41","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.5861767
 "85072832u001pko","MGI:2441730","Tbl1xr1","Early adult","C57BL","IMPC_CSD_023_001","Vibrissae - presence",2.321413e-08
 "85081n3h3b50zrx","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.6213226
-"8508842zi2pnks0","MGI:2388280","Polr2b","Early adult","C50BL","IMPC_DXA_007_001","BMC/Body weight",0.5565326
 "850cln1311w2ywz","MGI:2136890","Setd4","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.5029296
 "850dg3y6tgavkpq","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.7406641
 "852f146rhy5b998","MGI:1914015","4933411k16rik","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.3805006
@@ -10079,7 +9987,6 @@
 "873xmkm85k203qs","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_CBC_003_001","Chloride",0.5429983
 "874lgv7o00uean0","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_HEM_003_001","Hemoglobin",0.9900379
 "875602i4135ot82","MGI:2684313","Togaram1","E12.5","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.5391275
-"8756je48m4v8tmz","MGI:1918588","Tprg1","Early adult","C51BL","IMPC_CSD_019_001","Forelimbs - size",0.2259266
 "8757w082a084c08","MGI:1921287","Acot6","Early adult","129SV","IMPC_CSD_008_001","Coat - color pattern - back",0.5828566
 "875v8v3p1s6q3r5","MGI:2136890","Setd4","Early adult","C57BL","IMPC_OFD_020_001","Distance travelled - total",0.5453883
 "87626x40t0u1s02","MGI:1920431","Nfatc4","Early adult","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.5083474
@@ -10367,7 +10274,6 @@
 "8fqtuqq3tqlx29a","MGI:96217","Hprt1","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.07792904
 "8fx98d15ubo65d7","MGI:1914015","4933411k16rik","Early adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.8935634
 "8fx9i06yo6ii6bl","MGI:3607787","Spata21","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.1991844
-"8fz01081035skrr","MGI:96217","Hprt1","Early adult","C52BL","IMPC_ECH_005_001","Fractional Shortening",0.5511131
 "8g0g75yg67r9f9j","MGI:2136748","Pcdhb13","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.05252846
 "8g177k340s8x0jh","MGI:98905","Usp4","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.6180124
 "8g25441r3570ig7","MGI:2684313","Togaram1","E9.5","C57BL","IMPC_OWT_002_001","Spleen weight",0.6440331
@@ -10388,7 +10294,6 @@
 "8gktz00z7hb39lc","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.7880879
 "8gnd7lrg519d30q","MGI:2385186","Clcc1","Early adult","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.6557419
 "8gp8jfa7475h4e6","MGI:1919588","Wdr89","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.7118852
-"8gu8368s9433trl","MGI:3052471","Slc2a12","Early adult","C50BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.6578685
 "8gvfi222ub4b81f","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_DXA_008_001","Lean/Body weight",0.5641828
 "8gz95vn16223w81","MGI:97594","Prkacb","Early adult","C57BL","IMPC_HEM_027_001","Red blood cell distribution width",0.9156883
 "8h0c84g5o581e16","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.5625446
@@ -10657,7 +10562,6 @@
 "8syhyp0x4555el3","MGI:2684313","Togaram1","E12.5","C57BL","JAX_HBD_001_001","Total holepokes",0.4603492
 "8sylf2eld6ki72k","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.6635273
 "8t05637ur1eqb7v","MGI:1914852","Necap1","E18.5","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.3383394
-"8t0ajhl3h60r8d6","MGI:1916943","Pof1b","Early adult","C56BL","IMPC_EYE_002_001","Bulging eye",0.9939344
 "8t20sp6dwsyf2da","MGI:1921287","Acot6","Early adult","C57BL","IMPC_CBC_003_001","Chloride",0.6035991
 "8t23x929k317cn6","MGI:106351","Vcf1","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.8691287
 "8t2y7981y7q91p2","MGI:97594","Prkacb","Early adult","C57BL","IMPC_EYE_002_001","Bulging eye",0.1358106
@@ -10702,7 +10606,6 @@
 "8v3cf5c6xx8p457","MGI:2385186","Clcc1","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.9753487
 "8v492s1i610khxl","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_EYE_069_001","Left inner nuclear layer",0.887749
 "8v4o95j0a7k36dj","MGI:99602","Acan","E15.5","C57BL","CCP_XRY_002_001","Zygomatic bone",0.765398
-"8v5b03z9h28w1k4","MGI:1921287","Acot6","Early adult","127SV","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.3902298
 "8v72m4h1fkewghw","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.3213883
 "8v8q46173cy4ioq","MGI:97808","Ptpra","Early adult","C57BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.3791347
 "8v9libsx6i3n7j1","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.3350914
@@ -10892,7 +10795,6 @@
 "919575e8i74hu73","MGI:1098746","Ankzf1","Early adult","C57BL","JAX_SLW_013_001","Breath rate during sleep mean",0.7397579
 "9196ub824nhax4f","MGI:2685945","Pstk","Early adult","C57BL","IMPC_HEM_002_001","Red blood cell count",0.9246433
 "919t841hjyhs94y","MGI:102716","Cryba4","Early adult","C57BL","IMPC_DXA_003_001","Lean mass",0.4144224
-"919w2326c7m1fi7","MGI:109151","Ltbp1","Early adult","C58BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.3506367
 "91a258r2q199524","MGI:1915759","Ptx4","Early adult","C57BL","IMPC_HWT_008_001","Heart weight",0.09833003
 "91aurvvoam157py","MGI:2684313","Togaram1","E12.5","C57BL","HMGULA_SHI_009_001","Startle response",0.551745
 "91b538z65j4he5s","MGI:106351","Vcf1","Early adult","C57BL","IMPC_EYE_007_001","Cornea",0.6251732
@@ -10937,7 +10839,6 @@
 "92565l8obv5w83u","MGI:3652039","Rad21l","Early adult","C57BL","M-G-P_006_001_013","Radius",0.7638392
 "9260s2cw916d36v","MGI:1921287","Acot6","Early adult","129SV","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.3182144
 "926909q7w60c7md","MGI:2388280","Polr2b","E9.5","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.9295598
-"9269c4z3r7u3q34","MGI:1923549","Erp44","Early adult","C50BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.5807702
 "926br4gjkvv3qgr","MGI:2153608","Ube2j2","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.5005498
 "926z2765jiw6hd1","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.5971665
 "92732k2676m0887","MGI:2684313","Togaram1","E15.5","C57BL","JAX_LDT_004_001","Dark side time spent",0.3823816
@@ -11331,7 +11232,6 @@
 "985w76k84du9i1d","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.603525
 "98602e7751pz302","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_CBC_007_001","Albumin",0.7359336
 "986w2b3868aew8g","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.4374756
-"987312fyyrw6y71","MGI:88071","Arnt","Early adult","C54BL","JAX_LDT_008_001","Percent time in dark",0.08141241
 "987h6618110yp4g","MGI:1309467","Gstm6","Early adult","C57BL","ESLIM_020_001_002","Heart weight",0.6113752
 "987oem39b2934td","MGI:88071","Arnt","Early adult","C57BL","IMPC_HWT_002_001","Tibia length",0.7429202
 "987xwxwmq5841dd","MGI:3607787","Spata21","Early adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.3234589
@@ -11435,7 +11335,6 @@
 "99vj93411vs30h3","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.4018798
 "99vsb3c74y6wdki","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.05972477
 "99w8fzi34q98q4i","MGI:2669796","Rtn4rl2","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.3170729
-"99yzd66l53n64gk","MGI:2147067","Dhx57","Early adult","C53BL","CCP_XRY_001_001","Skull shape",0.3393532
 "99zk61ce4a6f10q","MGI:2685031","Leo1","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.3756658
 "9a09f9g131t6esz","MGI:98261","Ccl4","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.4455767
 "9a1rkvtofnea8i5","MGI:3652039","Rad21l","Middle aged adult","C57BL","CCP_XRY_057_001","Kyphosis",0.8140108
@@ -11508,7 +11407,6 @@
 "9cu4kzw99vo4x6h","MGI:2684313","Togaram1","E9.5","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.8435016
 "9cxs6050049yt6q","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.8975233
 "9d1cf999u157f00","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.1836243
-"9d207917hsv5000","MGI:3527427","Taar3","Early adult","C53BL","IMPC_CSD_029_001","Activity (body position)",0.1494999
 "9d2f8t2873384w1","MGI:97808","Ptpra","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.9317005
 "9d3b9809r121529","MGI:1919192","Myof","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.5780796
 "9d3smae0kd54c8k","MGI:96438","Igfbp3","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.7959519
@@ -11565,8 +11463,6 @@
 "9f1317mc388js4o","MGI:106351","Vcf1","Early adult","C57BL","IMPC_GEP_004_002","Spontaneous movement",0.4356083
 "9f1369bmby4296i","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.5366045
 "9f22r1lntvourm2","MGI:1339998","Efemp1","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.2017942
-"9f26d62qw77i8r5","MGI:1921674","Tmc5","Early adult","C54BL","IMPC_CSD_009_001","Coat - color pattern - head",0.6255573
-"9f2x5du5hb47658","MGI:1353497","Slc25a10","Early adult","C56BL","IMPC_GEM_027_001","Limb Bud Morphology",0.6058849
 "9f5785alpo9rso9","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.329796
 "9f5jp80ex0pu2ft","MGI:3042250","Serpinb13","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.7972368
 "9f890n7p164h37j","MGI:1914852","Necap1","Early adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.4804999
@@ -12060,7 +11956,6 @@
 "a3sh25k210078y0","MGI:88452","Col2a1","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.4598719
 "a3sho0dlm9xg69c","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.9989465
 "a3u5e6m5k2c1ncg","MGI:88289","Cbx2","E15.5","C57BL","IMPC_GEP_005_002","Responsive to tactile stimuli",0.254665
-"a3uydhosmzm7498","MGI:88071","Arnt","Early adult","C53BL","IMPC_CBC_014_001","Alkaline phosphatase",0.4707865
 "a3wp02plm9945v8","MGI:1926024","Cfap61","Early adult","C57BL","IMPC_HEM_038_001","Basophil differential count",0.8367198
 "a40249m2m3s60jq","MGI:2136890","Setd4","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.7076355
 "a405s06b513snah","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.3618003
@@ -12069,7 +11964,6 @@
 "a41j4o4102tgp4m","MGI:2685031","Leo1","Early adult","C57BL","IMPC_CBC_017_001","Triglycerides",0.8422213
 "a41y0vnn8d1t78s","MGI:98905","Usp4","Early adult","C57BL","IMPC_HEM_027_001","Red blood cell distribution width",0.1725242
 "a43307oi7g3g653","MGI:1916943","Pof1b","Early adult","C57BL","M-G-P_006_001_013","Radius",0.6140413
-"a436e7pciw93b2v","MGI:3041259","Mettl25","Early adult","C59BL","JAX_URI_004_001","Magnesium",0.4734787
 "a45p9484m9w89zu","MGI:98241","Stmn2","E12.5","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.60381
 "a46aaao651ut267","MGI:95805","Grb2","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.7716275
 "a46t4rdd1e55i7f","MGI:1916943","Pof1b","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.5377038
@@ -12126,7 +12020,6 @@
 "a683i31f1rxk591","MGI:1915918","Klk5","Early adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.6204461
 "a686k62b2c197dh","MGI:98905","Usp4","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.2175544
 "a69k8pce26b5140","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.5100223
-"a6bl12505lz22zx","MGI:2385186","Clcc1","Early adult","C58BL","JAX_LDT_005_001","Time mobile dark side",0.7977007
 "a6hnyam8imj0i2p","MGI:96438","Igfbp3","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.8392963
 "a6j4elh7zwxr66v","MGI:99602","Acan","E15.5","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.4852112
 "a6o835omuef579o","MGI:98905","Usp4","Early adult","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.225218
@@ -12309,7 +12202,6 @@
 "ans7a663710l0v1","MGI:1349473","Ppp2r5e","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",8.397843e-06
 "ao0era24v355xai","MGI:700006","Dbnl","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.9744922
 "ao6h56t01h8j01n","MGI:99160","Zfp14","Early adult","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0.7751103
-"ao7h9571k225fq6","MGI:1344403","Cfdp1","Early adult","C59BL","ESLIM_011_001_005","PP4 startle magnitude",0.7977122
 "ao7k31n4kshwd5a","MGI:1921275","Nphp3","Early adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.214858
 "ao95p85pby4yq85","MGI:98839","Prss1","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.9322871
 "ap349th39o0fc07","MGI:2387194","Qsox2","Late adult","C57BL","KMPCLA_CBC_006_001","Total protein",2.052612e-07
@@ -12402,7 +12294,6 @@
 "b01094b3z71g53v","MGI:98241","Stmn2","Early adult","C57BL","IMPC_OFD_013_001","Periphery average speed",0.9173829
 "b01935558321t8w","MGI:2153608","Ube2j2","Middle aged adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.9746805
 "b01e3xgjs450580","MGI:1339998","Efemp1","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.07613819
-"b0248ogs87g7je1","MGI:2443834","Ppfia2","Early adult","C52BL","IMPC_GEO_019_001","Embryo Size",0.8855269
 "b02k3m7iaqy08j8","MGI:98957","Wnt4","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.6997837
 "b03m5byot18io4t","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.5359451
 "b03m68274c0qb4r","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.1753029
@@ -12468,7 +12359,6 @@
 "b3k42qmu693w858","MGI:96217","Hprt1","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.1614997
 "b3m2uy04r8nxy27","MGI:1344403","Cfdp1","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.9706903
 "b3suo6dbcxb31sm","MGI:99160","Zfp14","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.6160038
-"b3ts359y910i773","MGI:1928486","Tdo2","E12.5","C51BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.1081699
 "b3vnyf00979m5j4","MGI:98241","Stmn2","E12.5","C57BL","JAX_URI_004_001","Magnesium",0.5119361
 "b3w17t9vlg2q05i","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.1025258
 "b3wx40jt36z8001","MGI:99602","Acan","Early adult","C57BL","IMPC_CBC_007_001","Albumin",0.6331192
@@ -12482,7 +12372,6 @@
 "b45exp47h048s16","MGI:1914015","4933411k16rik","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.8893653
 "b4644s27yhwh4d5","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.7261581
 "b46j39k2xvoi929","MGI:97808","Ptpra","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.6672052
-"b479373z1o39q97","MGI:1914852","Necap1","E18.5","C52BL","M-G-P_006_001_026","Fusion of vertebrae",0.9871572
 "b48w07yj5f4llct","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.7118666
 "b4dbd4moz166h06","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.1327954
 "b4gd69x8mptr916","MGI:1309467","Gstm6","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.78214
@@ -12508,7 +12397,6 @@
 "b5hdbims8w4e30b","MGI:107628","Prdm2","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.6248278
 "b5l7o630x8w9yvi","MGI:3042250","Serpinb13","Early adult","C57BL","HMGULA_SHI_009_001","Startle response",0.06426364
 "b5o6img28ct0csy","MGI:98839","Prss1","Early adult","C57BL","IMPC_CBC_009_001","Calcium",0.167526
-"b5py12li5s5r49l","MGI:95805","Grb2","Early adult","C59BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.7204695
 "b5q8ebqvy3bw624","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.05847059
 "b5re1v2h22937fv","MGI:97594","Prkacb","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.2647022
 "b5u370yfx68y8mq","MGI:1914852","Necap1","E18.5","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.5641425
@@ -12562,7 +12450,6 @@
 "b7zdw4g820487yx","MGI:1922928","Ippk","E9.5","C57BL","IMPC_EYE_083_001","Vitreous",0.0682291
 "b803639q849p4p4","MGI:1921287","Acot6","Early adult","129SV","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.4116141
 "b80ti0h212i58d1","MGI:98241","Stmn2","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.3015115
-"b82h8i59n8e399i","MGI:2387194","Qsox2","Early adult","C50BL","JAX_OFD_021_001","Number of rears - total",0.4151649
 "b82v93uqg5i52b3","MGI:99160","Zfp14","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.3953825
 "b845390od79oai2","MGI:98241","Stmn2","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.6057057
 "b84as99986c8oup","MGI:2684313","Togaram1","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.8699445
@@ -12646,7 +12533,6 @@
 "bfy437x35ya39f7","MGI:1922928","Ippk","E12.5","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.4009644
 "bg423h8y99a1lod","MGI:2385186","Clcc1","E12.5","C57BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.4059582
 "bg46p08478549n5","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_DXA_002_001","Fat mass",0.0696383
-"bg4xrkm03619048","MGI:95864","Gstp2","Early adult","C56BL","IMPC_CSD_008_001","Coat - color pattern - back",0.8631711
 "bg84v0763n9q0xd","MGI:1915918","Klk5","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.0003431435
 "bgh49wgvyo8570g","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_ACS_034_001","% Pre-pulse inhibition - PPI2",0.9138206
 "bgtq15n16m1ggli","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.4432703
@@ -12656,7 +12542,6 @@
 "bh88e8zx5y6897m","MGI:1921275","Nphp3","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.2187346
 "bh8kl0xh6gcsozi","MGI:1921287","Acot6","Early adult","129SV","IMPC_ECH_005_001","Fractional Shortening",0.7361642
 "bhmrj9008eeu241","MGI:2151224","Alpk3","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.4520814
-"bhpi80uo9514ods","MGI:2387194","Qsox2","Late adult","C59BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.9741887
 "bhra1858cum91p0","MGI:1914852","Necap1","E18.5","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.8917303
 "bi0649ma2841nsk","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.5509762
 "bi649a4t2hz2cn1","MGI:1859211","Irf6","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.07878706
@@ -12906,7 +12791,6 @@
 "c57u7889r0ej919","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_ECH_012_001","LVPWs",0.4970045
 "c57ux9jy1j31on5","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.3912297
 "c588464f60v3ohr","MGI:96273","Htr1a","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.8111256
-"c58un18ot4xgh37","MGI:1915759","Ptx4","Early adult","C58BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.8000566
 "c5cm8cf8j4512mj","MGI:102716","Cryba4","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.8025126
 "c5fh3fb45d49940","MGI:99602","Acan","E15.5","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.7021815
 "c5g15j0s3560un8","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.8011731
@@ -12926,7 +12810,6 @@
 "c63wg32x14558j9","MGI:2145567","Fam149b","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.4684378
 "c6489qn5t2kbd74","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.943721
 "c64bhezlq5gsw26","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.280629
-"c65348a0j0i61r6","MGI:104747","Pkia","Early adult","C54BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.8757256
 "c654645oreip7q3","MGI:98905","Usp4","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.9928857
 "c66ixk5du362bm4","MGI:98241","Stmn2","Early adult","C57BL","IMPC_ACS_037_001","% Pre-pulse inhibition - Global",0.5027119
 "c66w467y8x5440u","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.3464852
@@ -13076,10 +12959,8 @@
 "cjndtyjulo51d7s","MGI:2684313","Togaram1","E12.5","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.2848946
 "cju03bz0xib52d6","MGI:3037820","Kcna10","E12.5","C57BL","JAX_OFD_007_001","Whole arena resting time",0.5609019
 "ck16bpyd925b733","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.3926462
-"ck1u2m47o559op7","MGI:2388280","Polr2b","Early adult","C54BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.6536157
 "ck1w4e9ul4rnbt9","MGI:1333782","Pld3","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.05305991
 "ck21u9q7432e11e","MGI:107628","Prdm2","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",0.9160501
-"ck5q8q545x56z0t","MGI:1859026","Cnot4","Early adult","C54BL","IMPC_HEM_003_001","Hemoglobin",0.4678831
 "ck72bx6ts89621z","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_CAL_021_001","Total water intake",0.2805033
 "ck80b3g20c6vr7g","MGI:106351","Vcf1","Early adult","129SV","JAX_LDT_004_001","Dark side time spent",0.8680254
 "ckd7wu8d027z61c","MGI:1309998","Marco","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.1651402
@@ -13232,7 +13113,6 @@
 "d1gyw8546m1303r","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.09929217
 "d1hc5l674388e9u","MGI:1920431","Nfatc4","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.2109702
 "d1j2526497i5t81","MGI:106351","Vcf1","Early adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.1730531
-"d1l715153kz51ni","MGI:1915759","Ptx4","Early adult","C53BL","IMPC_CBC_017_001","Triglycerides",0.9441037
 "d1nh0nq3e6w6u67","MGI:1928486","Tdo2","E15.5","C57BL","M-G-P_006_001_013","Radius",0.786928
 "d1pz15u009g08q1","MGI:1921287","Acot6","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.5781108
 "d1uc9r2lhni21t7","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_OFD_013_001","Periphery average speed",0.4869393
@@ -13390,7 +13270,6 @@
 "d955e85x3pugbhp","MGI:96438","Igfbp3","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.6367212
 "d9624ku96wdl4y9","MGI:3042250","Serpinb13","Early adult","C57BL","IMPC_EYE_063_001","Right inner nuclear layer",0.9431249
 "d962fci2sa9tma9","MGI:1333782","Pld3","Early adult","C57BL","IMPC_CBC_001_001","Sodium",0.5999506
-"d96gv49v0d0hy33","MGI:1859211","Irf6","Early adult","C54BL","IMPC_DXA_010_001","Bone Area",0.887022
 "d973648nerjt26x","MGI:1930923","Slurp1","Early adult","C57BL","JAX_HBD_001_001","Total holepokes",0.5146084
 "d977183onmc5312","MGI:95864","Gstp2","Early adult","C57BL","IMPC_CBC_003_001","Chloride",0.4077739
 "d97hej65d264gra","MGI:97594","Prkacb","Early adult","C57BL","IMPC_DXA_004_001","Bone Mineral Density (excluding skull)",0.4557753
@@ -13444,7 +13323,6 @@
 "df57863kzdnl28f","MGI:95805","Grb2","Early adult","129SV","IMPC_DXA_006_001","Body length",0.4612366
 "dfc4tajry196f1x","MGI:1914015","4933411k16rik","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.6764739
 "dfmc909h01enna0","MGI:99602","Acan","E18.5","C57BL","JAX_LDT_009_001","Percent time in light",0.9906372
-"dfu1nl04ukhb4ja","MGI:2442689","Lrrc49","Early adult","C52BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.8283573
 "dfv9i8w8eu5vglu","MGI:2151224","Alpk3","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.4169176
 "dg9jf9db679sc1h","MGI:106351","Vcf1","Early adult","C57BL","JAX_SLW_013_001","Breath rate during sleep mean",0.2844733
 "dgial947pvwt591","MGI:2661120","Actr3b","Early adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.1736664
@@ -13459,7 +13337,6 @@
 "dh97k6535i23242","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_HEM_027_001","Red blood cell distribution width",0.8727551
 "dha78hk1nl6p23v","MGI:2685945","Pstk","Early adult","C57BL","ESLIM_011_001_004","PP3 startle magnitude",0.9089247
 "dhggjb97c19w826","MGI:104747","Pkia","Early adult","C57BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.6052031
-"dhi8v5jznijb1wm","MGI:1915340","Yif1a","Early adult","C53BL","IMPC_CSD_080_001","Head bobbing",0.7790293
 "dhjdw36hvl9144i","MGI:2685945","Pstk","Early adult","C57BL","M-G-P_005_001_001","Weight",0.4071022
 "dhjh0d082vu864q","MGI:1915625","Ndufa8","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.4958485
 "dhkx1l5790661ie","MGI:96217","Hprt1","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.2615558
@@ -13525,7 +13402,6 @@
 "dr2ja15dm96z599","MGI:102716","Cryba4","Early adult","C57BL","ESLIM_016_001_005","Mean cell volume",0.2299649
 "dr4fh4orvuh72q3","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_CBC_001_001","Sodium",0.8620405
 "dr773z8469524b8","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.9218036
-"drb2k4ac6wrwzhj","MGI:1915918","Klk5","Early adult","C53BL","IMPC_GRS_011_001","Forelimb and hindlimb grip strength normalised against body weight",0.6397793
 "drb64g036m36rw2","MGI:95805","Grb2","Early adult","C57BL","M-G-P_025_001_014","Alanine aminotransferase",0.5233702
 "drpj5k529558cm8","MGI:3037820","Kcna10","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.1120009
 "dru4oe5aux4heto","MGI:3607787","Spata21","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.8162268
@@ -13580,7 +13456,6 @@
 "dy1sr0800fsn6t7","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.6956854
 "dy4668mp1rl747l","MGI:96217","Hprt1","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.2130609
 "dy6orf9k913768c","MGI:3646952","Spink14","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.579921
-"dy8s5770650ut51","MGI:3037820","Kcna10","E12.5","C50BL","M-G-P_025_001_013","Aspartate aminotransferase",0.5286229
 "dymi7u4z803007n","MGI:1915918","Klk5","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.983289
 "dysv0560f713378","MGI:1277171","Dcx","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.3389925
 "dyz5l8krfx3hxs7","MGI:2684313","Togaram1","E15.5","C57BL","HMGULA_HWT_008_001","Heart weight",0.2681647
@@ -13625,7 +13500,6 @@
 "e1247k521430c4d","MGI:101901","Klra7","Early adult","C57BL","IMPC_ACS_037_001","% Pre-pulse inhibition - Global",0.7130708
 "e13d1h6827xfn95","MGI:109151","Ltbp1","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.7098281
 "e147frqehz7xrl9","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.5734667
-"e1481877667tj20","MGI:2684313","Togaram1","E9.5","C55BL","IMPC_DXA_007_001","BMC/Body weight",0.7290842
 "e15ue1o40tsd4y1","MGI:2443796","Scart1","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.3870095
 "e168u43i03h0dk7","MGI:98241","Stmn2","E18.5","C57BL","M-G-P_007_001_010","center - distance",0.07182975
 "e180stk689vj36l","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.4102694
@@ -13682,7 +13556,6 @@
 "e39w935b898h32l","MGI:1922928","Ippk","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.634441
 "e3alw2m7xgmo18l","MGI:2141255","Zfp513","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.2539709
 "e3c46qln77114gg","MGI:1859211","Irf6","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.810429
-"e3czfb88n8k81xy","MGI:2441730","Tbl1xr1","Late adult","C51BL","M-G-P_025_001_012","Lactate dehydrogenase",0.8222331
 "e3jbx98140u06ls","MGI:1339998","Efemp1","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.3184429
 "e3k603fg94d8o82","MGI:2442689","Lrrc49","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.4902204
 "e3pvf1e5453l329","MGI:88071","Arnt","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.7428648
@@ -14112,7 +13985,6 @@
 "f4e0sj070r324j8","MGI:1277171","Dcx","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.5247249
 "f4e9ut45wads43f","MGI:96217","Hprt1","Early adult","C57BL","JAX_SLW_013_001","Breath rate during sleep mean",0.5073051
 "f4ermq4v202d8gy","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.4800761
-"f4fkpy0kb9m4eeh","MGI:95864","Gstp2","Early adult","C52BL","IMPC_OFD_007_001","Whole arena resting time",0.7897254
 "f4ic8z8h396cc1j","MGI:98905","Usp4","Early adult","C57BL","HMGULA_SHI_009_001","Startle response",0.8704172
 "f4ju68zx9422889","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_CBC_006_001","Total protein",0.8339411
 "f4p7nexya63n1gj","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.3669354
@@ -14157,7 +14029,6 @@
 "f6id4kq2f7h4mqu","MGI:1915340","Yif1a","Early adult","C57BL","ESLIM_016_001_002","Red blood cell count",0.3399774
 "f6o87x95h88o309","MGI:1333782","Pld3","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.4424346
 "f6s382h957x5637","MGI:106351","Vcf1","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.606381
-"f6u8079629ytca0","MGI:1926024","Cfap61","Early adult","C50BL","IMPC_CSD_017_001","Forelimbs - position",0.2105231
 "f6ud6m5lpwo8346","MGI:3646952","Spink14","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.658065
 "f6yxdlze9f812we","MGI:1915918","Klk5","Early adult","C57BL","IMPC_GEP_004_002","Spontaneous movement",0.3424423
 "f6z000p414v1u2p","MGI:99160","Zfp14","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.09941351
@@ -14257,7 +14128,6 @@
 "few93ub1029lp8f","MGI:1859211","Irf6","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.5873072
 "ff093x81004n07l","MGI:2444401","Snrnp200","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.1676343
 "ff6pt03vo76b2s1","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.4576006
-"ff9kuxcb44f00x2","MGI:3646952","Spink14","Early adult","C52BL","IMPC_HEM_027_001","Red blood cell distribution width",0.2403436
 "ffawz26cs172o87","MGI:1914852","Necap1","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.4855079
 "ffb57o65xdze08u","MGI:88344","Cd7","Early adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.7753591
 "ffc38po59robc2n","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.8402091
@@ -14326,7 +14196,6 @@
 "fmh356s02345x98","MGI:2385186","Clcc1","E9.5","C57BL","IMPC_OFD_016_001","Center permanence time",0.08732758
 "fmhy36ej9f92azj","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_CSD_036_001","Startle response",0.3932361
 "fmm169d7zklm802","MGI:1277171","Dcx","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.3333026
-"fmsf0lz4pv53lab","MGI:2684313","Togaram1","E12.5","C54BL","IMPC_HEM_004_001","Hematocrit",0.7465455
 "fmx331a5frfbp2n","MGI:96438","Igfbp3","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.2401285
 "fmy57i48qgpjkzk","MGI:2685945","Pstk","Early adult","C57BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.3095807
 "fn0rvx9uqsk28n1","MGI:98241","Stmn2","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.832824
@@ -14496,7 +14365,6 @@
 "g2o1wau97uvum81","MGI:95805","Grb2","Early adult","C57BL","IMPC_EYE_026_001","Retinal Blood Vessels Pattern",0.2179533
 "g2ozjk5l94xk4kt","MGI:1915918","Klk5","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.1611232
 "g2s7lzg32b3cpge","MGI:2385186","Clcc1","E12.5","C57BL","IMPC_EYE_069_001","Left inner nuclear layer",0.1865957
-"g2t6w2505cqg0gy","MGI:95805","Grb2","Early adult","C52BL","M-G-P_026_001_011","Snout morphology",0.904076
 "g2vi799f44i079d","MGI:106351","Vcf1","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.5844211
 "g2vs6660l1e74ea","MGI:97594","Prkacb","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.9724028
 "g2w0544ue4cpxtk","MGI:96217","Hprt1","Early adult","C57BL","IMPC_HEM_035_001","Eosinophil differential count",0.2233526
@@ -14639,7 +14507,6 @@
 "g99a97727curiyb","MGI:98261","Ccl4","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.6712111
 "g99c0r0u8y71l9i","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.1076081
 "g9hah6l42wjdh0x","MGI:700006","Dbnl","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.8487335
-"g9j5m0ci577exel","MGI:3037820","Kcna10","Early adult","C52BL","IMPC_HEM_002_001","Red blood cell count",0.4356006
 "g9kf7os5zzau0zm","MGI:2661120","Actr3b","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.1627656
 "g9l5022d2n588k4","MGI:102716","Cryba4","Early adult","C57BL","IMPC_DXA_002_001","Fat mass",0.651827
 "g9v0u9d7fs327t8","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_HWT_008_001","Heart weight",0.5662006
@@ -14791,7 +14658,6 @@
 "gu4l30199s4x6iz","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.2048031
 "gu9q7auj8l2565f","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_CBC_008_001","Total bilirubin",0.08157027
 "gurz3b48eaw22r8","MGI:1339711","Myh1","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.9612181
-"gus564uan538ou4","MGI:109151","Ltbp1","Early adult","124SV","IMPC_CSD_032_001","Locomotor activity",0.0795527
 "gv27514ovi704m4","MGI:96273","Htr1a","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.890659
 "gvcn3tiiorb8500","MGI:2387194","Qsox2","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.1042847
 "gvdp204a8s64wig","MGI:700006","Dbnl","Early adult","C57BL","IMPC_ECH_012_001","LVPWs",0.5854158
@@ -14805,7 +14671,6 @@
 "gwb2glr68gc7q92","MGI:700006","Dbnl","Early adult","C57BL","ESLIM_016_001_008","Platelets count",0.9899187
 "gwcj5wdl8s21b85","MGI:102716","Cryba4","Early adult","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.583595
 "gwx8a5h629x927s","MGI:2443796","Scart1","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.1069321
-"gx0xs4s5zd7r1re","MGI:96273","Htr1a","Early adult","C51BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.6330094
 "gx213q9911fg784","MGI:1349473","Ppp2r5e","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.5030863
 "gx3z82047050fi9","MGI:99160","Zfp14","Early adult","C57BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.9291469
 "gxbffp08er40243","MGI:3652039","Rad21l","Late adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.4131087
@@ -15089,7 +14954,6 @@
 "hi8c4z9sl3o303e","MGI:1922928","Ippk","Early adult","C57BL","JAX_URI_005_001","Glucose",0.2277931
 "hi9k97xxe2l8346","MGI:1309998","Marco","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.05044077
 "hinv5883tz4i115","MGI:3527427","Taar3","Early adult","C57BL","IMPC_HWT_002_001","Tibia length",0.1235106
-"hiqomj1087c01l3","MGI:95864","Gstp2","Early adult","C55BL","IMPC_IPG_012_001","Area under glucose response curve",0.3420913
 "hit977m584s74yh","MGI:109349","Atf2","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.05230951
 "hiv144bb623g6c2","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.2488444
 "hj0fh29zyop1b59","MGI:1339998","Efemp1","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.942981
@@ -15182,7 +15046,6 @@
 "hvon3zs77ckqatw","MGI:1915918","Klk5","Early adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.2061339
 "hvtxjrzl2rej0jo","MGI:88289","Cbx2","E15.5","C57BL","IMPC_HEM_005_001","Mean cell volume",0.6732151
 "hvwk7z561i475y5","MGI:3652039","Rad21l","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.08231189
-"hw102agc1gmrm64","MGI:2388280","Polr2b","E9.5","C58BL","IMPC_OWT_002_001","Spleen weight",0.5034964
 "hw9lugj91n34682","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.7800374
 "hwcp63224514lc5","MGI:2685031","Leo1","Early adult","C57BL","IMPC_CBC_012_001","Aspartate aminotransferase",0.09917109
 "hwec6t3213b4d30","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.5674492
@@ -15361,7 +15224,6 @@
 "i72m7731wu60s06","MGI:1915918","Klk5","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.4980481
 "i739r22w7i3139g","MGI:96217","Hprt1","Early adult","C57BL","IMPC_OFD_016_001","Center permanence time",0.6740251
 "i74785r51or3988","MGI:95864","Gstp2","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.8270659
-"i7535p139l11qau","MGI:98261","Ccl4","Early adult","C54BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.285827
 "i759lvb5azy0d97","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",0.7397585
 "i75kvq31s749956","MGI:2151224","Alpk3","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.4894088
 "i76n2re5k5ekg06","MGI:1277171","Dcx","Early adult","C57BL","IMPC_ECH_011_001","LVIDs",0.1876611
@@ -15568,7 +15430,6 @@
 "itrxu33sy1aya19","MGI:96438","Igfbp3","Early adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.7288395
 "itw92eh7js1x1qn","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.5203434
 "iu088gzmm9huzo3","MGI:2141255","Zfp513","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.2665284
-"iu253973vl4y9ts","MGI:1921078","Dcaf4","Early adult","C55BL","RBRCLA_HEM_005_001","Mean cell volume",0.3590743
 "iu3d9n38cakkh5k","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_CSD_080_001","Head bobbing",0.6759186
 "iu7p6ur0j30883c","MGI:98905","Usp4","Early adult","C57BL","IMPC_OFD_020_001","Distance travelled - total",0.6444283
 "iup7310l58y0u8y","MGI:1919588","Wdr89","Early adult","C57BL","HMGULA_HWT_008_001","Heart weight",0.07674037
@@ -15631,7 +15492,6 @@
 "j10yy34o01ye88n","MGI:102716","Cryba4","Early adult","C57BL","IMPC_OFD_016_001","Center permanence time",0.9942387
 "j11vsd644z7q1el","MGI:3041259","Mettl25","Early adult","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.8404298
 "j120j4wpx4833s1","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.6390515
-"j12d51809e0ef2s","MGI:1919588","Wdr89","Early adult","C59BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.4753718
 "j131fcj2ft16507","MGI:1339711","Myh1","Early adult","C57BL","IMPC_DXA_002_001","Fat mass",5.620114e-06
 "j1399vf6y9786cd","MGI:1309998","Marco","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.1624863
 "j141wpm6ex52on6","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_ECH_009_001","LVPWd",0.3685005
@@ -15644,7 +15504,6 @@
 "j1f34pp806t4n29","MGI:700006","Dbnl","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.4480185
 "j1k286gd7x084w4","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.4939603
 "j1p0674d5e2m062","MGI:2661120","Actr3b","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.1075632
-"j1qu4q37nzcn655","MGI:1859026","Cnot4","Early adult","C59BL","CCP_XRY_002_001","Zygomatic bone",0.4317588
 "j1r5818q7553tya","MGI:88289","Cbx2","E15.5","C57BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.7212563
 "j1t56r8565kppo6","MGI:95864","Gstp2","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.7879721
 "j1w2me4c7230d0t","MGI:2685945","Pstk","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.7737817
@@ -15716,7 +15575,6 @@
 "j463q3a71u53d0m","MGI:1918588","Tprg1","Early adult","C57BL","M-G-P_005_001_001","Weight",0.2581773
 "j4806o51ovqrqs3","MGI:1921275","Nphp3","Early adult","C57BL","JAX_LDT_009_001","Percent time in light",0.7395591
 "j484601q90kw18v","MGI:98241","Stmn2","E12.5","C57BL","JAX_URI_002_001","Creatinine",0.783737
-"j48j10l15ph554w","MGI:2684313","Togaram1","E9.5","C54BL","IMPC_HEM_035_001","Eosinophil differential count",0.9772999
 "j4a07d3bwx6968f","MGI:1921720","Cep72","Early adult","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.7077679
 "j4a90nulq1898w7","MGI:98905","Usp4","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.2887664
 "j4b8afsdfkc702l","MGI:88452","Col2a1","Early adult","C57BL","IMPC_CSD_009_001","Coat - color pattern - head",0.3858215
@@ -15744,7 +15602,6 @@
 "j605m9d71e4rf63","MGI:1349473","Ppp2r5e","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.7207167
 "j616d1wqahcg4w8","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.8695587
 "j623yjqxmzvt66j","MGI:109349","Atf2","Early adult","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.8011269
-"j624613797d1u4l","MGI:2387194","Qsox2","Early adult","C51BL","IMPC_CBC_017_001","Triglycerides",0.2354044
 "j6294pa1hg50ld5","MGI:1309998","Marco","Early adult","C57BL","IMPC_OFD_020_001","Distance travelled - total",5.837562e-06
 "j62vu089i8z8c04","MGI:98905","Usp4","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.5446933
 "j631r3ff1600a8m","MGI:1916387","Vstm5","Early adult","C57BL","IMPC_DXA_003_001","Lean mass",0.7120262
@@ -15863,7 +15720,6 @@
 "je070uew9hlrqx0","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_EYE_026_001","Retinal Blood Vessels Pattern",0.5031193
 "je0y2vd15754c99","MGI:1339759","Csf2rb","Early adult","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.2796624
 "je16yb7g700y129","MGI:95777","Gnas","Early adult","129SV","M-G-P_025_001_013","Aspartate aminotransferase",0.7513603
-"je2v4f048o02ust","MGI:1916943","Pof1b","Early adult","C52BL","M-G-P_025_001_013","Aspartate aminotransferase",0.9377276
 "je785di4w921539","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.5163476
 "je99d41a0kg2vwo","MGI:2669796","Rtn4rl2","Early adult","C57BL","JAX_URI_005_001","Glucose",0.5758699
 "jegc2kel5gkw42o","MGI:2681308","Tas2r139","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.2318645
@@ -15892,7 +15748,6 @@
 "ji3wa18v3590di6","MGI:98241","Stmn2","E18.5","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.4549624
 "ji9ht33r755a223","MGI:1890564","Rcan1","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.8348247
 "jia1469picbanb3","MGI:107628","Prdm2","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.2673245
-"jig1b0r2149095l","MGI:97594","Prkacb","Early adult","C56BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.3598996
 "jiz3tl832kg80r6","MGI:104747","Pkia","Early adult","C57BL","IMPC_DXA_009_001","Fat/Body weight",0.9935391
 "jj56y81njc2sol8","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_OFD_020_001","Distance travelled - total",0.6745962
 "jj5lc7v2m35mmb1","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_EYE_014_001","Pupil Light Response",0.8922482
@@ -16015,7 +15870,6 @@
 "k051x721a5zico7","MGI:99602","Acan","E15.5","C57BL","IMPC_DXA_009_001","Fat/Body weight",0.7544098
 "k0531ea0q9h4y73","MGI:103250","Calm2","Early adult","C57BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.4720471
 "k07b8391430g99c","MGI:88289","Cbx2","E15.5","C57BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.3537194
-"k0a3woc3527okco","MGI:1919192","Myof","Early adult","C52BL","IMPC_EYE_016_001","Lens",0.7125549
 "k0e8r4sa71o3o9w","MGI:1928486","Tdo2","Early adult","C57BL","HMGULA_SHI_009_001","Startle response",0.9219198
 "k0h6yz262l87250","MGI:1917022","Bdh2","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.2546561
 "k0hvpnsif83ce62","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.3389845
@@ -16107,7 +15961,6 @@
 "k4cbo3pe9cr2dx3","MGI:109151","Ltbp1","Early adult","129SV","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.7063204
 "k4ceyp51gt0jpig","MGI:96217","Hprt1","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.6894957
 "k4e7as99r89n858","MGI:1921275","Nphp3","Early adult","C57BL","M-G-P_025_001_021","Uric acid",0.1173
-"k4hvods891y1x85","MGI:1930923","Slurp1","Early adult","C52BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0
 "k4oy0ar20yde3kp","MGI:98839","Prss1","Early adult","C57BL","JAX_LDT_009_001","Percent time in light",0.3329402
 "k4wqof0181h876q","MGI:2136748","Pcdhb13","Early adult","C57BL","IMPC_CBC_017_001","Triglycerides",0.3757732
 "k4x44pj99p10460","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_EYE_062_001","Right total retinal thickness",0.362215
@@ -16124,7 +15977,6 @@
 "k58948h92bzf489","MGI:3652039","Rad21l","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.5893854
 "k590aeauv65axo9","MGI:99602","Acan","E15.5","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.3189945
 "k5hww21z9tam31q","MGI:109151","Ltbp1","Early adult","129SV","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.4697763
-"k5j4x26mozy2s0t","MGI:2681308","Tas2r139","Early adult","C51BL","M-G-P_025_001_012","Lactate dehydrogenase",0.9314381
 "k5o4evvc2z10783","MGI:3037820","Kcna10","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.454359
 "k5w21k468d3i01l","MGI:95805","Grb2","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.6928458
 "k5x5p63ymv95sh2","MGI:3652039","Rad21l","Late adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.2962849
@@ -16184,7 +16036,6 @@
 "k83n63osjcj0844","MGI:1916943","Pof1b","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.169549
 "k865251fr7viy2h","MGI:1914852","Necap1","Early adult","C57BL","M-G-P_025_001_022","Total bilirubin",0.1573544
 "k8690s40u542pxo","MGI:99602","Acan","E15.5","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.8294788
-"k873o8g86rgyvk9","MGI:107628","Prdm2","Early adult","C54BL","IMPC_ECH_011_001","LVIDs",0.5647288
 "k88015h8y5u0926","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.3830619
 "k880h4j108j1q86","MGI:1930923","Slurp1","Early adult","C57BL","JAX_SLW_013_001","Breath rate during sleep mean",0.582877
 "k884fj23340n0c5","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.0517468
@@ -16263,7 +16114,6 @@
 "kf5ja324yc1u9q6","MGI:96217","Hprt1","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.7608507
 "kf870xw4r44w6jt","MGI:1915625","Ndufa8","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.3073182
 "kfcyz3831553a43","MGI:88289","Cbx2","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.07440313
-"kfft1j9b8li75rg","MGI:1353497","Slc25a10","Early adult","C59BL","IMPC_ECH_010_001","LVAWs",0.4172903
 "kfkt4u0025b7rn9","MGI:88452","Col2a1","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.7735444
 "kfontdsxws7yxd5","MGI:98839","Prss1","Early adult","C57BL","M-G-P_025_001_013","Aspartate aminotransferase",0.8539489
 "kfxw2i3q8q558h7","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_CBC_003_001","Chloride",0.3791959
@@ -16283,7 +16133,6 @@
 "khs2a52753095po","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.9434487
 "ki0x4hw1l7x2r7f","MGI:2684313","Togaram1","E9.5","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.4045128
 "ki76s39575fwz79","MGI:1922928","Ippk","E9.5","C57BL","IMPC_GEM_077_001","Hemorrhage",0.9125832
-"ki8x69gfvjs98us","MGI:1914852","Necap1","Early adult","C56BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.8443523
 "ki9gjqod73d6m24","MGI:106351","Vcf1","Early adult","129SV","IMPC_HEM_035_001","Eosinophil differential count",0.3138425
 "kifd07965x2mfzz","MGI:1196466","Dsg2","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.6774876
 "kig83o49z4kz7d2","MGI:106351","Vcf1","Early adult","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.7061611
@@ -16401,7 +16250,6 @@
 "kz2695g01nb6n37","MGI:2441730","Tbl1xr1","Late adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.2737849
 "kz50x780b10w91j","MGI:1333782","Pld3","Early adult","C57BL","IMPC_GEL_063_001","Delayed embryonic development",0.5331004
 "kz6ndv4k936tcxv","MGI:1921078","Dcaf4","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",0.4064272
-"kz6y0epb1i459s6","MGI:95805","Grb2","Early adult","125SV","JAX_LDT_008_001","Percent time in dark",0.9161954
 "kz70033n9d21vst","MGI:1921720","Cep72","Early adult","C57BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.6265365
 "kz9s4t9o6521m07","MGI:3041259","Mettl25","Early adult","C57BL","MGP_PBI_031_001","KLRG1+ mature NK cell number",0.8896997
 "kzgw1h5c79w2t4w","MGI:3037820","Kcna10","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.3275846
@@ -16436,7 +16284,6 @@
 "l100z0417ml5ay6","MGI:2153608","Ube2j2","Middle aged adult","C57BL","IMPC_CSD_010_001","Coat - color pattern - abdomen",0.2820179
 "l10o47a61rk300w","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_OFD_013_001","Periphery average speed",0.467849
 "l122y2kp9al92p6","MGI:1196466","Dsg2","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.3136486
-"l1320cp42qgi14f","MGI:3646952","Spink14","Early adult","C56BL","IMPC_ACS_037_001","% Pre-pulse inhibition - Global",0.2483
 "l13xn1320su7qe3","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.421682
 "l17267196gf8qtd","MGI:98261","Ccl4","Early adult","C57BL","HMGULA_SHI_009_001","Startle response",0.3341521
 "l18i4hw80i65v69","MGI:1921720","Cep72","Early adult","C57BL","IMPC_HEM_005_001","Mean cell volume",0.5096412
@@ -16515,7 +16362,6 @@
 "l567x6g23949nm5","MGI:1921078","Dcaf4","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.5794264
 "l57i74859vy3359","MGI:1349473","Ppp2r5e","Early adult","C57BL","M-G-P_026_001_011","Snout morphology",0.4269463
 "l57o1wt27etjwpx","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_OFD_020_001","Distance travelled - total",0.9199534
-"l57olc632331h4r","MGI:2684313","Togaram1","E9.5","C52BL","IMPC_CSD_033_001","Gait",0.7235731
 "l57xs769chl363g","MGI:1926024","Cfap61","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.4168751
 "l5ab028xbs4vb3t","MGI:1915625","Ndufa8","Early adult","C57BL","M-G-P_005_001_001","Weight",0.8095028
 "l5b982177463s95","MGI:1339759","Csf2rb","Early adult","C57BL","IMPC_CBC_018_001","Glucose",0.2427336
@@ -16723,7 +16569,6 @@
 "locmine298kah4e","MGI:2684313","Togaram1","E15.5","C57BL","IMPC_EYE_067_001","Left anterior chamber depth",0.9963027
 "log3dqkp321gh65","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.4630216
 "loi9ie10c9jg13x","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_CBC_008_001","Total bilirubin",0.3506783
-"lorc0bwk6eg19vg","MGI:2385186","Clcc1","Early adult","C50BL","JAX_SLW_004_001","Sleep dark phase percent",0.1643049
 "lotxvkc7gxshc1c","MGI:1921287","Acot6","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.7232849
 "lovg30qvrr81574","MGI:1915625","Ndufa8","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.1245637
 "lox397to6dss940","MGI:98957","Wnt4","Early adult","C57BL","ESLIM_011_001_004","PP3 startle magnitude",0.8537191
@@ -16824,7 +16669,6 @@
 "m0g2y0w5656o6t0","MGI:98241","Stmn2","E12.5","C57BL","CCP_XRY_001_001","Skull shape",0.8097927
 "m0j0j86737a7527","MGI:1921720","Cep72","Early adult","C57BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.887867
 "m0l604841al55nv","MGI:98241","Stmn2","E18.5","C57BL","IMPC_ECH_007_001","LVAWd",0.2690042
-"m0lbi512z45pna7","MGI:2387194","Qsox2","Late adult","C58BL","IMPC_ECH_012_001","LVPWs",0.8042621
 "m0mu770h8bv0pp7","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.4075321
 "m0n5h00f592h3mq","MGI:1309998","Marco","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.8506494
 "m0p0dnm7l667894","MGI:99602","Acan","Early adult","C57BL","M-G-P_005_001_001","Weight",0.7085558
@@ -16847,7 +16691,6 @@
 "m16r057hn7w4s5g","MGI:1921275","Nphp3","Early adult","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.1324868
 "m171im8w6bavvzd","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_CBC_028_001","Creatine kinase",0.7738518
 "m17836gov8ut1lw","MGI:2669796","Rtn4rl2","Early adult","C57BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.2378827
-"m17eh8er7592u0i","MGI:2681308","Tas2r139","Early adult","C59BL","IMPC_CBC_018_001","Glucose",0.1423344
 "m17u031ts6m8b6y","MGI:3527427","Taar3","Early adult","C57BL","IMPC_CBC_007_001","Albumin",0.1976001
 "m187x5a4xi8590f","MGI:88071","Arnt","Early adult","C57BL","IMPC_EYE_063_001","Right inner nuclear layer",0.1706318
 "m1do6kkx165s1v1","MGI:1921674","Tmc5","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.274763
@@ -16968,7 +16811,6 @@
 "m8009509g9k0i64","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_EYE_016_001","Lens",0.8889606
 "m8040aunu33g8gw","MGI:1347361","Mmp23","Early adult","C57BL","JAX_LDT_005_001","Time mobile dark side",0.7179888
 "m80613v68kc1m39","MGI:96217","Hprt1","Early adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.5734978
-"m80x5y7s9w7c54h","MGI:2385186","Clcc1","E12.5","C51BL","IMPC_EYE_007_001","Cornea",0.5253604
 "m8171d872cdc0ug","MGI:99160","Zfp14","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.1067204
 "m8375jl5azuchlo","MGI:98241","Stmn2","E18.5","C57BL","IMPC_OFD_022_001","Percentage center time",0.9277
 "m84iknfz811q6mx","MGI:1928486","Tdo2","E15.5","C57BL","IMPC_OFD_013_001","Periphery average speed",0.3652711
@@ -17225,7 +17067,6 @@
 "n06za4d5ufz0akz","MGI:99160","Zfp14","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.3300196
 "n08fa2g93jixt54","MGI:1098746","Ankzf1","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.194581
 "n0l3177s64pz68z","MGI:1928486","Tdo2","E12.5","C57BL","M-G-P_025_001_022","Total bilirubin",0.05717663
-"n0mv2927a758m76","MGI:3041259","Mettl25","Early adult","C50BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.726837
 "n0w986z13qk08a3","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.3919995
 "n10m55d8sar4mhz","MGI:1914015","4933411k16rik","Early adult","C57BL","HMGULA_CBC_016_001","HDL-cholesterol",0.9524405
 "n11tkaz49c0e2s5","MGI:700006","Dbnl","Early adult","C57BL","HMGULA_CBC_010_001","Phosphorus",0.2698489
@@ -17459,7 +17300,6 @@
 "ng4x3wilmyaiq93","MGI:1928486","Tdo2","E15.5","C57BL","IMPC_EYE_083_001","Vitreous",0.4901586
 "ng9388e36bz320b","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.4939383
 "ngcpy099f8w5f37","MGI:1916387","Vstm5","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.2666164
-"ngh3720a98to0h7","MGI:106351","Vcf1","Early adult","128SV","JAX_SLW_013_001","Breath rate during sleep mean",0.3612973
 "ngm1mod2ojthg0k","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_DXA_003_001","Lean mass",1.981943e-05
 "ngsb4f91i8c610b","MGI:3607787","Spata21","Early adult","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.6300031
 "ngw7h2318b35q1e","MGI:95864","Gstp2","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.8606433
@@ -17493,7 +17333,6 @@
 "njop8n5j316kwj3","MGI:97808","Ptpra","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.5518095
 "njrlr5z3927x2jh","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.49321
 "njvg046z1q9h0se","MGI:1923549","Erp44","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.8695087
-"njxgvn9422w94e8","MGI:1928486","Tdo2","E12.5","C59BL","IMPC_EYE_062_001","Right total retinal thickness",0.2085584
 "njxr4mzo51k8487","MGI:1339998","Efemp1","Early adult","C57BL","IMPC_HEM_027_001","Red blood cell distribution width",0.6310971
 "njy6m6t02xq6vc8","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.8059328
 "njz2h9l2o5mdxa4","MGI:109151","Ltbp1","Early adult","C57BL","M-G-P_005_001_001","Weight",1.495204e-11
@@ -17595,7 +17434,6 @@
 "nwq6n76c6xki92p","MGI:1339711","Myh1","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.9633617
 "nx0byb9yo99ogeh","MGI:1920431","Nfatc4","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.9390941
 "nx0q312u1ebc730","MGI:97808","Ptpra","Early adult","C57BL","IMPC_DXA_010_001","Bone Area",0.5034793
-"nx13hlz14a5kaln","MGI:2136890","Setd4","Early adult","C56BL","IMPC_CSD_036_001","Startle response",0.2366043
 "nx4486l3z63v9pd","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_HEM_019_001","Mean platelet volume",0.6707903
 "nx57i4qr62lk6ci","MGI:2443796","Scart1","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.4260589
 "nx60wu35wvuw5u2","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_ABR_008_001","18kHz-evoked ABR Threshold",0.4859078
@@ -17782,7 +17620,6 @@
 "o79i64t5ty36j22","MGI:2385186","Clcc1","E9.5","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.7644888
 "o7hg5u8g9ub5ro2","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_INS_001_001","Insulin",0.515374
 "o7kb29m2x84g5s9","MGI:102716","Cryba4","Early adult","C57BL","ESLIM_021_001_005","HDL-cholesterol",0.4268753
-"o7ohf1ln3t50221","MGI:95805","Grb2","Early adult","C53BL","IMPC_INS_001_001","Insulin",0.07148679
 "o7rav9fz572hn5v","MGI:88289","Cbx2","E15.5","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.5774696
 "o7s4wc3q6563477","MGI:1923549","Erp44","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",0.6141773
 "o7z6495865ky7g2","MGI:3652039","Rad21l","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.128246
@@ -17805,7 +17642,6 @@
 "o8o84l2n7851ck3","MGI:2443796","Scart1","Early adult","C57BL","IMPC_OFD_014_001","Center distance travelled",0.3519851
 "o8ox015hvt40g73","MGI:109349","Atf2","Early adult","C57BL","IMPC_CBC_005_001","Creatinine",0.3947214
 "o8r3gav48wll98h","MGI:3037820","Kcna10","E12.5","C57BL","JAX_LDT_009_001","Percent time in light",0.8462533
-"o8rs386sn473916","MGI:2153608","Ube2j2","Early adult","C51BL","ESLIM_021_001_005","HDL-cholesterol",0.2635236
 "o8sp469w7w508c6","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.0839708
 "o8zq5c0g15f299a","MGI:98839","Prss1","Early adult","C57BL","IMPC_DXA_004_001","Bone Mineral Density (excluding skull)",0.6653178
 "o90g9t19186jf4b","MGI:1915625","Ndufa8","Early adult","C57BL","JAX_LDT_002_001","Light side time spent",0.8194031
@@ -18120,7 +17956,6 @@
 "p4368bzs0e4gj98","MGI:98241","Stmn2","E18.5","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.2769721
 "p43d8787919hs3i","MGI:2136890","Setd4","Early adult","C57BL","IMPC_CSD_009_001","Coat - color pattern - head",0.09749982
 "p43z283t4204ya6","MGI:1922928","Ippk","E9.5","C57BL","IMPC_DXA_008_001","Lean/Body weight",0.6758366
-"p458j469og2ygcd","MGI:1339711","Myh1","Early adult","C55BL","IMPC_EYE_016_001","Lens",0.7286931
 "p4637o88syt2o37","MGI:97808","Ptpra","Early adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.5673271
 "p46nts99998u70j","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_EYE_083_001","Vitreous",0.1507684
 "p481d73xv2v90fi","MGI:95777","Gnas","Early adult","129SV","IMPC_CBC_028_001","Creatine kinase",0.5919265
@@ -18284,7 +18119,6 @@
 "pfs71189xrd1mm3","MGI:96217","Hprt1","Early adult","C57BL","IMPC_CBC_005_001","Creatinine",0.3616376
 "pfzf124p62g4u41","MGI:95805","Grb2","Early adult","129SV","JAX_OFD_007_001","Whole arena resting time",0.9635352
 "pg049y43eff371w","MGI:1890564","Rcan1","Early adult","C57BL","IMPC_DXA_006_001","Body length",0.2328552
-"pg1637z0pr07owc","MGI:1921720","Cep72","Early adult","C52BL","IMPC_ECH_009_001","LVPWd",0.1323857
 "pg26f57f26wd2v5","MGI:2145567","Fam149b","Early adult","C57BL","JAX_SLW_004_001","Sleep dark phase percent",0.4044335
 "pg367z31500qa9s","MGI:2385186","Clcc1","E12.5","C57BL","HMGULA_CBC_010_001","Phosphorus",0.6071711
 "pgjpo65ovzyf35n","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.3564219
@@ -18366,7 +18200,6 @@
 "pr823uqf69c1act","MGI:1098746","Ankzf1","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.3340257
 "prle8l99a506mpf","MGI:98241","Stmn2","E12.5","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.6172888
 "prnv3624207sq86","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_XRY_033_001","Tibia length",0.9996708
-"ps04t3851a8g80n","MGI:98241","Stmn2","E18.5","C56BL","IMPC_EYE_063_001","Right inner nuclear layer",0.8855592
 "ps74b8va725zy56","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_EYE_068_001","Left total retinal thickness",0.7138889
 "ps7902m00d49535","MGI:2684313","Togaram1","E12.5","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.2110065
 "ps7kwd46pj8c975","MGI:109349","Atf2","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.1486374
@@ -18503,7 +18336,6 @@
 "q4c0d4e95w442p0","MGI:1919588","Wdr89","Early adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.4732904
 "q4e6mi9d1923xpe","MGI:109151","Ltbp1","Early adult","129SV","IMPC_CBC_006_001","Total protein",0.4232166
 "q4g96llna313zg7","MGI:1196466","Dsg2","Early adult","C57BL","M-G-P_025_001_022","Total bilirubin",0.5838855
-"q4h84517z5o4z28","MGI:1928486","Tdo2","E12.5","C50BL","JAX_URI_005_001","Glucose",0.7190222
 "q4i43vlu8890quc","MGI:1921287","Acot6","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.2703328
 "q4k26v7a3uo683i","MGI:1919824","Zc3h14","Early adult","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.3667423
 "q4ocu3m99365021","MGI:1921674","Tmc5","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.6609808
@@ -18559,7 +18391,6 @@
 "q73b122qc73685a","MGI:98241","Stmn2","E12.5","C57BL","ESLIM_016_001_008","Platelets count",0.05385526
 "q73q747ir34j1tt","MGI:1859026","Cnot4","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.5525137
 "q7497ua02djr5t4","MGI:2145567","Fam149b","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.9862088
-"q75z1y9g6x56joy","MGI:99160","Zfp14","Early adult","C51BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.8780736
 "q761eh66u310q51","MGI:1339998","Efemp1","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.3983158
 "q770tce2j7tnia7","MGI:1309467","Gstm6","Early adult","C57BL","IMPC_HEM_008_001","Platelet count",0.1796298
 "q784fzwa59047j0","MGI:95805","Grb2","Early adult","129SV","IMPC_CBC_023_001","Alpha-amylase",0.5898109
@@ -18680,7 +18511,6 @@
 "ql91666x40p505k","MGI:95777","Gnas","Early adult","129SV","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.8699084
 "qla1935785t0uv6","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_CBC_018_001","Glucose",0.8499515
 "qlqujf5wf3b95nc","MGI:1919824","Zc3h14","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.6195357
-"qm0v63a5a45cd7a","MGI:1926024","Cfap61","Early adult","C50BL","IMPC_XRY_033_001","Tibia length",0.5781642
 "qm3lv56h43m6t0o","MGI:1915267","Mrm2","E9.5","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.8164407
 "qm89v194q5j0k7p","MGI:1915340","Yif1a","Early adult","C57BL","IMPC_CSD_023_001","Vibrissae - presence",0.8295234
 "qma1xaze01h909l","MGI:1932970","Ucn3","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.9588144
@@ -18775,7 +18605,6 @@
 "qx69893e953182u","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_CBC_008_001","Total bilirubin",0.6040145
 "qx6q2899a8l0se1","MGI:1921720","Cep72","Early adult","C57BL","IMPC_EYE_002_001","Bulging eye",0.09476408
 "qxcgvc1ihbx22b3","MGI:88289","Cbx2","E15.5","C57BL","IMPC_CBC_017_001","Triglycerides",0.7509459
-"qxdzcz6j4lzs8u8","MGI:2388280","Polr2b","E9.5","C58BL","ESLIM_021_001_005","HDL-cholesterol",0.3551561
 "qxk5y1g219n73l6","MGI:3652039","Rad21l","Late adult","C57BL","IMPC_CSD_008_001","Coat - color pattern - back",0.5272523
 "qxktq22l5mw3po2","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.06193176
 "qxs4625ya9oceb5","MGI:2145567","Fam149b","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.9653221
@@ -18787,7 +18616,6 @@
 "qym16j20mf3t620","MGI:1277171","Dcx","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.709455
 "qys25269gjq94ou","MGI:95805","Grb2","Early adult","C57BL","JAX_SLW_013_001","Breath rate during sleep mean",0.5700132
 "qyv11ne632y56j4","MGI:1919192","Myof","Early adult","C57BL","IMPC_CSD_039_001","Limb grasp",0.6529329
-"qz0hj07550xqa16","MGI:2387194","Qsox2","Late adult","C50BL","IMPC_GEM_027_001","Limb Bud Morphology",0.4762611
 "qz95505e91okguf","MGI:88452","Col2a1","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.2118256
 "qzm500o44l9969m","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.4697758
 "qzo0596dx8675qo","MGI:88344","Cd7","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.3876596
@@ -18875,7 +18703,6 @@
 "r3f14jo112b2yd3","MGI:3037820","Kcna10","Early adult","C57BL","JAX_URI_005_001","Glucose",0.5956822
 "r3hartn3591t9z6","MGI:2443796","Scart1","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.2957561
 "r3hfu6g48bd2udt","MGI:2388280","Polr2b","E9.5","C57BL","M-G-P_006_001_013","Radius",0.9624506
-"r3ikllc9h0i2d5q","MGI:98839","Prss1","Early adult","C55BL","IMPC_CSD_039_001","Limb grasp",0.1562016
 "r3r5i1d8c4tu6ac","MGI:2153608","Ube2j2","Middle aged adult","C57BL","IMPC_CBC_010_001","Phosphorus",0.3367086
 "r3r9q1zi5rsc253","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.7294835
 "r3u8u959oy325x2","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_EYE_002_001","Bulging eye",0.4995596
@@ -19480,7 +19307,6 @@
 "sg33zd222e07613","MGI:1309467","Gstm6","Early adult","C57BL","M-G-P_006_001_013","Radius",0.8488146
 "sgm1k2z82059265","MGI:1915625","Ndufa8","Early adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.1310622
 "sgnaj37qd85h2y1","MGI:2444401","Snrnp200","Early adult","C57BL","MGP_IMM_102_001","Immature NK cells - % of lymphocytes",0.4481142
-"sh21357x96j7070","MGI:106351","Vcf1","Early adult","C52BL","IMPC_EYE_062_001","Right total retinal thickness",0.9427033
 "sh4jqrt6801h8t6","MGI:2387194","Qsox2","Late adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.1944956
 "sh5oc54965k9fx9","MGI:1915918","Klk5","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.720709
 "shp3it462vwrw02","MGI:1915267","Mrm2","Early adult","C57BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.07680128
@@ -19520,9 +19346,7 @@
 "sn7056v3b0365as","MGI:2442689","Lrrc49","Early adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.2829352
 "sn83ly53lqgi9vx","MGI:1915918","Klk5","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.6834129
 "sn8kk6140pth5x5","MGI:1347361","Mmp23","Early adult","C57BL","CCP_XRY_001_001","Skull shape",0.5891022
-"sn9o599j9y2055g","MGI:97808","Ptpra","Early adult","C54BL","JAX_LDT_005_001","Time mobile dark side",0.05707008
 "sn9z8sjqf1lr1u5","MGI:2141255","Zfp513","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.5148112
-"so0h3dq37873d70","MGI:99602","Acan","E18.5","C56BL","IMPC_OFD_010_001","Periphery distance travelled",0.5244434
 "sob9mue1u739sjy","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_OFD_013_001","Periphery average speed",0.7927795
 "sof1gyr3zxn30m8","MGI:1914852","Necap1","E18.5","C57BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.06696739
 "sog8ni2c4bkcdx7","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_OFD_007_001","Whole arena resting time",0.6776818
@@ -19537,7 +19361,6 @@
 "spr7j1fb0fw6clb","MGI:3037820","Kcna10","E12.5","C57BL","M-G-P_026_001_011","Snout morphology",0.7256478
 "sq1abb96v533psl","MGI:97594","Prkacb","Early adult","C57BL","IMPC_CBC_001_001","Sodium",0.8036021
 "sq436544i91xie4","MGI:95864","Gstp2","Early adult","C57BL","IMPC_ECH_010_001","LVAWs",0.5268601
-"sq776wzf578fqj1","MGI:2661120","Actr3b","Early adult","C53BL","IMPC_ECH_011_001","LVIDs",0.8498216
 "sq7bh1dz2l9896k","MGI:2145567","Fam149b","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.7920766
 "sq903aue784pz11","MGI:3037820","Kcna10","Early adult","C57BL","IMPC_CBC_006_001","Total protein",0.9027442
 "sq9tk4036339tgb","MGI:1921287","Acot6","Early adult","129SV","ESLIM_021_001_005","HDL-cholesterol",0.3462763
@@ -19619,7 +19442,6 @@
 "t09tgi023p1u89m","MGI:3527427","Taar3","Early adult","C57BL","IMPC_CBC_017_001","Triglycerides",0.2538726
 "t09z883288f5c10","MGI:1922928","Ippk","E12.5","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.3831495
 "t0a43823xpln2jr","MGI:1922928","Ippk","Early adult","C57BL","IMPC_EYE_014_001","Pupil Light Response",0.9749565
-"t0c3e722fch19rr","MGI:2684313","Togaram1","E12.5","C55BL","IMPC_CBC_007_001","Albumin",0.1836212
 "t0gv86t3hwmebww","MGI:2136748","Pcdhb13","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.8050509
 "t0hutd3du71pf6b","MGI:1309998","Marco","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.07943781
 "t0q4vfxzb83m39f","MGI:98241","Stmn2","E12.5","C57BL","IMPC_ACS_037_001","% Pre-pulse inhibition - Global",0.1957427
@@ -19855,7 +19677,6 @@
 "tc3lp7486r0fg3c","MGI:1309467","Gstm6","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.2974106
 "tc4bw7h2203xwq5","MGI:102716","Cryba4","Early adult","C57BL","IMPC_CBC_009_001","Calcium",0.9614656
 "tcb30ql3635w788","MGI:1921287","Acot6","Early adult","C57BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.1817475
-"tcpi446i193ck3q","MGI:98839","Prss1","Early adult","C56BL","IMPC_CBC_005_001","Creatinine",0.3915642
 "tcry92u461sre50","MGI:2153608","Ube2j2","Early adult","C57BL","IMPC_DXA_006_001","Body length",4.883621e-10
 "tcx3e6k364uny06","MGI:2137026","P2rx5","Early adult","C57BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.75359
 "td9ys23w35tc8rn","MGI:98839","Prss1","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.478781
@@ -19878,12 +19699,10 @@
 "tgo2d9jwd68535f","MGI:1915918","Klk5","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.4454421
 "tgqj38759p453yo","MGI:98241","Stmn2","Early adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.2695073
 "tgyp8t46rm9x7i9","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_DXA_007_001","BMC/Body weight",0.9011339
-"th2r3011103h0bo","MGI:99602","Acan","Early adult","C59BL","IMPC_CBC_001_001","Sodium",0.619734
 "th3160v5tf2sei1","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_OFD_009_001","Whole arena average speed",0.2719394
 "th36b8jafl19sy5","MGI:98241","Stmn2","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.4215944
 "th5280r21180pt4","MGI:1915918","Klk5","Early adult","C57BL","JAX_SLW_002_001","Sleep daily percent",0.06379788
 "th546ox34m06z89","MGI:109349","Atf2","Early adult","C57BL","IMPC_GEM_068_001","Forebrain morphology",0.5049092
-"th5s096q917wi82","MGI:1921674","Tmc5","Early adult","C58BL","IMPC_CBC_010_001","Phosphorus",0.5119706
 "th7584f4289m503","MGI:88071","Arnt","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.5763072
 "thb8zu82ycz22i8","MGI:1921287","Acot6","Early adult","129SV","IMPC_CBC_016_001","HDL-cholesterol",0.8979051
 "thlz5jqzkpishmu","MGI:1914852","Necap1","E18.5","C57BL","ESLIM_016_001_005","Mean cell volume",0.8312474
@@ -19951,7 +19770,6 @@
 "trk659560xf9km6","MGI:1917022","Bdh2","Early adult","C57BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.8217316
 "trp69z7376o89k2","MGI:2441730","Tbl1xr1","Early adult","C57BL","IMPC_ABR_012_001","30kHz-evoked ABR Threshold",0.7087356
 "trqjj1tz214t1hu","MGI:1922928","Ippk","Early adult","C57BL","IMPC_IPG_010_001","Fasted blood glucose concentration",0.3260832
-"trwyes26rv2883m","MGI:2137026","P2rx5","Early adult","C53BL","IMPC_HEM_004_001","Hematocrit",0.05726055
 "ts10oj309ip1rrz","MGI:3052471","Slc2a12","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.645378
 "ts915joha43w86g","MGI:1196466","Dsg2","Early adult","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.1565148
 "tsf1ii83tih97kp","MGI:1333782","Pld3","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.1677271
@@ -20098,7 +19916,6 @@
 "u4609611219ccu5","MGI:3652039","Rad21l","Late adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.8399698
 "u46pm3lcfrhuz44","MGI:3041259","Mettl25","Early adult","C57BL","IMPC_ACS_036_001","% Pre-pulse inhibition - PPI4",0.8252108
 "u46q0l7397xowf0","MGI:1347361","Mmp23","Early adult","C57BL","IMPC_CSD_017_001","Forelimbs - position",0.5807515
-"u48far3g6bjtkni","MGI:2387194","Qsox2","Early adult","C54BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.2885668
 "u48v36m8r6739b9","MGI:3646952","Spink14","Early adult","C57BL","IMPC_ECH_005_001","Fractional Shortening",0.3600824
 "u4968943tce2mc4","MGI:88071","Arnt","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.7171285
 "u4au27jkdxb0075","MGI:3652039","Rad21l","Middle aged adult","C57BL","IMPC_OFD_016_001","Center permanence time",0.8912466
@@ -20108,7 +19925,6 @@
 "u4pv28m84c85uj0","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.1993071
 "u4t9n78dkusng79","MGI:98957","Wnt4","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.6803694
 "u4um06071t2991c","MGI:1922928","Ippk","E12.5","C57BL","IMPC_HEM_003_001","Hemoglobin",0.4212984
-"u4y5lxft5iuwt23","MGI:2661120","Actr3b","Early adult","C58BL","IMPC_DXA_003_001","Lean mass",0.9493663
 "u4yd1ny0qq2o3f8","MGI:102716","Cryba4","Early adult","C57BL","JAX_URI_005_001","Glucose",0.9062609
 "u4yusf4b28h30a4","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_DXA_008_001","Lean/Body weight",0.1809083
 "u523a797y9kb1wn","MGI:1859211","Irf6","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.5331523
@@ -20189,7 +20005,6 @@
 "u86prhtj19y16au","MGI:1339711","Myh1","Early adult","C57BL","JAX_SLW_004_001","Sleep dark phase percent",1.44329e-14
 "u870c5n1w32n77x","MGI:2441730","Tbl1xr1","Early adult","C57BL","IMPC_EYE_023_001","Optic Disc",0.08430576
 "u873sob95m6xx99","MGI:1918588","Tprg1","Early adult","C57BL","IMPC_EYE_014_001","Pupil Light Response",0.316996
-"u879qes9ey3lhot","MGI:88071","Arnt","Early adult","C56BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.6136892
 "u87kecd5x29v987","MGI:1915759","Ptx4","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.7157154
 "u87m1l855612nhk","MGI:3041259","Mettl25","Early adult","C57BL","IMPC_GEM_063_001","Facial cleft",0.3515348
 "u88n01w7o5bi620","MGI:88289","Cbx2","E15.5","C57BL","IMPC_ABR_008_001","18kHz-evoked ABR Threshold",0.4579899
@@ -20269,7 +20084,6 @@
 "ug5b0184xr3j0rq","MGI:1921078","Dcaf4","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.4405651
 "ug77703kp53v46m","MGI:99602","Acan","E18.5","C57BL","M-G-P_025_001_022","Total bilirubin",0.3280429
 "uggnuo49092mz25","MGI:96217","Hprt1","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.1707028
-"uh1so57v0493t6m","MGI:1922928","Ippk","E12.5","C50BL","IMPC_ABR_008_001","18kHz-evoked ABR Threshold",0.2217873
 "uh209x84z3z08by","MGI:2387194","Qsox2","Late adult","C57BL","JAX_URI_004_001","Magnesium",0.1223444
 "uh68a49c1q3n2z3","MGI:1914015","4933411k16rik","Early adult","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.1411257
 "uh7lvq965oe37zp","MGI:2661120","Actr3b","Early adult","C57BL","ESLIM_016_001_002","Red blood cell count",0.3816017
@@ -20449,7 +20263,6 @@
 "v1hb63852t80081","MGI:3652039","Rad21l","Late adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.720276
 "v1mfb71a33v52n8","MGI:97808","Ptpra","Early adult","C57BL","IMPC_OFD_011_001","Periphery resting time",0.9278238
 "v1mn60359q100hn","MGI:1859026","Cnot4","Early adult","C57BL","IMPC_OFD_022_001","Percentage center time",0.8060699
-"v1nrj842p956zsn","MGI:88289","Cbx2","E15.5","C58BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.4942005
 "v1o39xtr92a7j67","MGI:1928486","Tdo2","E12.5","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.3074224
 "v1o5qr2usx1k0vo","MGI:2684313","Togaram1","E9.5","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.8820955
 "v1o7906paxs59dh","MGI:1915918","Klk5","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.3357219
@@ -20483,10 +20296,8 @@
 "v31kw3sltrg3509","MGI:88071","Arnt","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.4232509
 "v32372y550526g8","MGI:1928486","Tdo2","E15.5","C57BL","M-G-P_025_001_022","Total bilirubin",0.0884505
 "v32y5q3da1mqr5e","MGI:1930923","Slurp1","Early adult","C57BL","IMPC_IPG_012_001","Area under glucose response curve",7.531814e-05
-"v3356671o547vht","MGI:2441730","Tbl1xr1","Early adult","C59BL","IMPC_OWT_002_001","Spleen weight",0.9065133
 "v342310yo29po40","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_HEM_007_001","Mean cell hemoglobin concentration",0.1556397
 "v34998224hg9n03","MGI:1921275","Nphp3","Early adult","C57BL","IMPC_CSD_029_001","Activity (body position)",0.1585069
-"v34s79539o2de7t","MGI:2141255","Zfp513","Early adult","C54BL","JAX_SLW_004_001","Sleep dark phase percent",0.5742579
 "v3576n9218zl1pu","MGI:98241","Stmn2","E12.5","C57BL","IMPC_OWT_002_001","Spleen weight",0.7611077
 "v35td36qn259d79","MGI:1930923","Slurp1","Early adult","C57BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.6896623
 "v360okp7759hw69","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_ABR_004_001","6kHz-evoked ABR Threshold",0.1367497
@@ -20496,7 +20307,6 @@
 "v3907c187fn71e7","MGI:98839","Prss1","Early adult","C57BL","IMPC_ECH_009_001","LVPWd",0.6551927
 "v3ew51t37msds2d","MGI:1859211","Irf6","Early adult","C57BL","IMPC_HEM_006_001","Mean corpuscular hemoglobin",0.112629
 "v3f2t9k7zkkni72","MGI:2443796","Scart1","Early adult","C57BL","IMPC_OFD_015_001","Center resting time",0.6477986
-"v3k8y9u5ik6y138","MGI:96217","Hprt1","Early adult","C50BL","JAX_LDT_009_001","Percent time in light",0.1776278
 "v3ld6y5c5prg0wj","MGI:1921287","Acot6","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.3429169
 "v3mhxj3a91ec868","MGI:102716","Cryba4","Early adult","C57BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.6279692
 "v3o98heqku7qvu8","MGI:2684313","Togaram1","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.3311801
@@ -20517,7 +20327,6 @@
 "v426zq54ev464f3","MGI:2685031","Leo1","Early adult","C57BL","IMPC_DXA_006_001","Body length",0.2507517
 "v429j46t82gp2rg","MGI:2685945","Pstk","Early adult","C57BL","IMPC_HEM_003_001","Hemoglobin",0.493919
 "v44471wk8p75wlg","MGI:2145567","Fam149b","Early adult","C57BL","CCP_XRY_003_001","Maxilla/Pre-maxilla",0.4740734
-"v44uyds3416ycd8","MGI:3607787","Spata21","Early adult","C58BL","ESLIM_009_001_704","Forelimb and hindlimb grip strength normalised against body weight",0.5161137
 "v45y7bzr46zqkgo","MGI:104747","Pkia","Early adult","C57BL","IMPC_HEM_004_001","Hematocrit",0.5362238
 "v46201grx46zo2u","MGI:1928486","Tdo2","E12.5","C57BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.4210658
 "v4627oao49ar587","MGI:1916943","Pof1b","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.6385415
@@ -20707,7 +20516,6 @@
 "vh0twh9uf697r92","MGI:2147067","Dhx57","Early adult","C57BL","IMPC_CSD_032_001","Locomotor activity",0.6590039
 "vh9pd9091me3r95","MGI:1923549","Erp44","Early adult","C57BL","IMPC_CSD_036_001","Startle response",0.7390789
 "vhb0jocm3gk1x7g","MGI:2443796","Scart1","Early adult","C57BL","JAX_LDT_004_001","Dark side time spent",0.3266805
-"vhocgsu344k3907","MGI:1277171","Dcx","Early adult","C52BL","JAX_OFD_007_001","Whole arena resting time",0.5509112
 "vhs635rpwr52y60","MGI:99602","Acan","E18.5","C57BL","IMPC_CSD_033_001","Gait",0.8480589
 "vhz3k19f59r39h7","MGI:109349","Atf2","Early adult","C57BL","IMPC_GEP_005_002","Responsive to tactile stimuli",0.4064414
 "vi012n227dbcp44","MGI:2388280","Polr2b","Early adult","C57BL","IMPC_CBC_014_001","Alkaline phosphatase",0.6076319
@@ -20716,7 +20524,6 @@
 "vi2w159bc91r78u","MGI:2441730","Tbl1xr1","Late adult","C57BL","IMPC_HEM_002_001","Red blood cell count",0.648993
 "vi3030llu26czxg","MGI:95805","Grb2","Early adult","129SV","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.2119459
 "vi7nz030oun566f","MGI:98241","Stmn2","Early adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.5222854
-"vij476p25xxff7f","MGI:1922928","Ippk","Early adult","C52BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.9419516
 "vio15121nu42s90","MGI:103250","Calm2","Early adult","C57BL","IMPC_OFD_012_001","Periphery permanence time",0.8880612
 "vio442f1754b3o5","MGI:95805","Grb2","Early adult","C57BL","IMPC_ECH_007_001","LVAWd",0.8218484
 "vite54ax522y7rz","MGI:95777","Gnas","Early adult","129SV","IMPC_HEM_032_001","Lymphocyte cell count",0.8980828
@@ -20838,7 +20645,6 @@
 "vy422298lb75c53","MGI:1928486","Tdo2","Early adult","C57BL","IMPC_GEL_032_001","Embryo Size",0.5615445
 "vy4o910op62n929","MGI:109151","Ltbp1","Early adult","C57BL","IMPC_ECH_008_001","LVIDd",0.7402824
 "vye17t3w9ujn381","MGI:1915625","Ndufa8","Early adult","C57BL","M-G-P_025_001_012","Lactate dehydrogenase",0.3438688
-"vyq2z21af24b1v9","MGI:1309998","Marco","Early adult","C52BL","IMPC_ECH_008_001","LVIDd",0.5662431
 "vz862z7g83tlsmy","MGI:3652039","Rad21l","Early adult","C57BL","M-G-P_007_001_010","center - distance",0.6284534
 "vzc78083r824614","MGI:3037820","Kcna10","Early adult","C57BL","CCP_XRY_002_001","Zygomatic bone",0.7964762
 "vzf584529k0kxtl","MGI:1914852","Necap1","E18.5","C57BL","IMPC_ACS_006_001","Response amplitude - S",0.6005579
@@ -20944,7 +20750,6 @@
 "w4cz88309z7nz1b","MGI:88344","Cd7","Early adult","C57BL","IMPC_CBC_028_001","Creatine kinase",0.3597014
 "w4djwf01wvkjw31","MGI:3041259","Mettl25","Early adult","C57BL","ESLIM_009_001_702","Forelimb and hindlimb grip strength measurement mean",0.5918161
 "w4f7s8hh115488i","MGI:88289","Cbx2","E15.5","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.06462642
-"w4is8y522eh91qd","MGI:96438","Igfbp3","Early adult","C59BL","IMPC_CSD_039_001","Limb grasp",0.1163044
 "w4jivdxq879b61y","MGI:1921287","Acot6","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.1554076
 "w4mv0677tk8t0q3","MGI:99602","Acan","Early adult","C57BL","IMPC_GEO_019_001","Embryo Size",0.6738061
 "w4t1xs06ix9v8j0","MGI:1915918","Klk5","Early adult","C57BL","IMPC_CBC_008_001","Total bilirubin",0.633429
@@ -20952,7 +20757,6 @@
 "w4wu8w4qv1b95s6","MGI:95805","Grb2","Early adult","C57BL","IMPC_OFD_010_001","Periphery distance travelled",0.5750838
 "w4x765b05dbhv0q","MGI:97808","Ptpra","Early adult","C57BL","JAX_SLW_010_001","Dark sleep bout lengths standard deviation",0.3298771
 "w4z1y2pju011u9o","MGI:109349","Atf2","Early adult","C57BL","JAX_OFD_007_001","Whole arena resting time",0.6742913
-"w503h63t0duq11o","MGI:2147067","Dhx57","Early adult","C55BL","KMPCLA_HEM_007_001","Mean cell hemoglobin concentration",0.1262938
 "w5042wm250378t7","MGI:1915267","Mrm2","Early adult","C57BL","IMPC_GEM_077_001","Hemorrhage",0.9554379
 "w50cr9287dec8d0","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_DXA_002_001","Fat mass",0.3361083
 "w51a9ptk5l91892","MGI:1098746","Ankzf1","Early adult","C57BL","IMPC_CBC_015_001","Total cholesterol",0.8964431
@@ -21209,7 +21013,6 @@
 "wu4x5xd5w5ce79x","MGI:88289","Cbx2","E15.5","C57BL","IMPC_CBC_015_001","Total cholesterol",0.6859635
 "wu6g1p7vr185v5s","MGI:101901","Klra7","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.5208633
 "wu8b3xf0r4956oz","MGI:2388280","Polr2b","E9.5","C57BL","IMPC_DXA_007_001","BMC/Body weight",0.2677406
-"wuc2n0j1b7r6mkz","MGI:88452","Col2a1","Early adult","C53BL","ESLIM_016_001_008","Platelets count",0.4101642
 "wuduse07vh46hmp","MGI:1932970","Ucn3","Early adult","C57BL","IMPC_CBC_003_001","Chloride",0.1819366
 "wv7a19ww6024v9j","MGI:2151224","Alpk3","Early adult","C57BL","IMPC_DXA_008_001","Lean/Body weight",0.7548047
 "wvfg6c4i5sj4ekl","MGI:1928486","Tdo2","E12.5","C57BL","IMPC_CBC_028_001","Creatine kinase",0.6763219
@@ -21347,7 +21150,6 @@
 "x40i28s34xp4z87","MGI:1917022","Bdh2","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.4053674
 "x41si05b1q8an42","MGI:1921287","Acot6","Early adult","C57BL","IMPC_CSD_033_001","Gait",0.5306778
 "x430v80xqk3skm4","MGI:1914852","Necap1","Early adult","C57BL","IMPC_CBC_016_001","HDL-cholesterol",0.3305728
-"x45izk4842078uq","MGI:1919192","Myof","Early adult","C58BL","IMPC_EYE_025_001","Retinal Blood Vessels Structure",0.2084934
 "x46v20o0o5az5r2","MGI:98839","Prss1","Early adult","C57BL","IMPC_CBC_023_001","Alpha-amylase",0.831652
 "x46zkhr420wl126","MGI:99160","Zfp14","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.7313549
 "x479xsp2h3q82wo","MGI:2684313","Togaram1","E9.5","C57BL","IMPC_DXA_006_001","Body length",0.8639353
@@ -21365,8 +21167,6 @@
 "x5159nk9k3uyc5d","MGI:1890564","Rcan1","Early adult","C57BL","IMPC_GRS_010_001","Forelimb grip strength normalised against body weight",0.1963564
 "x51h6l123ljog06","MGI:1921720","Cep72","Early adult","C57BL","IMPC_ABR_010_001","24kHz-evoked ABR Threshold",0.6035716
 "x51n41qe49nfk41","MGI:101901","Klra7","Early adult","C57BL","IMPC_HEM_007_001","Mean cell hemoglobin concentration",0.510599
-"x5204o80yc0yf9b","MGI:1928486","Tdo2","E12.5","C51BL","RBRCLA_YMZ_005_001","Alternation ratio per number of triplets",0.296283
-"x53d3f6jd7xthuk","MGI:106351","Vcf1","Early adult","126SV","IMPC_GEM_068_001","Forebrain morphology",0.5097164
 "x54356s46t212x3","MGI:700006","Dbnl","Early adult","C57BL","JAX_URI_004_001","Magnesium",0.7210688
 "x550qh8v0t7g7uw","MGI:3527427","Taar3","Early adult","C57BL","IMPC_HEM_001_001","White blood cell count",0.07308062
 "x5534fqx177g880","MGI:1098746","Ankzf1","Early adult","C57BL","ESLIM_016_001_008","Platelets count",0.7891325
@@ -21557,7 +21357,6 @@
 "xm4c1p75whgrac4","MGI:1921674","Tmc5","Early adult","C57BL","RBRCLA_CBC_004_001","Urea (Blood Urea Nitrogen - BUN)",0.1661071
 "xm846420em522pr","MGI:2136748","Pcdhb13","Early adult","C57BL","IMPC_HEM_032_001","Lymphocyte cell count",0.07636475
 "xm8mlgy68f62y90","MGI:97808","Ptpra","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.06274769
-"xm9s3305429mv4e","MGI:109349","Atf2","Early adult","C51BL","MGP_IMM_121_001","Macrophages - % of CD45+",0.08207946
 "xmf4u59ek278659","MGI:1344403","Cfdp1","Early adult","C57BL","MGP_IMM_033_001","Total NK cells - % of CD45+",0.9647036
 "xmgj460npe282co","MGI:2681308","Tas2r139","Early adult","C57BL","IMPC_OFD_017_001","Center average speed",0.7787634
 "xmlprg1380lwcjp","MGI:1923549","Erp44","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.05052954
@@ -21574,7 +21373,6 @@
 "xo4m56hy06mgmv6","MGI:1928486","Tdo2","E15.5","C57BL","IMPC_HEM_004_001","Hematocrit",0.4303549
 "xo6v8t44398725l","MGI:97594","Prkacb","Early adult","C57BL","ESLIM_021_001_005","HDL-cholesterol",0.1451092
 "xo7udk52r5494y6","MGI:2137026","P2rx5","Early adult","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.4476803
-"xoaox5j522cs3m3","MGI:2684313","Togaram1","E9.5","C58BL","IMPC_CSD_008_001","Coat - color pattern - back",0.8336562
 "xoc57q46c847m8q","MGI:102716","Cryba4","Early adult","C57BL","JAX_OFD_021_001","Number of rears - total",0.3893952
 "xok7649uvze8blq","MGI:95864","Gstp2","Early adult","C57BL","IMPC_OWT_002_001","Spleen weight",0.7744768
 "xov9de0ddy70le2","MGI:88289","Cbx2","E15.5","C57BL","M-G-P_025_001_014","Alanine aminotransferase",0.4607371
@@ -21614,7 +21412,6 @@
 "xtl06u4h7d03lxr","MGI:3652039","Rad21l","Middle aged adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.1677237
 "xtm6xpt5vs6e5cv","MGI:1919588","Wdr89","Early adult","C57BL","M-G-P_006_001_026","Fusion of vertebrae",0.515544
 "xu09l989g11c60a","MGI:3037820","Kcna10","E12.5","C57BL","ESLIM_016_001_008","Platelets count",0.6378027
-"xu0vp59jx19df53","MGI:99602","Acan","E15.5","C50BL","JAX_URI_005_001","Glucose",0.2793307
 "xu38qg189c3jlfm","MGI:2385186","Clcc1","E9.5","C57BL","IMPC_OFD_022_001","Percentage center time",0.9245161
 "xu47e021pfxn6c3","MGI:1344403","Cfdp1","Early adult","C57BL","IMPC_XRY_033_001","Tibia length",0.3152178
 "xu50v33gjw632cp","MGI:1921078","Dcaf4","Early adult","C57BL","IMPC_HWT_008_001","Heart weight",0.157946
@@ -21674,7 +21471,6 @@
 "y06qoy7c88dtqg6","MGI:1918588","Tprg1","Early adult","C57BL","IMPC_ECH_011_001","LVIDs",0.8569286
 "y08810sbj519163","MGI:2685945","Pstk","Early adult","C57BL","MGP_IMM_104_001","Mature NK cells - % of lymphocytes",0.2249642
 "y0921g66kyj63n8","MGI:96273","Htr1a","Early adult","C57BL","IMPC_EYE_024_001","Retinal Blood Vessels",0.460014
-"y09m0z4x62w4621","MGI:1932970","Ucn3","Early adult","C59BL","IMPC_ACS_033_001","% Pre-pulse inhibition - PPI1",0.7496582
 "y0d08l09i5xl51c","MGI:1277171","Dcx","Early adult","C57BL","CCP_XRY_057_001","Kyphosis",0.6831196
 "y0e8p247mz3s935","MGI:1915267","Mrm2","E9.5","C57BL","JAX_SLW_002_001","Sleep daily percent",0.6324739
 "y0f293hy237zr08","MGI:1915625","Ndufa8","Early adult","C57BL","MGP_IMM_100_001","Resting NK cells - % of CD45+",0.9567193
@@ -21962,7 +21758,6 @@
 "yl3894507p3mah5","MGI:1921275","Nphp3","Early adult","C57BL","IMPC_OFD_050_001","Percentage center movement time",0.6117248
 "yl6ug256m0bn6n9","MGI:106351","Vcf1","Early adult","129SV","IMPC_DXA_010_001","Bone Area",0.1994874
 "ylj9an9a94y83t6","MGI:104747","Pkia","Early adult","C57BL","IMPC_GRS_009_001","Forelimb and hindlimb grip strength measurement mean",0.7600554
-"ym26po65t32slfa","MGI:2661120","Actr3b","Early adult","C54BL","IMPC_CBC_028_001","Creatine kinase",0.1693509
 "ym67f99qx203v23","MGI:2153608","Ube2j2","Late adult","C57BL","IMPC_HEM_007_001","Mean cell hemoglobin concentration",0.474451
 "ym7052x95kc3pb7","MGI:3646952","Spink14","Early adult","C57BL","ESLIM_016_001_008","Platelets count",0.8069085
 "ym8ja6n368z561p","MGI:2685031","Leo1","Early adult","C57BL","IMPC_GRS_008_001","Forelimb grip strength measurement mean",0.173826
@@ -22105,7 +21900,6 @@
 "z1pwqtfb747k25e","MGI:1922928","Ippk","Early adult","C57BL","ESLIM_011_001_003","PP2 startle magnitude",0.7850123
 "z1xu256426n4jt1","MGI:1353497","Slc25a10","Early adult","C57BL","IMPC_OFD_014_001","Center distance travelled",0.07334778
 "z1y1v694882l47e","MGI:1859211","Irf6","Early adult","C57BL","IMPC_DXA_005_001","Bone Mineral Content (excluding skull)",0.9518091
-"z1zmxy2442qhozu","MGI:97808","Ptpra","Early adult","C58BL","JAX_ECT_011_001","mA threshold inducing clonic seizure",0.2326464
 "z233g8cigs415lj","MGI:103250","Calm2","Early adult","C57BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.588812
 "z25a6op5457e246","MGI:1915918","Klk5","Early adult","C57BL","JAX_HBD_001_001","Total holepokes",0.511447
 "z26nkvfe4r3w7kz","MGI:1922928","Ippk","Early adult","C57BL","IMPC_CSD_019_001","Forelimbs - size",0.7616127
@@ -22337,7 +22131,6 @@
 "zifrwc85at89i2p","MGI:1919588","Wdr89","Early adult","C57BL","RBRCLA_HEM_005_001","Mean cell volume",0.4055524
 "zip2lpq278ov97v","MGI:3037820","Kcna10","E12.5","C57BL","IMPC_CBC_003_001","Chloride",0.7685631
 "ziw7o6d9y2k4r0n","MGI:88452","Col2a1","Early adult","C57BL","IMPC_CSD_080_001","Head bobbing",0.8662855
-"zj6l8hou90lvt43","MGI:1922928","Ippk","E12.5","C53BL","IMPC_ACS_035_001","% Pre-pulse inhibition - PPI3",0.4367923
 "zj86v02z0cncc1v","MGI:95777","Gnas","Early adult","129SV","MGP_IMM_033_001","Total NK cells - % of CD45+",0.8767049
 "zj88j0618r120r9","MGI:2443796","Scart1","Early adult","C57BL","IMPC_ECH_004_001","Ejection Fraction",0.4328919
 "zjb0uul53oj1hm6","MGI:1920431","Nfatc4","Early adult","C57BL","IMPC_EYE_026_001","Retinal Blood Vessels Pattern",0.1373428
@@ -22448,7 +22241,6 @@
 "zx773u4ii71ar03","MGI:2685945","Pstk","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.6475086
 "zx8x354fb89n6w9","MGI:98839","Prss1","Early adult","C57BL","IMPC_CSD_009_001","Coat - color pattern - head",0.353921
 "zxa338ecs7xn694","MGI:98839","Prss1","Early adult","C57BL","IMPC_EYE_027_001","Persistence of hyaloid vascular system",0.5857381
-"zxb66a9762i05s1","MGI:700006","Dbnl","Early adult","C56BL","IMPC_EYE_068_001","Left total retinal thickness",0.8345912
 "zxcv14xx3tvro91","MGI:2443796","Scart1","Early adult","C57BL","IMPC_GEM_027_001","Limb Bud Morphology",0.7246682
 "zxi732p77v82aq0","MGI:1859211","Irf6","Early adult","C57BL","ESLIM_011_001_005","PP4 startle magnitude",0.3276387
 "zxk0z555ev9862j","MGI:1277171","Dcx","Early adult","C57BL","KMPCLA_CBC_006_001","Total protein",0.8412965
