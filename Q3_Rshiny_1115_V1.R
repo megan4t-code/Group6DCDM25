@@ -39,44 +39,35 @@ ui <- fluidPage(
   titlePanel("Phenotype Profile Heatmap of Knockout Genes"),
   
   mainPanel(
-    plotlyOutput("heat", height = "1500px", width = "1500px")   # FIXED: use plotlyOutput and correct ID
+    plotlyOutput("heat", height = "2000px", width = "2500px")   # FIXED: use plotlyOutput and correct ID
   )
 )
 
 server <- function(input, output) {
   output$heat <- renderPlotly({
     
-    df <- IMPC_analysis
-    
     collapsed <- IMPC_analysis %>%
       group_by(gene_symbol, parameter_name) %>%
       summarise(pvalue = min(pvalue, na.rm = TRUE), .groups = "drop")
     
-    g <- ggplot(  collapsed , aes(
-      x = gene_symbol,
-      y = parameter_name,
-      fill = pvalue,
-      text = paste(
-        "Phenotype:", parameter_name,
-        "<br>Gene:", gene_symbol,
-        "<br>p-value:", round(pvalue, 10)
-      )
-    )) +
-      geom_tile() +
-      scale_fill_gradientn(colors = c("#4D004B",   
-                                      "purple","lavender", "skyblue", "lightblue"))+
-      theme_minimal() +
-      labs(
-        x = "Knockout Gene",
-        y = "Parameter",
-        fill = "p-value"
-      ) +
-      theme(
-        axis.text.x = element_text(angle = 90, hjust = 1)
-      )
+    mat <- collapsed %>%
+      tidyr::pivot_wider(
+        names_from = parameter_name,
+        values_from = pvalue
+      ) %>%
+      as.data.frame()
     
-    ggplotly(g, tooltip = "text")
+    rownames(mat) <- mat$gene_symbol
+    mat$gene_symbol <- NULL
+    
+    heatmaply::heatmaply(
+      mat,
+      scale = "none",
+      k_row = 3,
+      k_col = 3
+    )
   })
+  
 }
 
 shinyApp(ui = ui, server = server)
