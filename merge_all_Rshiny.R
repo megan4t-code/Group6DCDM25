@@ -1,15 +1,21 @@
+# install.packages('heatmaply')
+
+# "heatmaplyOutput" %in% ls("package:shinyHeatmaply")
+
 library(shiny)
 library(ggplot2)
 library(plotly)
 library(dplyr)
+library(reshape2)
+library(heatmaply)
+library(tidyr)
+library(viridis)
 
+# ------------------ Data ------------------
 clean_data <- read.csv("./clean_input_files/IMPC_analysis.csv", 
-                       header = TRUE,   # 第一列是欄位名稱
-                       sep = ",",       # CSV 的分隔符號
-                       stringsAsFactors = FALSE)  # 不自動轉成 factor
-  
+                       header = TRUE, sep = ",", stringsAsFactors = FALSE)
+
 cleaned_analysisid <- clean_data %>% group_by(
-    #gene_accession_id,
     gene_symbol,
     mouse_life_stage,
     mouse_strain,
@@ -19,31 +25,28 @@ cleaned_analysisid <- clean_data %>% group_by(
   slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%
   ungroup()
 
-cleaned_analysisid2<- cleaned_analysisid %>% group_by(
+cleaned_analysisid2 <- cleaned_analysisid %>% group_by(
   mgi_accession_id,
   gene_symbol,
   mouse_life_stage,
   mouse_strain,
-  #parameter_id,
   parameter_name
 ) %>% 
   slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%
   ungroup()
 
-names(clean_data)
-
+# ------------------ UI ------------------
 ui <- fluidPage(
   titlePanel("IMPC Mouse Phenotype & Gene Viewer"),
   
   tabsetPanel(
-    # UI for Panel 1: Gene search
+    # ---------------- Tab 1: Gene Search ----------------
     tabPanel("Gene Search",
              sidebarLayout(
                sidebarPanel(
                  textInput("gene_id", "Enter GeneID:", value = ""),
                  selectizeInput("gene_name", "Enter Gene Symbol:", 
-                                choices = unique(  
-                                  cleaned_analysisid2$gene_symbol)),
+                                choices = unique(cleaned_analysisid2$gene_symbol)),
                  actionButton("gene_search", "Search")
                ),
                mainPanel(
@@ -51,18 +54,18 @@ ui <- fluidPage(
                    condition = "input.gene_search > 0",
                    h4("Phenotypes associated with the Selected Gene")
                  ),
-                 plotlyOutput("volcanoPlot", height = "2000px")
+                 plotlyOutput("dotPlot_gene", height = "2000px")
                )
              )
     ),
-    # ----------------------------------
+    
+    # ---------------- Tab 2: Parameter Search ----------------
     tabPanel("Parameter Search",
              sidebarLayout(
                sidebarPanel(
                  textInput("param_id", "Enter ParameterID:", value = ""),
                  selectizeInput("param_name", "Enter Parameter Symbol:", 
-                                choices = unique(  
-                                  cleaned_analysisid2$parameter_name)),
+                                choices = unique(cleaned_analysisid2$parameter_name)),
                  actionButton("param_search", "Search")
                ),
                mainPanel(
@@ -70,29 +73,81 @@ ui <- fluidPage(
                    condition = "input.param_search > 0",
                    h4("Selected Gene associated with the Parameter")
                  ),
-                 plotlyOutput("dotPlot", height = "2000px")
+                 plotlyOutput("dotPlot_param", height = "2000px")
                )
              )
+    ),
+    
+    # ---------------- Tab 3: Heatmap ----------------
+    tabPanel("Phenotype Heatmap",
+             mainPanel(
+               plotlyOutput("heatmap", height = "1500px", width = "2000px")
+             )
     )
-)
+  )
 )
 
+# ------------------ Server ------------------
 server <- function(input, output, session) {
   
-  # ----------------- Tab 1: Parameter Search -----------------
+  # --------------- Gene Search ---------------
+  selected_gene <- eventReactive(input$gene_search, {
+    if (nzchar(input$gene_id) && nzchar(input$gene_name)) {
+      showNotification("Please enter only one input.", type = "error")
+      return(NULL)
+    }
+    if (nzchar(input$gene_id)) {
+      subset(cleaned_analysisid2, gene_accession_id == input$gene_id)
+    } else {
+      subset(cleaned_analysisid2, gene_symbol == input$gene_name)
+    }
+  })
+  
+  output$dotPlot_gene <- renderPlotly({
+    df <- selected_gene()
+    req(df)
+    df$text_info <- paste(
+      "Phenotype:", df$parameter_name,
+      "<br>Parameter ID:", df$parameter_id,
+      "<br>Life Stage:", df$mouse_life_stage,
+      "<br>Strain:", df$mouse_strain,
+      "<br>p-value:", df$pvalue
+    )
+    p <- ggplot(df, aes(
+      x = reorder(parameter_name, pvalue, FUN = min, decreasing = TRUE),
+      y = pvalue,
+      text = text_info
+    )) +
+      geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
+      scale_shape_manual(
+        values = c("C57BL" = 16, "129SV" = 17, "C3H" = 15, "B6J" = 8)
+      ) +
+      labs(color = "Mouse Life Stage", shape = "Mouse Strain") +
+      geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
+      coord_flip() +
+      labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
+      theme_minimal() +
+      theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+            axis.title.x = element_text(size =15, face = "bold"),
+            axis.title.y = element_text(size = 15, face = "bold"),
+            axis.text.x = element_text(angle = 90, hjust = -2))
+    
+    ggplotly(p, tooltip = "text")
+  })
+  
+  # --------------- Parameter Search ---------------
   filtered_param <- eventReactive(input$param_search, {
     if (nzchar(input$param_id) && nzchar(input$param_name)) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
-    
     cleaned_analysisid2 %>% filter(
       (input$param_id != "" & parameter_id == input$param_id) |
         (input$param_name != "" & parameter_name == input$param_name)
     )
   })
   
-  output$dotPlot <- renderPlotly({
+  output$dotPlot_param <- renderPlotly({
     df <- filtered_param()
     req(df)
     df$text_info <- paste(
@@ -106,20 +161,13 @@ server <- function(input, output, session) {
                         text = text_info)) +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "blue")+
       coord_flip() +
-      geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
-      theme_minimal() +
+      geom_point(aes(shape = mouse_strain, color = mouse_life_stage), size = 2) +
       scale_shape_manual(
-        values = c(
-          "C57BL" = 16,   # Circle
-          "129SV" = 17,     # ▲
-          "C3H" = 15,     # ■
-          "B6J"
-        ))+
-      labs(
-        color = "Mouse Life Stage",
-        shape = "Mouse Strain"
+        values = c("C57BL" = 16, "129SV" = 17, "C3H" = 15, "B6J" = 8)
       )+
+      labs(shape = "Mouse Strain", color = "Mouse Life Stage")+
       labs(x = "Gene", y = "p-value") +
+      theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
             axis.title.y = element_text(size = 15, face = "bold"),
@@ -128,93 +176,49 @@ server <- function(input, output, session) {
     ggplotly(p, tooltip = "text")
   })
   
-  # ----------------- Tab 2: Gene Search -----------------
-  # Server-side logic for Gene search: Search gene by ID or name and returns phenotypes associated to it (p-value)
-  
-  # Select the p-value of  by gene ID or gene name
-  # Shows error if both terms are entered
-  selected_gene <- eventReactive(input$gene_search, {
-    if (nzchar(input$gene_id) && nzchar(input$gene_name)) {
-      showNotification("Please enter only one input.", type = "error")
-      return(NULL)
-    }
-    if (nzchar(input$gene_id)) {
-      subset(cleaned_analysisid2, gene_accession_id == input$gene_id)
-    } else {
-      subset(cleaned_analysisid2, gene_symbol == input$gene_name)
-    }
-  })
-  
-  
-  output$DotPlot <- renderPlotly({
+  # --------------- Heatmap ---------------
+  output$heatmap <- renderPlotly({
+    collapsed <- cleaned_analysisid2 %>%
+      group_by(gene_symbol, parameter_name) %>%
+      summarise(pvalue = min(pvalue, na.rm = TRUE), .groups = "drop")
     
-    # Retrieves the filtered dataset for the chosen gene
-    # Ensure the plot only runs when valid data is avaliable
-    df <- selected_gene()
-    req(df)
+    mat <- collapsed %>%
+      tidyr::pivot_wider(names_from = parameter_name, values_from = pvalue) %>%
+      as.data.frame()
     
-    # Provide information to the hover text
-    df$text_info <- paste(
-      "Phenotype:", df$parameter_name,
-      "<br>Parameter ID:", df$parameter_id,
-      "<br>Life Stage:", df$mouse_life_stage,
-      "<br>Strain:", df$mouse_strain,
-      "<br>p-value:", df$pvalue
+    rownames(mat) <- mat$gene_symbol
+    mat$gene_symbol <- NULL
+    
+    mat_num <- as.matrix(mat)
+    
+    # Custom hover text
+    text <- matrix(
+      nrow = nrow(mat_num),
+      ncol = ncol(mat_num),
+      dimnames = list(rownames(mat_num), colnames(mat_num))
     )
     
-    # Crete a dot plot (ggplot)
-    # Puts phenotype in X-axis, reordered to allow the significant association occured first in the dot plot
-    # Puts p-values on the Y-axis, and attach the hover text to each points for interactive purpose
-    p <- ggplot(df, aes(
-      x = reorder(parameter_name, pvalue, FUN = min, decreasing = TRUE),
-      y = pvalue,
-      text = text_info
-    )) +
-      
-      # Coloring the dot points by life stage and re-shaping them by different mouse strain for visually distinguishing in the dot plot
-      geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
-      scale_shape_manual(
-        values = c(
-          "C57BL" = 16,   # Circle
-<<<<<<< HEAD
-          "129SV" = 17,     # triangle
-          "C3H" = 15,     # square
-          "B6J"
-        ))+
-      
-      # Create a horizontal dashed line at p=0.05 for easy visulize the significant gene-phenotype associations
-=======
-          "129SV" = 17,     # ▲
-          "C3H" = 15,     # ■
-          "B6J" = 8
-        ))+
-      labs(
-        color = "Mouse Life Stage",
-        shape = "Mouse Strain"
-      )+
->>>>>>> 4176ba3 (Change plot legend with lab)
-      geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
-      
-      # Swap the x and y axis, make the phenotype names easier to read 
-      coord_flip() +
-      
-      # Plot lables
-      labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
-      
-      # Setting theme
-      theme_minimal() +
-      theme(
-        plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
-        axis.title.x = element_text(size =15, face = "bold"),
-        axis.title.y = element_text(size = 15, face = "bold"),
-        axis.text.x = element_text(angle = 90, hjust = -2)
-        # axis.text.y = element_text(size = 5)
-      )
+    for (i in 1:nrow(mat_num)) {
+      for (j in 1:ncol(mat_num)) {
+        text[i, j] <- paste0(
+          "Knockout gene: ", rownames(mat_num)[i], "<br>",
+          "Phenotype: ", colnames(mat_num)[j], "<br>",
+          "p-value: ", mat_num[i, j]
+        )
+      }
+    }
     
-    # Convert ggplot into an interactive plot
-    ggplotly(p, tooltip = "text")
+    heatmaply(
+      mat_num,
+      scale = "none",
+      midpoint = 0,
+      custom_hovertext = text,
+      colors = viridis::magma(256),
+      plot_method = "plotly",
+      label_names = c("", "", "")
+    )
   })
 }
 
-# Launching the Shiny application
+# ------------------ Run App ------------------
 shinyApp(ui = ui, server = server)
