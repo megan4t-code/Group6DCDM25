@@ -1,3 +1,5 @@
+-- 10.
+
 INSERT INTO IMPC_procedure (procedure_name, description, is_mandatory)
 SELECT
     procedure_name,

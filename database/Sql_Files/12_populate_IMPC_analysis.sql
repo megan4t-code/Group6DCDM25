@@ -1,10 +1,10 @@
--- 10. Populate IMPC_analysis (normalized experimental data)
+-- 12. Populate IMPC_analysis (normalized experimental data)
 --     Need to map (parameter_id, parameter_name) from IMPC_analysis_raw
 --     to impc_parameter_orig_id in IMPC_parameter.
 --
 --     IMPC_parameter can have duplicate (parameter_code, parameter_name)
---     → multiple impc_parameter_orig_id.
---     We pick MIN(impc_parameter_orig_id) per combo as the "first match".
+--     - multiple unique impc_parameter_orig_id.
+--     - we pick MIN(impc_parameter_orig_id) per combination as the "first match".
 -- =========================================================
 
 INSERT INTO IMPC_analysis (

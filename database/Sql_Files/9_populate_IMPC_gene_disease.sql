@@ -1,4 +1,4 @@
--- 7. Populate IMPC_gene_disease (gene ↔ disease link)
+-- 9. Populate IMPC_gene_disease (gene-disease link)
 -- =========================================================
 
 INSERT INTO IMPC_gene_disease (mgi_accession_id, disease_id)

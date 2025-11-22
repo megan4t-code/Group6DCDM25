@@ -1,5 +1,5 @@
 -- =========================================================
--- 6. Populate IMPC_disease (distinct diseases)
+-- 8. Populate IMPC_disease (distinct diseases)
 --    IMPC_disease(disease_id, disease_name, omim_ids)
 -- =========================================================
 

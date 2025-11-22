@@ -1,7 +1,7 @@
 USE impc_db;
 
 -- =========================================================
--- 0.  Drop staging table if it exists
+-- 2.  Drop staging table if it exists
 -- =========================================================
 DROP TABLE IF EXISTS IMPC_analysis_raw;
 

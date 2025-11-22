@@ -1,7 +1,6 @@
--- 5. Populate IMPC_gene (canonical gene symbol per MGI ID)
+-- 7. Populate IMPC_gene from IMPC_disease_raw
 -- =========================================================
 
--- IMPC_gene: one row per gene, choose a canonical symbol
 INSERT INTO IMPC_gene (mgi_accession_id, gene_symbol)
 SELECT 
     d.mgi_accession_id,
