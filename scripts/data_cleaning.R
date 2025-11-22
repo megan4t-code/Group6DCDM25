@@ -1,0 +1,341 @@
+params <-
+list(data_dir = "../output/merged_data/", metadata_dir = "../metadata/", 
+    output_dir = "../output/")
+
+source("validators.R")
+library(stringr)
+library(dplyr)
+
+
+#Read SOP file to a data frame
+metadata_path <- params$metadata_dir
+impc_sop <- read.csv(paste0(metadata_path, "IMPC_SOP.csv"))
+impc_sop$dataField <- tolower(impc_sop$dataField)
+impc_sop$dataType <- tolower(impc_sop$dataType)
+
+
+#Read data file to a data frame
+data_path <- params$data_dir
+merged_data <- read.csv(
+  paste0(data_path, "merged_data.csv"),
+  stringsAsFactors = FALSE
+)
+merged_data <- merged_data %>%
+  mutate(across(where(is.character), trimws))
+
+
+##Required specs
+mouse_strain_valid_values <- c("C57BL", "B6J", "C3H", "129SV")
+mouse_life_stage_valid_values <- c("E12.5", "E15.5", "E18.5", "E9.5", "Early adult", "Late adult", "Middle aged adult")
+
+
+##Set variables for dataFields in sop (to make the change global through this instance)
+analysis_id <- "analysis_id"
+gene_accession_id <- "gene_accession_id"
+gene_symbol <- "gene_symbol"
+mouse_strain <- "mouse_strain"
+mouse_life_stage <- "mouse_life_stage"
+parameter_id <- "parameter_id"
+parameter_name <- "parameter_name"
+pvalue <- "pvalue"
+
+
+##Function to fetch rules for dataField in sop
+get_rules <- function(rules_df, field){
+  rules_df[rules_df$dataField == field, , drop = FALSE]
+}
+
+
+##Store rules for dataFields
+analysis_id_rules <- get_rules(impc_sop, analysis_id)
+gene_accession_id_rules <- get_rules(impc_sop, gene_accession_id)
+gene_symbol_rules <- get_rules(impc_sop, gene_symbol)
+mouse_strain_rules <- get_rules(impc_sop, mouse_strain)
+mouse_life_stage_rules <- get_rules(impc_sop, mouse_life_stage)
+parameter_id_rules <- get_rules(impc_sop, parameter_id)
+parameter_name_rules <- get_rules(impc_sop, parameter_name)
+pvalue_rules <- get_rules(impc_sop, pvalue)
+
+
+##Check rule value exists
+rule_exists <- function(rule_value){
+  !is.na(rule_value) & nzchar(trimws(rule_value))
+}
+
+
+##Collect issues
+update_issue_log <- function(issue_log, new_issues) {
+
+  # If nothing new, return as-is
+  if (is.null(new_issues) || nrow(new_issues) == 0) {
+    return(issue_log)
+  }
+
+  # If issue_log doesn't exist yet, start with new_issues
+  if (is.null(issue_log) || nrow(issue_log) == 0) {
+    return(new_issues)
+  }
+
+  # Otherwise append new rows
+  return(rbind(issue_log, new_issues))
+}
+
+
+##Core Validations (data type and string length check)
+validate_datatype_helper <- function(data_cur, data_field, colrules){
+  issues = NULL
+  if(rule_exists(colrules$dataType)){
+    res <- validate_datatype(data_cur, data_field, colrules$dataType)
+    data_cur <- res$data
+    issues <- res$issues
+  }
+  list(
+    data = data_cur,
+    issues = issues
+  )
+}
+
+
+validate_string_length_helper <- function(data_cur, data_field, colrules) {
+  issues = NULL
+  if(rule_exists(colrules$minValue) && rule_exists(colrules$maxValue)){
+    res <- validate_string_length(data_cur, data_field, colrules$minValue, colrules$maxValue)
+    data_cur <- res$data
+    issues <- res$issues
+  }
+    list(
+    data = data_cur,
+    issues = issues
+  )
+}
+
+
+##Custom validations for columns
+clean_analysis_id <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+  #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length
+  res <- validate_string_length_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_alphanumeric
+  res <- validate_alphanumeric(data_cur, data_field)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #remove_duplicates
+  res <- remove_duplicates(data_cur, data_field)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+  }
+
+
+##Clean gene_accession_id
+clean_gene_accession_id <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+   #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length
+  res <- validate_string_length_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #Set all values to uppercase
+  data_cur[[data_field]] <- toupper(data_cur[[data_field]])
+  
+  #Validate that all values begin with 'MGI:' and colon is followed by numbers only
+  res <- validate_pattern(data_cur, data_field, "^MGI:[0-9]+$", ignore_case = TRUE)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+   list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+##Clean gene symbol
+clean_gene_symbol <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+   #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length
+  res <- validate_string_length_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #change to title case
+  data_cur[[data_field]] <- str_to_title(data_cur[[data_field]])
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+  
+
+
+##Clean mouse life stage
+clean_mouse_life_stage <- function(dataset, data_field, colrules, valid_values, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+   #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length is not required as values should be from within a given list
+  #validate if values are within the allowed list (case is handled in validate_enum())
+  res <- validate_enum(data_cur, data_field, valid_values)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+
+##Clean mouse strain
+clean_mouse_strain <- function(dataset, data_field, colrules, valid_values, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+   #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length is not required as values should be from within a given list
+  #validate if values are within the allowed list (case is handled in validate_enum())
+  res <- validate_enum(data_cur, data_field, valid_values)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+
+##Clean parameter id
+clean_parameter_id <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+  #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length
+  res <- validate_string_length_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #change to upper case
+  data_cur[[data_field]] <- toupper(data_cur[[data_field]])
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+
+##Clean parameter name
+clean_parameter_name <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+  #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length
+  res <- validate_string_length_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+##Clean pvalue
+clean_pvalue <- function(dataset, data_field, colrules, issue_log = NULL){
+  data_cur <- dataset
+  if (is.null(issue_log)) issue_log <- data.frame()
+  
+  #validate_datatype
+  res <- validate_datatype_helper(data_cur, data_field, colrules)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  #validate_string_length is not required as data type is changed to numeric and values are rounded off
+  #validate_range
+  res <- validate_range(data_cur, data_field, colrules$minValue, colrules$maxValue)
+  data_cur <- res$data
+  issue_log <- update_issue_log(issue_log, res$issues)
+  
+  list(
+    dataset = data_cur,
+    issue_log = issue_log
+  ) 
+}
+
+
+##Data cleaning pipeline
+data_cleaning_pipeline <- function(dataset){
+  result <- clean_analysis_id(dataset, analysis_id, analysis_id_rules)
+  result <- clean_gene_accession_id(result$dataset, gene_accession_id, gene_accession_id_rules, result$issue_log)
+  result <- clean_gene_symbol(result$dataset, gene_symbol, gene_symbol_rules, result$issue_log)
+  result <- clean_mouse_life_stage(result$dataset, mouse_life_stage, mouse_life_stage_rules, mouse_life_stage_valid_values, result$issue_log)
+  result <- clean_mouse_strain(result$dataset, mouse_strain, mouse_strain_rules, mouse_strain_valid_values, result$issue_log)
+  result <- clean_parameter_id(result$dataset, parameter_id, parameter_id_rules, result$issue_log)
+  result <- clean_parameter_name(result$dataset, parameter_name, parameter_name_rules, result$issue_log)
+  result <- clean_pvalue(result$dataset, pvalue, pvalue_rules, result$issue_log)
+  result
+}
+
+
+##Execute pipeline
+res <- data_cleaning_pipeline(merged_data)
+clean_df <- res$dataset %>% filter(
+    !is.na(analysis_id),
+    !is.na(gene_accession_id),
+    !is.na(mouse_life_stage),
+    !is.na(mouse_strain),
+    !is.na(parameter_id),
+    !is.na(pvalue)
+  )
+write.csv(clean_df, "../output/validated_analysis_data.csv", row.names = FALSE)
+write.csv(res$issue_log,  "../logs/issue_log.csv")
+

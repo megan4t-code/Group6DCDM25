@@ -1,0 +1,134 @@
+---
+title: "Reading cleaned data and metadata files, formatting, and writing to CSVs with updated column names consistent with DB design"
+params:
+  data_dir: "../output/merged_data/" 
+  metadata_dir: "../metadata/" 
+  output_dir: "../output/"
+---
+```{r}
+source("validators.R")
+library(stringr)
+library(dplyr)
+library(tidyr)
+```
+
+##Read Metadata
+```{r}
+output_path <- params$output_dir
+metadata_path <- params$metadata_dir
+
+IMPC_parameters_orig <- read.csv(
+  paste0(metadata_path, "IMPC_parameter_description.txt"),
+  col.names = c("impc_parameter_orig_id", "parameter_name", "description", "parameter_code"),
+  stringsAsFactors = FALSE
+) %>% mutate(across(where(is.character), trimws)) %>%   # remove leading/trailing white spaces
+  mutate(across(where(is.character), ~ na_if(., ""))) %>% # set blanks to NA so DB can treat NAs as null
+  mutate(across(where(is.character), ~ na_if(., "NA")))   # setting all "NA" strings to true NAs
+
+IMPC_procedures_orig <- read.csv(
+  paste0(metadata_path, "IMPC_procedure.txt"),
+  col.names = c("procedure_name", "description", "is_mandatory", "impc_parameter_orig_id"),
+  stringsAsFactors = FALSE
+) %>% mutate(across(where(is.character), trimws)) %>%
+  mutate(across(where(is.character), ~ na_if(., ""))) %>%
+  mutate(across(where(is.character), ~ na_if(., "NA")))
+
+IMPC_disease_orig <- read.csv(
+  paste0(metadata_path, "Disease_information.txt"),
+  sep = "\t",
+  col.names = c("disease_id", "disease_name", "omim_id", "mgi_accession_id"),
+  stringsAsFactors = FALSE
+) %>% mutate(across(where(is.character), trimws)) %>%
+  mutate(across(where(is.character), ~ na_if(., ""))) %>%
+  mutate(across(where(is.character), ~ na_if(., "NA")))
+
+#Reading clean data
+IMPC_analysis_orig <- read.csv(
+  paste0(output_path, "validated_analysis_data.csv"), 
+  col.names = c("analysis_id", "mgi_accession_id", "gene_symbol", "mouse_life_stage", "mouse_strain", "parameter_id",	"parameter_name", "pvalue"),
+  stringsAsFactors = FALSE
+) %>% mutate(across(where(is.character), trimws)) %>%
+  mutate(across(where(is.character), ~ na_if(., ""))) %>%
+  mutate(across(where(is.character), ~ na_if(., "NA")))
+```
+
+#Writing formatted data frames with primary key duplicates removed to CSVs
+```{r}
+#parameters
+result <- remove_duplicates(IMPC_parameters_orig, "impc_parameter_orig_id")
+IMPC_parameters_with_unique_orig_id <- result$data
+write.csv(IMPC_parameters_with_unique_orig_id, "../output/IMPC_parameters.csv", row.names = FALSE, na = "\\N")
+
+#procedure
+write.csv(IMPC_procedures_orig, "../output/IMPC_procedure.csv", row.names = FALSE, na = "\\N")
+
+#disease
+result <- remove_duplicates(IMPC_disease_orig, "disease_id")
+IMPC_unique_disease <- result$data
+write.csv(IMPC_unique_disease, "../output/IMPC_disease.csv", row.names = FALSE, na = "\\N")
+
+#analysis
+write.csv(IMPC_analysis_orig, "../output/IMPC_analysis.csv", row.names = FALSE, na = "\\N")
+```
+
+#Split joined omim ids to separate rows and create normalized disease omim relation and write the data to CSV to load in DB
+```{r}
+IMPC_human_gene_disease <- IMPC_unique_disease %>%
+  select(disease_id, omim_id) %>%
+  filter(!is.na(omim_id) & omim_id != "") %>%
+  # Split omim id values like these:"OMIM:247640|OMIM:613065" into rows
+  separate_rows(omim_id, sep = "\\|") %>%
+  mutate(
+    omim_ids = trimws(omim_id)
+  ) %>%
+  select(disease_id, omim_ids) %>%
+  distinct()
+
+write.csv(IMPC_human_gene_disease, "../output/IMPC_human_gene_disease.csv", row.names = FALSE, na = "\\N")
+```
+
+
+
+<!-- ##Create data frames for DB tables (Below code generates files in DB table structure format)-->)
+<!-- ```{r} -->
+<!-- #IMPC_procedures  -->
+
+<!-- IMPC_procedures <- IMPC_procedures_orig[,c("procedure_name",	"description",	"is_mandatory")] -->
+<!-- result <- remove_duplicates(IMPC_procedures, "procedure_name") -->
+<!-- IMPC_unique_procedures <- result$data -->
+<!-- IMPC_procedure_with_id <- cbind(procedure_id = paste0("Proc_", 1:nrow(IMPC_unique_procedures)), IMPC_unique_procedures) -->
+<!-- write.csv(IMPC_procedure_with_id, "../output/IMPC_procedure.csv", row.names = FALSE, na = "\\N") -->
+
+<!-- match_index <- match(IMPC_procedures_orig[,"procedure_name"], IMPC_procedure_with_id[,"procedure_name"]) -->
+<!-- IMPC_procedure_parameter <- cbind(procedure_id = IMPC_procedure_with_id[match_index,"procedure_id"], impc_parameter_orig_id = IMPC_procedures_orig[,"impc_parameter_orig_id"]) -->
+<!-- write.csv(IMPC_procedure_parameter, "../output/IMPC_procedure_parameter.csv", row.names = FALSE, na = "\\N") -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- #IMPC_disease -->
+
+<!-- IMPC_disease <- IMPC_disease_orig[,c("disease_id", "disease_name", "omim_id")] -->
+<!-- result <- remove_duplicates(IMPC_disease, "disease_id") -->
+<!-- IMPC_unique_disease <- result$data -->
+<!-- write.csv(IMPC_unique_disease, "../output/IMPC_disease.csv", row.names = FALSE, na = "\\N") -->
+
+<!-- IMPC_gene_disease <- IMPC_disease_orig[,c("disease_id",	"mgi_accession_id")] -->
+<!-- write.csv(IMPC_gene_disease, "../output/IMPC_gene_disease.csv", row.names = FALSE, na = "\\N") -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- #IMPC_parameters -->
+<!-- result <- remove_duplicates(IMPC_parameters_orig, "impc_parameter_orig_id") -->
+<!-- IMPC_parameters_with_unique_orig_id <- result$data -->
+<!-- write.csv(IMPC_parameters_with_unique_orig_id, "../output/IMPC_parameters.csv", row.names = FALSE, na = "\\N") -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- #IMPC_analysis -->
+<!-- IMPC_analysis <- IMPC_analysis_orig[,c("analysis_id", "mgi_accession_id", "gene_symbol", "mouse_life_stage", "mouse_strain", "pvalue")] -->
+<!-- match_index <- match(IMPC_analysis_orig[,"parameter_id"], IMPC_parameters_orig[,"parameter_code"]) -->
+<!-- IMPC_analysis_with_impc_orig_id <- cbind(IMPC_analysis, impc_parameter_orig_id = IMPC_parameters_orig[match_index, "impc_parameter_orig_id"]) -->
+<!-- write.csv(IMPC_analysis_with_impc_orig_id, "../output/IMPC_analysis.csv", row.names = FALSE, na = "\\N") -->
+
+<!-- ``` -->
+

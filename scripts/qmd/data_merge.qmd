@@ -1,0 +1,56 @@
+---
+title: "data_merge"
+---
+
+#install.packages("data.table")
+```{r}
+library(data.table)
+library(dplyr)
+```
+
+#Creating file list
+```{r}
+files <- list.files("../data", pattern = "(?i)\\.csv$", full.names=TRUE, ignore.case = FALSE)
+```
+#Read one file, set values to string types to prevent fread from manipulating types
+#Retreive and set record_id from filenames; handle duplicate column entries 
+#Reshape data from long to wide format
+```{r}
+read_file <- function(path){
+  cols <- c("Attribute", "Value")
+  record <- fread(
+    path,
+    header = FALSE,
+    select = 1:2,
+    col.names = cols,
+    colClasses = c("character", "character")
+  )
+#reshape long format to wide, order cols with record_id on left, and fill cells with values  
+  wide <- dcast(record, . ~ Attribute, value.var = "Value")
+  wide[, "." := NULL]
+#To handle colname case and force all to lowercase
+  setnames(wide, tolower(names(wide)))
+  wide
+}
+```
+
+#Read all files and store all one-row data tables(dt), combine them and merge
+```{r}
+dt_list <- lapply(files, read_file)
+#fill with NA if Attributes/cols are missing in some files to ensure all rows align
+#rbindlist uses the first datatable's colnames as base structure and 
+#matches all other datatable's cols by name
+#use.names matches cols by name and not by position (prevents mixing up if cols are missing or reordered)
+combined <- rbindlist(dt_list, fill = TRUE, use.names = TRUE)
+#res_dir <- params$output_dir
+#Below code is to generate and write CSV with timestamp
+#timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
+#merged_data_path <- file.path(res_dir, "merged_data", paste0("merged_data_", timestamp, ".csv"))
+#merged_data_path <- file.path(res_dir, "merged_data.csv")
+merged_data_path <- "../output/merged_data/merged_data.csv"
+
+fwrite(combined, merged_data_path)
+```
+
+
+
