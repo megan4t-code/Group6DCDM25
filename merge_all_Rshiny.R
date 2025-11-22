@@ -3,7 +3,7 @@ library(ggplot2)
 library(plotly)
 library(dplyr)
 
-clean_data <- read.csv("~/Desktop/Data_cleaning_and_management/DCDM_25_26/DCDM_group_coursework/clean_input_files/IMPC_analysis.csv", 
+clean_data <- read.csv("./clean_input_files/IMPC_analysis.csv", 
                        header = TRUE,   # 第一列是欄位名稱
                        sep = ",",       # CSV 的分隔符號
                        stringsAsFactors = FALSE)  # 不自動轉成 factor
@@ -115,6 +115,10 @@ server <- function(input, output, session) {
           "C3H" = 15,     # ■
           "B6J"
         ))+
+      labs(
+        color = "Mouse Life Stage",
+        shape = "Mouse Strain"
+      )+
       labs(x = "Gene", y = "p-value") +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
@@ -151,7 +155,7 @@ server <- function(input, output, session) {
     
     # Provide information to the hover text
     df$text_info <- paste(
-      "Phenotype:", df$parametername,
+      "Phenotype:", df$parameter_name,
       "<br>Parameter ID:", df$parameter_id,
       "<br>Life Stage:", df$mouse_life_stage,
       "<br>Strain:", df$mouse_strain,
@@ -172,12 +176,23 @@ server <- function(input, output, session) {
       scale_shape_manual(
         values = c(
           "C57BL" = 16,   # Circle
+<<<<<<< HEAD
           "129SV" = 17,     # triangle
           "C3H" = 15,     # square
           "B6J"
         ))+
       
       # Create a horizontal dashed line at p=0.05 for easy visulize the significant gene-phenotype associations
+=======
+          "129SV" = 17,     # ▲
+          "C3H" = 15,     # ■
+          "B6J" = 8
+        ))+
+      labs(
+        color = "Mouse Life Stage",
+        shape = "Mouse Strain"
+      )+
+>>>>>>> 4176ba3 (Change plot legend with lab)
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
       
       # Swap the x and y axis, make the phenotype names easier to read 
