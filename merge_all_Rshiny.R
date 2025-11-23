@@ -104,7 +104,7 @@ server <- function(input, output, session) {
       return(NULL)
     }
     if (nzchar(input$gene_id)) {
-      subset(cleaned_analysisid2, gene_accession_id == input$gene_id)
+      subset(cleaned_analysisid2, mgi_accession_id == input$gene_id)
     } else {
       subset(cleaned_analysisid2, gene_symbol == input$gene_name)
     }
