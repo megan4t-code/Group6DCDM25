@@ -39,7 +39,7 @@ ui <- fluidPage(
   titlePanel("Phenotype Profile Heatmap of Knockout Genes"),
   
   mainPanel(
-    plotlyOutput("heat", height = "2000px", width = "2500px")   # FIXED: use plotlyOutput and correct ID
+    plotlyOutput("heat", height = "1500px", width = "1700px")   # FIXED: use plotlyOutput and correct ID
   )
 )
 
@@ -50,24 +50,43 @@ server <- function(input, output) {
       group_by(gene_symbol, parameter_name) %>%
       summarise(pvalue = min(pvalue, na.rm = TRUE), .groups = "drop")
     
-    mat <- collapsed %>%
+    # Convert to wide matrix
+    mat_wide <- collapsed %>%
       tidyr::pivot_wider(
+        id_cols = gene_symbol, 
         names_from = parameter_name,
         values_from = pvalue
-      ) %>%
+      ) %>% 
       as.data.frame()
     
-    rownames(mat) <- mat$gene_symbol
-    mat$gene_symbol <- NULL
+    row_names <- mat_wide$gene_symbol
+    mat_wide$gene_symbol <- NULL
+    mat_matrix <- as.matrix(mat_wide)
     
-    heatmaply::heatmaply(
-      mat,
-      scale = "none",
-      k_row = 3,
-      k_col = 3
-    )
+    # Hierarchical clustering
+    row_clust <- hclust(dist(mat_matrix))
+    col_clust <- hclust(dist(t(mat_matrix)))
+    mat_reordered <- mat_matrix[row_clust$order, col_clust$order]
+    
+    # Extract reordered names
+    row_names_reordered <- row_names[row_clust$order]
+    col_names_reordered <- colnames(mat_matrix)[col_clust$order]
+    
+    # Plot clustered heatmap with custom hover
+    heatmap <- plot_ly(
+      x = col_names_reordered,
+      y = row_names_reordered,
+      z = mat_reordered,
+      type = "heatmap",
+      colors = "PuBu",
+      hovertemplate = paste(
+        "Knockout gene: %{y}<br>",
+        "Parameter: %{x}<br>",
+        "p-value: %{z}<extra></extra>") )
+    
+      heatmap <- layout(
+        heatmap,
+        xaxis = list(tickangle = -45))
   })
-  
 }
-
 shinyApp(ui = ui, server = server)
