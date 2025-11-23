@@ -1,6 +1,13 @@
-# install.packages('heatmaply')
+# IMPC Genotype–Phenotype Viewer (Group 6)
+# R version: 4.5.1
 
-# "heatmaplyOutput" %in% ls("package:shinyHeatmaply")
+# This is a R shiny script for interactive visualisations
+# (1) Section "Gene Search" – allows users to select a knockout gene and view p-value profiles across all tested phenotypes, highlighting significant effects
+# (2) Section "Parameter Search" – allows users to select a phenotype and view p-value profiles across all tested knockout genes, highlighting significant effects 
+# (3) Section "Phenotype Heatmap" – generates a clustered heatmap showing groups of genes with similar phenotype patterns
+# Code is generated into labelled blocks: Data, UI, Server, and App Run, comments in this script described the purpose and logic of each section.
+# R version 4.5.2 (2025-10-31)
+# Last updated: __ (final version for submission)
 
 library(shiny)
 library(ggplot2)
@@ -52,8 +59,7 @@ ui <- fluidPage(
                mainPanel(
                  conditionalPanel(
                    condition = "input.gene_search > 0",
-                   h4("Phenotypes associated with the Selected Gene")
-                 ),
+                   h4("Phenotypes associated with the Selected Gene")),
                  plotlyOutput("dotPlot_gene", height = "2000px")
                )
              )
@@ -73,17 +79,18 @@ ui <- fluidPage(
                    condition = "input.param_search > 0",
                    h4("Selected Gene associated with the Parameter")
                  ),
-                 plotlyOutput("dotPlot_param", height = "2000px")
+                 
+               plotlyOutput("dotPlot_param", height = "2000px")
                )
-             )
-    ),
+             ) 
+             ),
     
     # ---------------- Tab 3: Heatmap ----------------
     tabPanel("Phenotype Heatmap",
              mainPanel(
                plotlyOutput("heatmap", height = "1500px", width = "2000px")
              )
-    )
+             ) 
   )
 )
 
@@ -132,7 +139,10 @@ server <- function(input, output, session) {
             axis.title.y = element_text(size = 15, face = "bold"),
             axis.text.x = element_text(angle = 90, hjust = -2))
     
-    ggplotly(p, tooltip = "text")
+    ggplotly(p, tooltip = "text")%>%
+      layout(
+        legend = list(
+          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ) )
   })
   
   # --------------- Parameter Search ---------------
@@ -173,7 +183,11 @@ server <- function(input, output, session) {
             axis.title.y = element_text(size = 15, face = "bold"),
             axis.text.x = element_text(angle = 90, hjust = -2))
     
-    ggplotly(p, tooltip = "text")
+    ggplotly(p, tooltip = "text")%>%
+      layout(
+        legend = list(
+          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ) )
+    
   })
   
   # --------------- Heatmap ---------------
