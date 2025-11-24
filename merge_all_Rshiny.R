@@ -1,10 +1,10 @@
-# IMPC Genotype–Phenotype Viewer (Group 6)
+# IMPC Knockout Gene–Phenotype Association Viewer (Group 6)
 # R version: 4.5.1
 
 # This is a R shiny script for interactive visualisations
 # (1) Section "Gene Search" – allows users to select a knockout gene and view p-value profiles across all tested phenotypes, highlighting significant effects
 # (2) Section "Parameter Search" – allows users to select a phenotype and view p-value profiles across all tested knockout genes, highlighting significant effects 
-# (3) Section "Phenotype Heatmap" – generates a clustered heatmap showing groups of genes with similar phenotype patterns
+# (3) Section "Gene–Phenotype Clustering" – generates a clustered heatmap showing groups of genes with similar phenotype patterns
 # Code is generated into labelled blocks: Data, UI, Server, and App Run, comments in this script described the purpose and logic of each section.
 # R version 4.5.2 (2025-10-31)
 # Last updated: __ (final version for submission)
@@ -56,6 +56,7 @@ ui <- fluidPage(
                  selectizeInput("gene_name", "Enter Gene Symbol:", 
                                 choices = unique(cleaned_analysisid2$gene_symbol)),
                  helpText("e.g. Ube2j2"),
+                 helpText("Please use only ONE search box at a time"),
                  actionButton("gene_search", "Search"),
                  br(), br(), # insert a space
                  selectInput("limit_gene", "Number of Phenotypes to Display:",
@@ -80,6 +81,7 @@ ui <- fluidPage(
                  selectizeInput("param_name", "Enter Parameter Symbol:", 
                                 choices = unique(cleaned_analysisid2$parameter_name)),
                  helpText ("e.g. Glucose"),
+                 helpText("Please use only ONE search box at a time"),
                  actionButton("param_search", "Search"),
                  br(), br(), # insert a space
                  selectInput("limit_param", "Number of Genes to Display:",
@@ -97,7 +99,7 @@ ui <- fluidPage(
              ),
     
     # ---------------- Tab 3: Heatmap ----------------
-    tabPanel("Gene–Phenotype Clustering",
+    tabPanel("Gene–Phenotype Cluster",
              mainPanel(
                plotlyOutput("heatmap", height = "1500px", width = "2000px")
              )
@@ -284,7 +286,7 @@ server <- function(input, output, session) {
       scale = "none",
       midpoint = 0,
       custom_hovertext = text,
-      colors = viridis::magma(256),
+      colors = magma(256),
       plot_method = "plotly",
       label_names = c("", "", "")
     )
