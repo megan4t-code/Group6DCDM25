@@ -54,7 +54,11 @@ ui <- fluidPage(
                  textInput("gene_id", "Enter GeneID:", value = ""),
                  selectizeInput("gene_name", "Enter Gene Symbol:", 
                                 choices = unique(cleaned_analysisid2$gene_symbol)),
-                 actionButton("gene_search", "Search")
+                 actionButton("gene_search", "Search"),
+                 br(), br(), # insert a space
+                 selectInput("limit_gene", "Number of Phenotypes to Display:",
+                             choices = c("Top 10", "All"), selected = "All")
+                 
                ),
                mainPanel(
                  conditionalPanel(
@@ -72,12 +76,15 @@ ui <- fluidPage(
                  textInput("param_id", "Enter ParameterID:", value = ""),
                  selectizeInput("param_name", "Enter Parameter Symbol:", 
                                 choices = unique(cleaned_analysisid2$parameter_name)),
-                 actionButton("param_search", "Search")
+                 actionButton("param_search", "Search"),
+                 br(), br(), # insert a space
+                 selectInput("limit_param", "Number of Genes to Display:",
+                             choices = c("Top 10", "All"), selected = "All")
                ),
                mainPanel(
                  conditionalPanel(
                    condition = "input.param_search > 0",
-                   h4("Selected Gene associated with the Parameter")
+                   h4("Genes Associated With Selected Phenotype")
                  ),
                  
                plotlyOutput("dotPlot_param", height = "2000px")
@@ -103,16 +110,30 @@ server <- function(input, output, session) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
-    if (nzchar(input$gene_id)) {
+    
+    df <- if (nzchar(input$gene_id)) {
       subset(cleaned_analysisid2, mgi_accession_id == input$gene_id)
     } else {
       subset(cleaned_analysisid2, gene_symbol == input$gene_name)
     }
+    
+    if (!is.null(df) && input$limit_gene == "Top 10") {
+      df <- df %>% arrange(pvalue) %>% head(10)
+    }
+    
+    df
   })
   
   output$dotPlot_gene <- renderPlotly({
     df <- selected_gene()
     req(df)
+    title_text <- if (nzchar(input$gene_name)) {
+      paste("Phenotype Significance for Gene:", input$gene_name)
+    } else {
+      paste("Phenotype Significance for Gene:", input$gene_id)
+    }
+    
+    plot_height <- if (input$limit_gene == "Top 10") 600 else 2000
     df$text_info <- paste(
       "Phenotype:", df$parameter_name,
       "<br>Parameter ID:", df$parameter_id,
@@ -132,7 +153,7 @@ server <- function(input, output, session) {
       labs(color = "Mouse Life Stage", shape = "Mouse Strain") +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
       coord_flip() +
-      labs(x = "Phenotype", y = "p-value", title = "Phenotype Significance for Knockout Gene") +
+      labs(x = "Phenotype", y = "p-value", title = title_text) +
       theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
@@ -142,7 +163,8 @@ server <- function(input, output, session) {
     ggplotly(p, tooltip = "text")%>%
       layout(
         legend = list(
-          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ) )
+          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ),
+        height = plot_height)
   })
   
   # --------------- Parameter Search ---------------
@@ -151,15 +173,27 @@ server <- function(input, output, session) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
-    cleaned_analysisid2 %>% filter(
+    df <- cleaned_analysisid2 %>% filter(
       (input$param_id != "" & parameter_id == input$param_id) |
         (input$param_name != "" & parameter_name == input$param_name)
     )
+    if (!is.null(df) && input$limit_param == "Top 10") {
+      df <- df %>% arrange(pvalue) %>% head(10)
+    }
+    
+    df
   })
   
   output$dotPlot_param <- renderPlotly({
     df <- filtered_param()
     req(df)
+    title_text <- if (nzchar(input$gene_name)) {
+      paste("Significant genes for Phenotype:", input$param_name)
+    } else {
+      paste("Significant genes for Phenotype:", input$param_id)
+    }
+
+    plot_height <- if (input$limit_param == "Top 10") 600 else 2000
     df$text_info <- paste(
       "Gene:", df$gene_symbol,
       "<br>Parameter ID:", df$parameter_id,
@@ -176,7 +210,7 @@ server <- function(input, output, session) {
         values = c("C57BL" = 16, "129SV" = 17, "C3H" = 15, "B6J" = 8)
       )+
       labs(shape = "Mouse Strain", color = "Mouse Life Stage")+
-      labs(x = "Gene", y = "p-value") +
+      labs(x = "Gene", y = "p-value", title = title_text) +
       theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
@@ -186,7 +220,8 @@ server <- function(input, output, session) {
     ggplotly(p, tooltip = "text")%>%
       layout(
         legend = list(
-          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ) )
+          title = list(text = "Mouse Metadata<br>(Mouse strain, Mouse lifestage)") ),
+        height = plot_height)
     
   })
   
