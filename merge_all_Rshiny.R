@@ -44,7 +44,7 @@ cleaned_analysisid2 <- cleaned_analysisid %>% group_by(
 
 # ------------------ UI ------------------
 ui <- fluidPage(
-  titlePanel("IMPC Mouse Phenotype & Gene Viewer"),
+  titlePanel("IMPC Knockout Gene–Phenotype Association Viewer"),
   
   tabsetPanel(
     # ---------------- Tab 1: Gene Search ----------------
@@ -52,8 +52,10 @@ ui <- fluidPage(
              sidebarLayout(
                sidebarPanel(
                  textInput("gene_id", "Enter GeneID:", value = ""),
+                 helpText("e.g. MGI:2153608"),
                  selectizeInput("gene_name", "Enter Gene Symbol:", 
                                 choices = unique(cleaned_analysisid2$gene_symbol)),
+                 helpText("e.g. Ube2j2"),
                  actionButton("gene_search", "Search"),
                  br(), br(), # insert a space
                  selectInput("limit_gene", "Number of Phenotypes to Display:",
@@ -74,8 +76,10 @@ ui <- fluidPage(
              sidebarLayout(
                sidebarPanel(
                  textInput("param_id", "Enter ParameterID:", value = ""),
+                 helpText ("e.g. IMPC_CBC_018_001"),
                  selectizeInput("param_name", "Enter Parameter Symbol:", 
                                 choices = unique(cleaned_analysisid2$parameter_name)),
+                 helpText ("e.g. Glucose"),
                  actionButton("param_search", "Search"),
                  br(), br(), # insert a space
                  selectInput("limit_param", "Number of Genes to Display:",
@@ -93,7 +97,7 @@ ui <- fluidPage(
              ),
     
     # ---------------- Tab 3: Heatmap ----------------
-    tabPanel("Phenotype Heatmap",
+    tabPanel("Gene–Phenotype Clustering",
              mainPanel(
                plotlyOutput("heatmap", height = "1500px", width = "2000px")
              )
@@ -106,17 +110,21 @@ server <- function(input, output, session) {
   
   # --------------- Gene Search ---------------
   selected_gene <- eventReactive(input$gene_search, {
+    
+    # Return error when both search boxes are used at the same time
     if (nzchar(input$gene_id) && nzchar(input$gene_name)) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
     
+    # Return error when search with search boxes empty
     df <- if (nzchar(input$gene_id)) {
       subset(cleaned_analysisid2, mgi_accession_id == input$gene_id)
     } else {
       subset(cleaned_analysisid2, gene_symbol == input$gene_name)
     }
     
+    # Keep only the 10 most significant p-values (optional)
     if (!is.null(df) && input$limit_gene == "Top 10") {
       df <- df %>% arrange(pvalue) %>% head(10)
     }
@@ -124,6 +132,7 @@ server <- function(input, output, session) {
     df
   })
   
+  # Dot plot visualize the assocaition between selected knock out gene and phenotypes
   output$dotPlot_gene <- renderPlotly({
     df <- selected_gene()
     req(df)
@@ -146,12 +155,14 @@ server <- function(input, output, session) {
       y = pvalue,
       text = text_info
     )) +
+      # Colouring by life stage and shaping by strain, with custom shapes and labelled legends
       geom_point(aes(color = mouse_life_stage, shape = mouse_strain), size = 2) +
       scale_shape_manual(
         values = c("C57BL" = 16, "129SV" = 17, "C3H" = 15, "B6J" = 8)
       ) +
       labs(color = "Mouse Life Stage", shape = "Mouse Strain") +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "royalblue") +
+      # Flip the x- and y-axes to make the plot horizontal
       coord_flip() +
       labs(x = "Phenotype", y = "p-value", title = title_text) +
       theme_minimal() +
@@ -169,14 +180,19 @@ server <- function(input, output, session) {
   
   # --------------- Parameter Search ---------------
   filtered_param <- eventReactive(input$param_search, {
+    # Return error when both search boxes are used at the same time
     if (nzchar(input$param_id) && nzchar(input$param_name)) {
       showNotification("Please enter only one input.", type = "error")
       return(NULL)
     }
+    
+    # Return error when search with search boxes empty
     df <- cleaned_analysisid2 %>% filter(
       (input$param_id != "" & parameter_id == input$param_id) |
         (input$param_name != "" & parameter_name == input$param_name)
     )
+    
+    # Keep only the 10 most significant p-values (optional)
     if (!is.null(df) && input$limit_param == "Top 10") {
       df <- df %>% arrange(pvalue) %>% head(10)
     }
@@ -204,7 +220,9 @@ server <- function(input, output, session) {
     p <- ggplot(df, aes(x = reorder(gene_symbol, pvalue, FUN = min, decreasing = TRUE), y =pvalue, 
                         text = text_info)) +
       geom_hline(yintercept = 0.05, linetype = "dashed", color = "blue")+
+      # Flip the x- and y-axes to make the plot horizontal
       coord_flip() +
+      # Colouring by life stage and shaping by strain, with custom shapes and labelled legends
       geom_point(aes(shape = mouse_strain, color = mouse_life_stage), size = 2) +
       scale_shape_manual(
         values = c("C57BL" = 16, "129SV" = 17, "C3H" = 15, "B6J" = 8)
@@ -227,12 +245,15 @@ server <- function(input, output, session) {
   
   # --------------- Heatmap ---------------
   output$heatmap <- renderPlotly({
-    collapsed <- cleaned_analysisid2 %>%
+    
+    # Collapse duplicates by gene–parameter pair, keeping only the smallest p-value for each
+    unique_data <- cleaned_analysisid2 %>%
       group_by(gene_symbol, parameter_name) %>%
       summarise(pvalue = min(pvalue, na.rm = TRUE), .groups = "drop")
     
-    mat <- collapsed %>%
-      tidyr::pivot_wider(names_from = parameter_name, values_from = pvalue) %>%
+    # Convert data into a matrix for heatmaps and clustering generating
+    mat <- unique_data %>%
+      pivot_wider(names_from = parameter_name, values_from = pvalue) %>%
       as.data.frame()
     
     rownames(mat) <- mat$gene_symbol
@@ -240,7 +261,7 @@ server <- function(input, output, session) {
     
     mat_num <- as.matrix(mat)
     
-    # Custom hover text
+    # Create an empty matrix for hover text in Heatmap
     text <- matrix(
       nrow = nrow(mat_num),
       ncol = ncol(mat_num),
@@ -257,6 +278,7 @@ server <- function(input, output, session) {
       }
     }
     
+    # Generate Cluster-heatmap
     heatmaply(
       mat_num,
       scale = "none",
