@@ -281,7 +281,7 @@ server <- function(input, output, session) {
     }
     
     # Generate Cluster-heatmap
-    heatmaply(
+    heatmap <- heatmaply(
       mat_num,
       scale = "none",
       midpoint = 0,
@@ -289,6 +289,11 @@ server <- function(input, output, session) {
       colors = magma(256),
       plot_method = "plotly",
       label_names = c("", "", "")
+    )
+    
+    heatmap %>% layout(
+      xaxis = list(tickfont = list(size = 8)),   
+      yaxis = list(tickfont = list(size = 8)) 
     )
   })
 }
