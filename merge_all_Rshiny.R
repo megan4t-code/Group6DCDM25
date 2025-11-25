@@ -57,10 +57,10 @@ ui <- fluidPage(
                                 choices = unique(cleaned_analysisid2$gene_symbol)),
                  helpText("e.g. Ube2j2"),
                  helpText("Please use only ONE search box at a time"),
-                 actionButton("gene_search", "Search"),
-                 br(), br(), # insert a space
+                 tags$hr(), # Add a line between
                  selectInput("limit_gene", "Number of Phenotypes to Display:",
-                             choices = c("Top 10", "All"), selected = "All")
+                             choices = c("Top 10", "All"), selected = "All"),
+                 actionButton("gene_search", "Search"),
                  
                ),
                mainPanel(
@@ -82,10 +82,10 @@ ui <- fluidPage(
                                 choices = unique(cleaned_analysisid2$parameter_name)),
                  helpText ("e.g. Glucose"),
                  helpText("Please use only ONE search box at a time"),
-                 actionButton("param_search", "Search"),
-                 br(), br(), # insert a space
+                 tags$hr(), # Add a line between
                  selectInput("limit_param", "Number of Genes to Display:",
-                             choices = c("Top 10", "All"), selected = "All")
+                             choices = c("Top 10", "All"), selected = "All"),
+                 actionButton("param_search", "Search")
                ),
                mainPanel(
                  conditionalPanel(
