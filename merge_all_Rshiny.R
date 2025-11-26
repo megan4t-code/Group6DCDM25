@@ -60,6 +60,7 @@ ui <- fluidPage(
                  tags$hr(), # Add a line between
                  selectInput("limit_gene", "Number of Phenotypes to Display:",
                              choices = c("Top 10", "All"), selected = "All"),
+                 helpText ("After changing the option, please re-click the Search button to refresh the plot"),
                  actionButton("gene_search", "Search"),
                  
                ),
@@ -85,6 +86,7 @@ ui <- fluidPage(
                  tags$hr(), # Add a line between
                  selectInput("limit_param", "Number of Genes to Display:",
                              choices = c("Top 10", "All"), selected = "All"),
+                 helpText ("After changing the option, please re-click the Search button to refresh the plot"),
                  actionButton("param_search", "Search")
                ),
                mainPanel(
