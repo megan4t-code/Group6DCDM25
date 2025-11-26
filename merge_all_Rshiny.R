@@ -139,9 +139,9 @@ server <- function(input, output, session) {
     df <- selected_gene()
     req(df)
     title_text <- if (nzchar(input$gene_name)) {
-      paste("Phenotype Significance for Gene:", input$gene_name)
+      paste("Significant Phenotypes for Gene:", input$gene_name)
     } else {
-      paste("Phenotype Significance for Gene:", input$gene_id)
+      paste("Significant Phenotypes for Gene:", input$gene_id)
     }
     
     plot_height <- if (input$limit_gene == "Top 10") 600 else 2000
@@ -168,7 +168,7 @@ server <- function(input, output, session) {
       coord_flip() +
       labs(x = "Phenotype", y = "p-value", title = title_text) +
       theme_minimal() +
-      theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+      theme(plot.title = element_text(hjust = 0.5, size = 15, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
             axis.title.y = element_text(size = 15, face = "bold"),
             axis.text.x = element_text(angle = 90, hjust = -2))
@@ -202,13 +202,14 @@ server <- function(input, output, session) {
     df
   })
   
+  # Dot plot visualize the assocaition between selected phenotype and knock out genes
   output$dotPlot_param <- renderPlotly({
     df <- filtered_param()
     req(df)
-    title_text <- if (nzchar(input$gene_name)) {
-      paste("Significant genes for Phenotype:", input$param_name)
+    title_text <- if (nzchar(input$param_name)) {
+      paste("Significant Genes for Phenotype:", input$param_name)
     } else {
-      paste("Significant genes for Phenotype:", input$param_id)
+      paste("Significant Genes for Phenotype:", input$param_id)
     }
 
     plot_height <- if (input$limit_param == "Top 10") 600 else 2000
@@ -232,7 +233,7 @@ server <- function(input, output, session) {
       labs(shape = "Mouse Strain", color = "Mouse Life Stage")+
       labs(x = "Gene", y = "p-value", title = title_text) +
       theme_minimal() +
-      theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+      theme(plot.title = element_text(hjust = 0.5, size = 15, face = "bold"),
             axis.title.x = element_text(size =15, face = "bold"),
             axis.title.y = element_text(size = 15, face = "bold"),
             axis.text.x = element_text(angle = 90, hjust = -2))
