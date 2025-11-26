@@ -135,7 +135,12 @@ server <- function(input, output, session) {
     
     # Apply Top 10 limit if selected
     if (!is.null(df) && input$limit_gene == "Top 10") {
-      df <- df %>% arrange(pvalue) %>% head(10)
+      df <- df %>% 
+        group_by(parameter_name) %>%     
+        slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%  
+        ungroup() %>%
+        arrange(pvalue) %>%  
+        head(10)             
     }
     
     # Return BOTH data and label
@@ -219,7 +224,12 @@ server <- function(input, output, session) {
     
     # Keep only the 10 most significant p-values (optional)
     if (!is.null(df) && input$limit_param == "Top 10") {
-      df <- df %>% arrange(pvalue) %>% head(10)
+      df <- df %>% 
+        group_by(gene_symbol) %>%    
+        slice_min(order_by = pvalue, n = 1, with_ties = FALSE) %>%  
+        ungroup() %>%
+        arrange(pvalue) %>%  
+        head(10)             
     }
     
     list(
