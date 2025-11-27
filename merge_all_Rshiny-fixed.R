@@ -9,14 +9,14 @@
 # R version 4.5.2 (2025-10-31)
 # Last updated: __ (final version for submission)
 
-library(shiny)
-library(ggplot2)
-library(plotly)
-library(dplyr)
-library(reshape2)
-library(heatmaply)
-library(tidyr)
-library(viridis)
+library(shiny) # version: 1.11.1
+library(ggplot2) # version: 4.0.0
+library(plotly) # version: 4.11.0
+library(dplyr) # version: 1.1.4
+library(reshape2) # version: 1.4.5
+library(heatmaply) # version: 1.6.0
+library(tidyr) # version: 1.3.1
+library(viridis) # version: 0.6.5
 
 # ------------------ Data ------------------
 clean_data <- read.csv("../output/IMPC_analysis.csv", 
